@@ -6,18 +6,60 @@ import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import com.papyrus.fanoos.bshairwebapp.Adapters.NewsAdapter
+import com.papyrus.fanoos.bshairwebapp.Api.NewsApi
+import com.papyrus.fanoos.bshairwebapp.Api.NewsClinet
+import com.papyrus.fanoos.bshairwebapp.Models.News
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
+import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+    internal lateinit var myNewsApi: NewsApi
+    internal var compositeDisposable = CompositeDisposable()
+    internal lateinit var myNewsAdapter: NewsAdapter
+    var pageCount:Int = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+        progressbar.visibility = View.VISIBLE
 
+//        Init adapter
+        myNewsAdapter = NewsAdapter(this, ArrayList())
+        recycler_news.adapter = myNewsAdapter
+
+//        Init Api
+        val myNewsClinet = NewsClinet.instance
+        myNewsApi = myNewsClinet.create(NewsApi::class.java)
+
+
+//        Show Data
+        fetchData(pageCount)
+
+//        Init RecyclerView
+        recycler_news.setHasFixedSize(true)
+        var newLayoutManger =  LinearLayoutManager(this)
+        recycler_news.layoutManager = newLayoutManger
+        recycler_news.addOnScrollListener(object: EndlessRecyclerViewScrollListener(newLayoutManger){
+            override fun onLoadMore(page: Int, totalItemsCount: Int, view: RecyclerView?) {
+                var newCount = page + 1
+                progressbar.visibility = View.VISIBLE
+
+                fetchData(newCount)
+
+
+            }
+        })
 
 
         val toggle = ActionBarDrawerToggle(
@@ -26,6 +68,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
+    }
+
+    private fun fetchData(localPageCount:Int) {
+        compositeDisposable.add(myNewsApi.getNews(localPageCount).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe{newsData -> displayData(newsData)})
+
+    }
+
+    private fun displayData(newsData: News?) {
+        progressbar.visibility = View.GONE
+        myNewsAdapter.addMoreItem(newsData!!.posts)
     }
 
     override fun onBackPressed() {

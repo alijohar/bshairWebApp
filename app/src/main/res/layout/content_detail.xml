@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginStart="@dimen/half_standard_margin"
+            android:layout_marginEnd="@dimen/half_standard_margin"
+            >
+
+
+            <ImageView
+                android:layout_marginTop="@dimen/half_standard_margin"
+                android:id="@+id/image_news_detial"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_news_detail_full_size"
+                android:background="@color/accent"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/des_news_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/test_title"
+                android:layout_marginTop="@dimen/miniMargin"
+                android:padding="@dimen/half_standard_margin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
