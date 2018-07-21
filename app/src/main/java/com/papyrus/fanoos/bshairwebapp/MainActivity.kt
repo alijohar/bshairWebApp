@@ -11,6 +11,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import com.papyrus.fanoos.bshairwebapp.Adapters.BannerAdapter
 import com.papyrus.fanoos.bshairwebapp.Adapters.NewsAdapter
 import com.papyrus.fanoos.bshairwebapp.Api.NewsApi
 import com.papyrus.fanoos.bshairwebapp.Api.NewsClinet
@@ -26,7 +27,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     internal lateinit var myNewsApi: NewsApi
     internal var compositeDisposable = CompositeDisposable()
     internal lateinit var myNewsAdapter: NewsAdapter
+    internal lateinit var myBannerAdapter:BannerAdapter
+    internal var myImagesBanner = ArrayList<String>()
     var pageCount:Int = 1
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,9 +38,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setSupportActionBar(toolbar)
         progressbar.visibility = View.VISIBLE
 
-//        Init adapter
+//        Init adapter of news
         myNewsAdapter = NewsAdapter(this, ArrayList())
         recycler_news.adapter = myNewsAdapter
+
+//        Init adapter of banner
+        myImagesBanner.add("https://cdn.pixabay.com/photo/2014/09/19/12/30/pencils-452238_960_720.jpg")
+        myImagesBanner.add("https://cdn.pixabay.com/photo/2015/03/26/09/40/pencil-690050_960_720.jpg")
+        myImagesBanner.add("https://cdn.pixabay.com/photo/2015/09/02/12/28/pencil-918449_960_720.jpg")
+        myImagesBanner.add("https://cdn.pixabay.com/photo/2014/05/02/21/50/home-office-336378_960_720.jpg")
+
+        myBannerAdapter = BannerAdapter(this, myImagesBanner)
+        viewPager.adapter = myBannerAdapter
 
 //        Init Api
         val myNewsClinet = NewsClinet.instance
@@ -45,6 +58,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 //        Show Data
         fetchData(pageCount)
+
+
 
 //        Init RecyclerView
         recycler_news.setHasFixedSize(true)

@@ -12,4 +12,5 @@
     <dimen name="half_standard_margin">8dp</dimen>
     <dimen name="progressSize">30dp</dimen>
     <dimen name="image_news_detail_full_size">220dp</dimen>
+    <dimen name="banner_title_height">36dp</dimen>
 </resources>

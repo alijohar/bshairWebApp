@@ -30,7 +30,14 @@ class NewsDetail : AppCompatActivity() {
         title_news_detail.text = title
         Glide.with(this).load(fullImage).into(image_news_detial)
 
+//Back arrow icon
+            supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+            supportActionBar!!.setDisplayShowHomeEnabled(true)
+
+
     }
+
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -49,6 +56,10 @@ class NewsDetail : AppCompatActivity() {
             }
             R.id.action_adding_comment -> {
                 Snackbar.make(news_detail, "comment is good", Snackbar.LENGTH_LONG).show()
+                return true
+            }
+            android.R.id.home -> {
+                finish()
                 return true
             }
             else -> return super.onOptionsItemSelected(item)

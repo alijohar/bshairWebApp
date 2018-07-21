@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,9 +7,16 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main"
+    android:orientation="vertical"
     android:paddingStart="@dimen/activity_horizontal_margin"
     android:paddingEnd="@dimen/activity_horizontal_margin">
 
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/half_standard_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_header_height"
+        android:id="@+id/viewPager"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_news"
@@ -22,8 +29,7 @@
         android:layout_height="@dimen/progressSize"
         android:layout_marginBottom="@dimen/miniMargin"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_gravity="center"
+ />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
