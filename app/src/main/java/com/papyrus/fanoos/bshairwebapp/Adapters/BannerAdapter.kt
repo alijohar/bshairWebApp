@@ -38,7 +38,11 @@ class BannerAdapter(val context:Context, val localBannerArray:News): PagerAdapte
         val imageBanner:String = localBannerArray.posts[position].thumbnail_images.medium_large.url
         val bannerContent = localBannerArray.posts[position].content
         val urlPost:String = localBannerArray.posts[position].url
-
+        val numberComment = localBannerArray.posts[position].comment_count
+//        TODO: must get all cats if the customer needs it
+        val catName = localBannerArray.posts[position].categories[0].title
+        val authorName = localBannerArray.posts[position].author.nickname
+        val timePosting = localBannerArray.posts[position].date
         itemView.banner_title.text = bannerTitle
         Glide.with(context).load(imageBanner).into(banner)
 
@@ -53,6 +57,10 @@ class BannerAdapter(val context:Context, val localBannerArray:News): PagerAdapte
             bannerIntent.putExtra("content", bannerContent)
             bannerIntent.putExtra("full_image", imageBanner)
             bannerIntent.putExtra("post_url", urlPost)
+            bannerIntent.putExtra("number_comment", numberComment)
+            bannerIntent.putExtra("cat_name", catName)
+            bannerIntent.putExtra("author_name", authorName)
+            bannerIntent.putExtra("time_post", timePosting)
 
             context.startActivity(bannerIntent)
 

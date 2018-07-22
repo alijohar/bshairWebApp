@@ -31,6 +31,10 @@ class NewsDetail : AppCompatActivity() {
         val title = bundle.getString("title")
         val content = bundle.getString("content")
         val fullImage = bundle.getString("full_image")
+        val commentNumber:Int = bundle.getInt("number_comment")
+        val catName = bundle.getString("cat_name")
+        val authorName = bundle.getString("author_name")
+        val time = bundle.getString("time_post")
         urlPost = bundle.getString("post_url")
         urlPostWithTitle =  title + "\n" + urlPost
 
@@ -38,6 +42,11 @@ class NewsDetail : AppCompatActivity() {
         des_news_detail.text = Html.fromHtml(Html.fromHtml(content).toString())
         title_news_detail.text = title
         Glide.with(this).load(fullImage).into(image_news_detial)
+
+        detail_author_name.text = authorName
+        detail_time_posting.text = time
+        detail_cat_name.text = catName
+        detail_comment_number.text = commentNumber.toString()
 
 //Back arrow icon
             supportActionBar!!.setDisplayHomeAsUpEnabled(true)

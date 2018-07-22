@@ -5,7 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/deep_purple_400</item>
         <item name="colorPrimaryDark">@color/deep_purple_400</item>
-        <item name="colorAccent">@color/orange_500</item>
+        <item name="colorAccent">@color/red_500</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>

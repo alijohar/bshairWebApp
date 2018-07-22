@@ -30,6 +30,11 @@ class NewsAdapter(internal var context: Context, internal var newsList: ArrayLis
         val contentNews = newsList[position].content
         val fullImage = newsList[position].thumbnail_images.medium_large.url
         val urlPost:String = newsList[position].url
+        val numberComment = newsList[position].comment_count
+//        TODO: must get all cats if the customer needs it
+        val catName = newsList[position].categories[0].title
+        val authorName = newsList[position].author.nickname
+        val timePosting = newsList[position].date
         holder.news_title.text = titleNews
         Glide.with(context).load(imageThumbNewsUrlString).into(locatImageView)
 
@@ -41,6 +46,13 @@ class NewsAdapter(internal var context: Context, internal var newsList: ArrayLis
             newsIntent.putExtra("content", contentNews)
             newsIntent.putExtra("full_image", fullImage)
             newsIntent.putExtra("post_url", urlPost)
+            newsIntent.putExtra("number_comment", numberComment)
+            newsIntent.putExtra("cat_name", catName)
+            newsIntent.putExtra("author_name", authorName)
+            newsIntent.putExtra("time_post", timePosting)
+
+
+
             context.startActivity(newsIntent)
         })
     }
