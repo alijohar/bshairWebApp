@@ -5,6 +5,14 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface NewsApi {
+
+//    For last 10 posts
     @GET("get_posts")
     fun getNews(@Query("page") page: Int): io.reactivex.Observable<News>
+
+
+//    For last 10 Banner Posts
+    @GET("get_tag_posts")
+    fun getBannerPosts(@Query("tag_slug") bannerTage:String,
+                       @Query("page") pageBanner:Int):io.reactivex.Observable<News>
 }
