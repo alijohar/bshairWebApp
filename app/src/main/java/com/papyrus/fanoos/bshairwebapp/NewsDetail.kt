@@ -13,8 +13,14 @@ import kotlinx.android.synthetic.main.activity_news_detail.*
 import kotlinx.android.synthetic.main.app_bar_detail.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_detail.*
+import android.content.Intent
+
+
 
 class NewsDetail : AppCompatActivity() {
+        var urlPost:String? = null
+        var urlPostWithTitle:String? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +31,9 @@ class NewsDetail : AppCompatActivity() {
         val title = bundle.getString("title")
         val content = bundle.getString("content")
         val fullImage = bundle.getString("full_image")
+        urlPost = bundle.getString("post_url")
+        urlPostWithTitle =  title + "\n" + urlPost
+
 
         des_news_detail.text = Html.fromHtml(Html.fromHtml(content).toString())
         title_news_detail.text = title
@@ -51,7 +60,7 @@ class NewsDetail : AppCompatActivity() {
         // as you specify a parent activity in AndroidManifest.xml.
         when (item.itemId) {
             R.id.action_sharing -> {
-                Snackbar.make(news_detail, "Share is good", Snackbar.LENGTH_LONG).show()
+                sharePostLink()
                 return true
             }
             R.id.action_adding_comment -> {
@@ -65,4 +74,18 @@ class NewsDetail : AppCompatActivity() {
             else -> return super.onOptionsItemSelected(item)
         }
     }
+
+    private fun sharePostLink() {
+
+        try {
+            val sharingIntent = Intent(android.content.Intent.ACTION_SEND)
+            sharingIntent.type = "text/plain"
+            sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, R.string.share)
+            sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, urlPostWithTitle!!)
+            startActivity(Intent.createChooser(sharingIntent, resources.getString(R.string.share)))
+        }catch (e:Exception){
+            Snackbar.make(news_detail, e.message.toString(), Snackbar.LENGTH_LONG).show()
+
+        }
+   }
 }

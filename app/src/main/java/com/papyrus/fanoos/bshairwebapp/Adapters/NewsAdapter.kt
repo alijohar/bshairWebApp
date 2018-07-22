@@ -28,7 +28,8 @@ class NewsAdapter(internal var context: Context, internal var newsList: ArrayLis
         val imageThumbNewsUrlString = newsList[position].thumbnail
         val titleNews = newsList[position].title
         val contentNews = newsList[position].content
-        val fullImage = newsList[position].thumbnail_images.full.url
+        val fullImage = newsList[position].thumbnail_images.medium_large.url
+        val urlPost:String = newsList[position].url
         holder.news_title.text = titleNews
         Glide.with(context).load(imageThumbNewsUrlString).into(locatImageView)
 
@@ -39,6 +40,7 @@ class NewsAdapter(internal var context: Context, internal var newsList: ArrayLis
             newsIntent.putExtra("title", titleNews)
             newsIntent.putExtra("content", contentNews)
             newsIntent.putExtra("full_image", fullImage)
+            newsIntent.putExtra("post_url", urlPost)
             context.startActivity(newsIntent)
         })
     }
