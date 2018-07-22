@@ -35,6 +35,7 @@ class NewsDetail : AppCompatActivity() {
         val catName = bundle.getString("cat_name")
         val authorName = bundle.getString("author_name")
         val time = bundle.getString("time_post")
+        val timeS = time.split(" ")
         urlPost = bundle.getString("post_url")
         urlPostWithTitle =  title + "\n" + urlPost
 
@@ -44,7 +45,7 @@ class NewsDetail : AppCompatActivity() {
         Glide.with(this).load(fullImage).into(image_news_detial)
 
         detail_author_name.text = authorName
-        detail_time_posting.text = time
+        detail_time_posting.text = timeS[0]
         detail_cat_name.text = catName
         detail_comment_number.text = commentNumber.toString()
 
