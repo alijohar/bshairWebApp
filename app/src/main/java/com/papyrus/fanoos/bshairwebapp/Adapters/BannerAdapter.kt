@@ -4,20 +4,16 @@ import android.content.Context
 import android.content.Intent
 import android.support.v4.view.PagerAdapter
 import android.view.View
-import android.widget.LinearLayout
-import android.widget.Toast
 import android.view.ViewGroup
 import com.papyrus.fanoos.bshairwebapp.R
 import android.view.LayoutInflater
-import android.widget.FrameLayout
-import android.widget.ImageView
+import android.widget.*
 import com.bumptech.glide.Glide
 import com.papyrus.fanoos.bshairwebapp.Models.News
 import com.papyrus.fanoos.bshairwebapp.Models.Post
 import com.papyrus.fanoos.bshairwebapp.NewsDetail
 import com.papyrus.fanoos.bshairwebapp.R.id.banner_image
 import kotlinx.android.synthetic.main.slide_image_item.view.*
-
 
 class BannerAdapter(val context:Context, val localBannerArray:News): PagerAdapter() {
     var layoutInflater: LayoutInflater? = null

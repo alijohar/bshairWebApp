@@ -1,5 +1,6 @@
 package com.papyrus.fanoos.bshairwebapp
 
+import android.content.Context
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -23,6 +24,12 @@ import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_main.*
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
+
+
+
+
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     internal lateinit var myNewsApi: NewsApi
@@ -50,8 +57,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val myNewsClinet = NewsClinet.instance
         myNewsApi = myNewsClinet.create(NewsApi::class.java)
 
+//        CustomFont
+        CalligraphyConfig.initDefault(CalligraphyConfig.Builder()
+                .setDefaultFontPath("droidkufi_bold.ttf")
+                .setFontAttrId(R.attr.fontPath)
+                .build()
+        )
 
 
+//        Show Banner Data
         fetchDataBanner(bannerTagName, pageCount)
 
 //        Show Data
@@ -155,4 +169,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
     }
+
+
+//    ForCustomFont
+    override fun attachBaseContext(newBase: Context) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
+    }
+
 }

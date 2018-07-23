@@ -1,5 +1,6 @@
 package com.papyrus.fanoos.bshairwebapp
 
+import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.Snackbar
@@ -14,7 +15,8 @@ import kotlinx.android.synthetic.main.app_bar_detail.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_detail.*
 import android.content.Intent
-
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 
 
 class NewsDetail : AppCompatActivity() {
@@ -27,6 +29,13 @@ class NewsDetail : AppCompatActivity() {
         setContentView(R.layout.activity_news_detail)
         setSupportActionBar(toolbar_detail)
 
+        //        CustomFont
+        CalligraphyConfig.initDefault(CalligraphyConfig.Builder()
+                .setDefaultFontPath("droidkufi_bold.ttf")
+                .setFontAttrId(R.attr.fontPath)
+                .build()
+        )
+
         val bundle = intent.extras
         val title = bundle.getString("title")
         val content = bundle.getString("content")
@@ -38,7 +47,6 @@ class NewsDetail : AppCompatActivity() {
         val timeS = time.split(" ")
         urlPost = bundle.getString("post_url")
         urlPostWithTitle =  title + "\n" + urlPost
-
 
         des_news_detail.text = Html.fromHtml(Html.fromHtml(content).toString())
         title_news_detail.text = title
@@ -98,4 +106,9 @@ class NewsDetail : AppCompatActivity() {
 
         }
    }
+
+    //    ForCustomFont
+    override fun attachBaseContext(newBase: Context) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
+    }
 }
