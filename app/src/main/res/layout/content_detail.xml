@@ -45,8 +45,10 @@
                     android:maxLines="1"
                     android:orientation="horizontal"
                     android:text="@string/test_small_title"
-                    android:textSize="@dimen/very_small_caption"
-                    />
+                    android:layout_marginRight="@dimen/miniMargin"
+                    android:layout_marginLeft="@dimen/miniMargin"
+                    android:textSize="@dimen/smal_caption_size"
+                    android:textAppearance="@style/TextAppearance.FontPath_regular"/>
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -69,9 +71,8 @@
                         android:layout_width="wrap_content"
                         android:text="@string/test_small_title"
                         android:layout_gravity="center"
-                        android:textSize="@dimen/very_small_caption"
-
-                        />
+                        android:textSize="@dimen/smal_caption_size"
+                        android:textAppearance="@style/TextAppearance.FontPath_regular"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -94,10 +95,10 @@
                         android:id="@+id/detail_time_posting"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:textSize="@dimen/very_small_caption"
+                        android:textSize="@dimen/smal_caption_size"
                         android:text="@string/test_small_title"
                         android:layout_gravity="center"
-                        />
+                        android:textAppearance="@style/TextAppearance.FontPath_regular"/>
 
                 </LinearLayout>
 
@@ -121,11 +122,12 @@
                         android:id="@+id/detail_comment_number"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:textSize="@dimen/very_small_caption"
+                        android:textSize="@dimen/smal_caption_size"
                         android:text="@string/test_number"
                         android:textColor="?attr/colorAccent"
                         android:layout_gravity="center"
-                        />
+                        android:textAppearance="@style/TextAppearance.FontPath_regular"/>
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -134,13 +136,15 @@
                 android:id="@+id/des_news_detail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/line_space_detail_text"
                 android:text="@string/test_title"
                 android:layout_marginTop="@dimen/miniMargin"
                 android:padding="@dimen/half_standard_margin"
-                android:textSize="@dimen/smal_caption_size"
+                android:textSize="@dimen/caption_text_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                android:textAppearance="@style/TextAppearance.FontPath_regular"/>
 
 
         </LinearLayout>

@@ -15,6 +15,11 @@
         <item name="fontPath">droidkufi_bold.ttf</item>
     </style>
 
+    <style name="TextAppearance.FontPath_regular" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">droidkufi_regular.ttf</item>
+        <item name="android:textColor">@color/grey_700</item>
+    </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

@@ -18,6 +18,7 @@
     <dimen name="appbar_text_size">10sp</dimen>
     <dimen name="smal_caption_size">10sp</dimen>
     <dimen name="very_small_caption">8sp</dimen>
+    <dimen name="line_space_detail_text">16dp</dimen>
     <item name="half_alpha" type="dimen" format="float">0.5</item>
     <item name="high_alpha" type="dimen" format="float">0.75</item>
 </resources>
