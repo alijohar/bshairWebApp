@@ -15,13 +15,17 @@ import kotlinx.android.synthetic.main.app_bar_detail.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_detail.*
 import android.content.Intent
+import android.support.v7.app.AlertDialog
+import android.widget.Button
+import android.widget.EditText
+import kotlinx.android.synthetic.main.dialog_add_comment.*
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 
 
 class NewsDetail : AppCompatActivity() {
-        var urlPost:String? = null
-        var urlPostWithTitle:String? = null
+    var urlPost: String? = null
+    var urlPostWithTitle: String? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,13 +44,13 @@ class NewsDetail : AppCompatActivity() {
         val title = bundle.getString("title")
         val content = bundle.getString("content")
         val fullImage = bundle.getString("full_image")
-        val commentNumber:Int = bundle.getInt("number_comment")
+        val commentNumber: Int = bundle.getInt("number_comment")
         val catName = bundle.getString("cat_name")
         val authorName = bundle.getString("author_name")
         val time = bundle.getString("time_post")
         val timeS = time.split(" ")
         urlPost = bundle.getString("post_url")
-        urlPostWithTitle =  title + "\n" + urlPost
+        urlPostWithTitle = title + "\n" + urlPost
 
         des_news_detail.text = Html.fromHtml(Html.fromHtml(content).toString())
         title_news_detail.text = title
@@ -58,12 +62,11 @@ class NewsDetail : AppCompatActivity() {
         detail_comment_number.text = commentNumber.toString()
 
 //Back arrow icon
-            supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-            supportActionBar!!.setDisplayShowHomeEnabled(true)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.setDisplayShowHomeEnabled(true)
 
 
     }
-
 
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -82,8 +85,32 @@ class NewsDetail : AppCompatActivity() {
                 return true
             }
             R.id.action_adding_comment -> {
-                Snackbar.make(news_detail, "comment is good", Snackbar.LENGTH_LONG).show()
+                val commentDialog = AlertDialog.Builder(this)
+                val view = layoutInflater.inflate(R.layout.dialog_add_comment, null)
+                val submit = view.findViewById<Button>(R.id.send_dialog_send_comment)
+                val name = view.findViewById<EditText>(R.id.name_dialog_send_comment)
+                val mail = view.findViewById<EditText>(R.id.email_dialog_send_comment)
+                val desComment = view.findViewById<EditText>(R.id.des_dialog_send_comment)
+
+
+                submit.setOnClickListener {
+                    if (!name.text.isEmpty() && !mail.text.isEmpty() && !mail.text.isEmpty()) {
+                        Toast.makeText(this, "message is sent", Toast.LENGTH_LONG).show()
+                    }else {
+                        if (name.text.isEmpty()) name.error = getString(R.string.not_be_empty)
+                        if (mail.text.isEmpty()) mail.error = getString(R.string.not_be_empty)
+                        if (desComment.text.isEmpty()) desComment.error = getString(R.string.not_be_empty)
+                    }
+                     }
+
+                commentDialog.setView(view)
+                val dialog = commentDialog.create()
+                dialog.show()
+
+
                 return true
+
+
             }
             android.R.id.home -> {
                 finish()
@@ -101,14 +128,17 @@ class NewsDetail : AppCompatActivity() {
             sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, R.string.share)
             sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, urlPostWithTitle!!)
             startActivity(Intent.createChooser(sharingIntent, resources.getString(R.string.share)))
-        }catch (e:Exception){
+        } catch (e: Exception) {
             Snackbar.make(news_detail, e.message.toString(), Snackbar.LENGTH_LONG).show()
 
         }
-   }
+    }
 
     //    ForCustomFont
     override fun attachBaseContext(newBase: Context) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
     }
+
+
 }
+

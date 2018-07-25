@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:id="@+id/loginDialog">
+
+    <TextView
+        android:id="@+id/title_dialog_send_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:padding="@dimen/smal_padding"
+        android:text="@string/send_comment_title"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name_dialog_send_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/your_name"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.FontPath_regular"
+        android:textSize="@dimen/smal_caption_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_dialog_send_comment" />
+
+    <EditText
+        android:id="@+id/email_dialog_send_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/your_mail"
+        android:inputType="textEmailAddress"
+        android:textAppearance="@style/TextAppearance.FontPath_regular"
+        android:textSize="@dimen/smal_caption_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_dialog_send_comment" />
+
+
+    <EditText
+        android:id="@+id/des_dialog_send_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/your_text"
+        android:minHeight="@dimen/des_dialog_send_comment"
+        android:textAppearance="@style/TextAppearance.FontPath_regular"
+        android:textSize="@dimen/smal_caption_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_dialog_send_comment" />
+
+    <Button
+        android:id="@+id/send_dialog_send_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:gravity="start|center_vertical"
+        android:text="@string/send"
+        android:textAppearance="@style/TextAppearance.FontPath_regular"
+        android:textColor="?attr/colorAccent"
+        android:textSize="@dimen/smal_caption_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/des_dialog_send_comment" />
+
+    <Button
+        android:id="@+id/cancet_dialog_send_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:gravity="start|center_vertical"
+        android:text="@string/cancel"
+        android:textAppearance="@style/TextAppearance.FontPath_regular"
+        android:textSize="@dimen/smal_caption_size"
+        app:layout_constraintStart_toEndOf="@+id/send_dialog_send_comment"
+        app:layout_constraintTop_toBottomOf="@+id/des_dialog_send_comment" />
+</android.support.constraint.ConstraintLayout>

@@ -145,8 +145,6 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 android:textAppearance="@style/TextAppearance.FontPath_regular"/>
-
-
         </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
