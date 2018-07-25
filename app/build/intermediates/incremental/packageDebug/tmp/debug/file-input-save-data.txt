@@ -1,0 +1,15 @@
+#Internal package file, do not edit.
+#Mon Jul 23 21:54:37 IRDT 2018
+1.base=/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/transforms/dexMerger/debug/0
+2.path=droidkufi_bold.ttf
+0.baseType=DIRECTORY
+2.base=/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/assets/debug
+2.set=ASSET
+1.baseType=DIRECTORY
+count=3
+1.set=DEX
+0.path=droidkufi_regular.ttf
+0.set=ASSET
+0.base=/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/assets/debug
+2.baseType=DIRECTORY
+1.path=classes.dex
