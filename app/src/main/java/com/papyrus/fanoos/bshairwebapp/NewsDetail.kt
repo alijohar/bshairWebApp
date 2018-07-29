@@ -67,7 +67,11 @@ class NewsDetail : AppCompatActivity() {
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar!!.setDisplayShowHomeEnabled(true)
 
+        comment_display.setOnClickListener {
+            var intent = Intent(this, CommentDetail::class.java)
 
+            startActivity(intent)
+        }
     }
 
 
