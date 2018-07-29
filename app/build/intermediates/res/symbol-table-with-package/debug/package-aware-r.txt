@@ -1160,7 +1160,7 @@ int id bottom 0x7f080028
 int id buttonPanel 0x7f080029
 int id calligraphy_tag_id 0x7f08002a
 int id cancel_action 0x7f08002b
-int id cancet_dialog_send_comment 0x7f08002c
+int id cancel_dialog_send_comment 0x7f08002c
 int id center 0x7f08002d
 int id center_horizontal 0x7f08002e
 int id center_vertical 0x7f08002f

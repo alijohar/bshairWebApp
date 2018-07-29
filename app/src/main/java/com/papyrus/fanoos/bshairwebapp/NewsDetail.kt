@@ -16,9 +16,11 @@ import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_detail.*
 import android.content.Intent
 import android.support.v7.app.AlertDialog
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import kotlinx.android.synthetic.main.dialog_add_comment.*
+import kotlinx.android.synthetic.main.dialog_add_comment.view.*
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 
@@ -85,29 +87,7 @@ class NewsDetail : AppCompatActivity() {
                 return true
             }
             R.id.action_adding_comment -> {
-                val commentDialog = AlertDialog.Builder(this)
-                val view = layoutInflater.inflate(R.layout.dialog_add_comment, null)
-                val submit = view.findViewById<Button>(R.id.send_dialog_send_comment)
-                val name = view.findViewById<EditText>(R.id.name_dialog_send_comment)
-                val mail = view.findViewById<EditText>(R.id.email_dialog_send_comment)
-                val desComment = view.findViewById<EditText>(R.id.des_dialog_send_comment)
-
-
-                submit.setOnClickListener {
-                    if (!name.text.isEmpty() && !mail.text.isEmpty() && !mail.text.isEmpty()) {
-                        Toast.makeText(this, "message is sent", Toast.LENGTH_LONG).show()
-                    }else {
-                        if (name.text.isEmpty()) name.error = getString(R.string.not_be_empty)
-                        if (mail.text.isEmpty()) mail.error = getString(R.string.not_be_empty)
-                        if (desComment.text.isEmpty()) desComment.error = getString(R.string.not_be_empty)
-                    }
-                     }
-
-                commentDialog.setView(view)
-                val dialog = commentDialog.create()
-                dialog.show()
-
-
+                addComment()
                 return true
 
 
@@ -117,6 +97,37 @@ class NewsDetail : AppCompatActivity() {
                 return true
             }
             else -> return super.onOptionsItemSelected(item)
+        }
+    }
+
+    private fun addComment() {
+        val commentDialog = AlertDialog.Builder(this)
+        val view = layoutInflater.inflate(R.layout.dialog_add_comment, null)
+
+        val submit = view.send_dialog_send_comment
+        val cancel = view.cancel_dialog_send_comment
+        val name = view.name_dialog_send_comment
+        val mail = view.email_dialog_send_comment
+        val desComment = view.des_dialog_send_comment
+
+        submit.setOnClickListener {
+            if (!name.text.isEmpty() && !mail.text.isEmpty() && !desComment.text.isEmpty()){
+                Toast.makeText(this, "message is sent", Toast.LENGTH_LONG).show()
+            }else{
+                if (name.text.isEmpty()) name.error = getString(R.string.not_be_empty)
+                if (mail.text.isEmpty()) mail.error = getString(R.string.not_be_empty)
+                if (desComment.text.isEmpty()) desComment.error = getString(R.string.not_be_empty)
+            }
+        }
+
+        val dialog = commentDialog.setView(view).create()
+        dialog.show()
+        dialog.setCancelable(false)
+
+
+
+        cancel.setOnClickListener {
+            dialog.dismiss()
         }
     }
 

@@ -4080,7 +4080,7 @@ public final class R {
     public static final int buttonPanel=0x7f080029;
     public static final int calligraphy_tag_id=0x7f08002a;
     public static final int cancel_action=0x7f08002b;
-    public static final int cancet_dialog_send_comment=0x7f08002c;
+    public static final int cancel_dialog_send_comment=0x7f08002c;
     public static final int center=0x7f08002d;
     public static final int center_horizontal=0x7f08002e;
     public static final int center_vertical=0x7f08002f;
