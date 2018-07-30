@@ -35,11 +35,12 @@ class NewsAdapter(internal var context: Context, internal var newsList: ArrayLis
         val catName = newsList[position].categories[0].title
         val authorName = newsList[position].author.nickname
         val timePosting = newsList[position].date
+        val postId = newsList[position].id
         holder.news_title.text = titleNews
         Glide.with(context).load(imageThumbNewsUrlString).into(locatImageView)
 
         val newCardView = holder.news_card_view
-        newCardView.setOnClickListener({
+        newCardView.setOnClickListener {
             val newsIntent = Intent(context, NewsDetail::class.java)
 //            TODO: must get authorname and data and category and count of comments
             newsIntent.putExtra("title", titleNews)
@@ -50,11 +51,12 @@ class NewsAdapter(internal var context: Context, internal var newsList: ArrayLis
             newsIntent.putExtra("cat_name", catName)
             newsIntent.putExtra("author_name", authorName)
             newsIntent.putExtra("time_post", timePosting)
+            newsIntent.putExtra("post_id", postId)
 
 
 
             context.startActivity(newsIntent)
-        })
+        }
     }
 
 

@@ -2,11 +2,14 @@ package com.papyrus.fanoos.bshairwebapp.Adapters
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
+import android.text.Html
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import com.papyrus.fanoos.bshairwebapp.Models.Comment
 import com.papyrus.fanoos.bshairwebapp.R
 
-class CommentsAdapter(internal val context:Context, internal var commentsList:ArrayList<String>): RecyclerView.Adapter<CommentsHolder>(){
+class CommentsAdapter(internal val context:Context, internal var commentsList:List<Comment>): RecyclerView.Adapter<CommentsHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CommentsHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.comment_item, parent, false)
         return CommentsHolder(itemView)
@@ -17,7 +20,10 @@ class CommentsAdapter(internal val context:Context, internal var commentsList:Ar
     }
 
     override fun onBindViewHolder(holder: CommentsHolder, position: Int) {
-        holder.des_comment.text = commentsList[position]
+        holder.des_comment.text = Html.fromHtml(Html.fromHtml(commentsList[position].content).toString())
+        holder.author_comment.text = commentsList[position].name
+        holder.date_comment.text = commentsList[position].date
+
     }
 
 }

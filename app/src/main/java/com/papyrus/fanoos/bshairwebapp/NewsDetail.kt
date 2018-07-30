@@ -50,6 +50,7 @@ class NewsDetail : AppCompatActivity() {
         val catName = bundle.getString("cat_name")
         val authorName = bundle.getString("author_name")
         val time = bundle.getString("time_post")
+        val postIdNew = bundle.getInt("post_id")
         val timeS = time.split(" ")
         urlPost = bundle.getString("post_url")
         urlPostWithTitle = title + "\n" + urlPost
@@ -69,7 +70,8 @@ class NewsDetail : AppCompatActivity() {
 
         comment_display.setOnClickListener {
             var intent = Intent(this, CommentDetail::class.java)
-
+                intent.putExtra("post_id", postIdNew)
+                intent.putExtra("post_title", title)
             startActivity(intent)
         }
     }

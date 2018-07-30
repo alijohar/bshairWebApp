@@ -1,6 +1,7 @@
 package com.papyrus.fanoos.bshairwebapp.Api
 
 import com.papyrus.fanoos.bshairwebapp.Models.News
+import com.papyrus.fanoos.bshairwebapp.Models.NewsComments
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -15,4 +16,9 @@ interface NewsApi {
     @GET("get_tag_posts")
     fun getBannerPosts(@Query("tag_slug") bannerTage:String,
                        @Query("page") pageBanner:Int):io.reactivex.Observable<News>
+
+
+//    For get post comments
+    @GET("get_post")
+    fun getPostComments(@Query("id") id:Int):io.reactivex.Observable<NewsComments>
 }

@@ -9,6 +9,12 @@ data class News(
         val query: Query
 )
 
+data class NewsComments(
+        val status: String,
+        val post: Post,
+        val previous_url: String
+)
+
 data class Post(
         val id: Int,
         val type: String,
@@ -24,7 +30,7 @@ data class Post(
         val categories: List<Category>,
         val tags: List<Any>,
         val author: Author,
-        val comments: List<Any>,
+        val comments: List<Comment>,
         val attachments: List<Attachment>,
         val comment_count: Int,
         val comment_status: String,
@@ -32,6 +38,15 @@ data class Post(
         val custom_fields: CustomFields,
         val thumbnail_size: String,
         val thumbnail_images: ThumbnailImages
+)
+
+data class Comment(
+        val id: Int,
+        val name: String,
+        val url: String,
+        val date: String,
+        val content: String,
+        val parent: Int
 )
 
 data class Category(
@@ -134,3 +149,5 @@ data class Images(
 data class Query(
         val ignore_sticky_posts: Boolean
 )
+
+
