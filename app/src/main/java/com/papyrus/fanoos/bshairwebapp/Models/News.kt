@@ -151,3 +151,19 @@ data class Query(
 )
 
 
+
+data class CatList(
+    val status: String,
+    val count: Int,
+    val categories: List<Category>
+)
+
+
+data class PostFromCatIndex(
+    val status: String,
+    val count: Int,
+    val pages: Int,
+    val category: Category,
+    val posts: List<Post>
+)
+

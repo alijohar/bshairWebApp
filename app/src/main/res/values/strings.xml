@@ -22,4 +22,10 @@
     <string name="comment_ready">Comment ready to send</string>
     <string name="comment_not_ready">comment is not sent</string>
     <string name="not_be_empty">لا يجب أن يكون فارغاً</string>
+    <string name="cats">التصانيف</string>
+    <string name="text_setting">إعدادات النص والخلفية</string>
+    <string name="about_us">حول التطبيق</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="share_app">مشاركة التطبيق</string>
+    <string name="send_bugs">تقرير خطأ</string>
 </resources>

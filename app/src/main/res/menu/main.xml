@@ -8,4 +8,6 @@
         android:title="@string/action_searching"
         app:showAsAction="always"
         app:actionViewClass="android.widget.SearchView" />
+
+
 </menu>

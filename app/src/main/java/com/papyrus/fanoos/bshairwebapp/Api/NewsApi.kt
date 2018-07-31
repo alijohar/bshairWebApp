@@ -1,7 +1,9 @@
 package com.papyrus.fanoos.bshairwebapp.Api
 
+import com.papyrus.fanoos.bshairwebapp.Models.CatList
 import com.papyrus.fanoos.bshairwebapp.Models.News
 import com.papyrus.fanoos.bshairwebapp.Models.NewsComments
+import com.papyrus.fanoos.bshairwebapp.Models.PostFromCatIndex
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -21,4 +23,15 @@ interface NewsApi {
 //    For get post comments
     @GET("get_post")
     fun getPostComments(@Query("id") id:Int):io.reactivex.Observable<NewsComments>
+
+
+//    For get all cats list
+    @GET("get_category_index")
+    fun getCatList():io.reactivex.Observable<CatList>
+
+
+//    For get all posts in special cat
+    @GET("get_category_posts")
+    fun getPostFromCat(@Query("category_id") catId:Int,
+                       @Query("page") pageNumber:Int):io.reactivex.Observable<PostFromCatIndex>
 }
