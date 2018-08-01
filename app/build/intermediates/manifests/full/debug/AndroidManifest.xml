@@ -31,6 +31,7 @@
         <activity android:name="com.papyrus.fanoos.bshairwebapp.NewsDetail" />
         <activity android:name="com.papyrus.fanoos.bshairwebapp.CommentDetail" />
         <activity android:name="com.papyrus.fanoos.bshairwebapp.CatActivity" />
+        <activity android:name="com.papyrus.fanoos.bshairwebapp.SearchActivity" />
     </application>
 
 </manifest>

@@ -31,12 +31,12 @@ import kotlinx.android.synthetic.main.content_main_cat.*
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 
-class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener{
+class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     internal lateinit var myNewsApi: NewsApi
     internal var compositeDisposable = CompositeDisposable()
     internal lateinit var myNewsAdapter: NewsAdapter
 
-    var pageCount:Int = 1
+    var pageCount: Int = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -75,7 +75,7 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
         )
 
         //        Show Data
-        fetchData(idCat,pageCount)
+        fetchData(idCat, pageCount)
 
 
 //        Show Cat List Data
@@ -84,14 +84,14 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
 
 //        Init RecyclerView
         recycler_cats_index.setHasFixedSize(true)
-        var newLayoutManger =  LinearLayoutManager(this)
+        var newLayoutManger = LinearLayoutManager(this)
         recycler_cats_index.layoutManager = newLayoutManger
-        recycler_cats_index.addOnScrollListener(object: EndlessRecyclerViewScrollListener(newLayoutManger){
+        recycler_cats_index.addOnScrollListener(object : EndlessRecyclerViewScrollListener(newLayoutManger) {
             override fun onLoadMore(page: Int, totalItemsCount: Int, view: RecyclerView?) {
                 var newCount = page + 1
                 progressbar_cat.visibility = View.VISIBLE
 
-                fetchData(newCount, idCat)
+                fetchData(idCat, newCount)
 
 
             }
@@ -107,7 +107,7 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
     }
 
     private fun fetchDataCatList() {
-        compositeDisposable.add(myNewsApi.getCatList().subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe{catsData -> displayCatData(catsData)})
+        compositeDisposable.add(myNewsApi.getCatList().subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { catsData -> displayCatData(catsData) })
 
     }
 
@@ -115,15 +115,14 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
 
         try {
             addMenuItemInNavMenuDrawer(catsData)
-        }catch (e:Exception){
+        } catch (e: Exception) {
             Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
         }
     }
 
 
-
-    private fun fetchData(idCat:Int, localPageCount:Int) {
-        compositeDisposable.add(myNewsApi.getPostFromCat(idCat,localPageCount).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe{newsData -> displayData(newsData)})
+    private fun fetchData(idCat: Int, localPageCount: Int) {
+        compositeDisposable.add(myNewsApi.getPostFromCat(idCat, localPageCount).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { newsData -> displayData(newsData) })
 
     }
 
@@ -133,9 +132,6 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
     }
 
 
-
-
-
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.main, menu)
@@ -143,13 +139,16 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
     }
 
 
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         when (item.itemId) {
-            R.id.action_searching -> return true
+            R.id.action_searching -> {
+                val intent = Intent(this, SearchActivity::class.java)
+                startActivity(intent)
+                return true
+            }
             else -> return super.onOptionsItemSelected(item)
         }
     }
@@ -189,7 +188,7 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
 
         val menu = navView.menu
 
-        for (item in 0 until catsData!!.categories.size){
+        for (item in 0 until catsData!!.categories.size) {
             menu.add(catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
                 val newId = catsData.categories[item].id
                 val intent = Intent(this, CatActivity::class.java)

@@ -9,6 +9,8 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.support.v7.widget.SearchView
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -30,20 +32,17 @@ import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 
 
-
-
-
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     internal lateinit var myNewsApi: NewsApi
     internal var compositeDisposable = CompositeDisposable()
     internal lateinit var myNewsAdapter: NewsAdapter
-    internal lateinit var myBannerAdapter:BannerAdapter
+    internal lateinit var myBannerAdapter: BannerAdapter
 
 
-    var pageCount:Int = 1
+    var pageCount: Int = 1
 
-//    TODO: Must change var below when website datas changed
-    var bannerTagName:String = "test"
+    //    TODO: Must change var below when website datas changed
+    var bannerTagName: String = "test"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -69,7 +68,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         myNewsApi = myNewsClinet.create(NewsApi::class.java)
 
 
-
 //        CustomFont
         CalligraphyConfig.initDefault(CalligraphyConfig.Builder()
                 .setDefaultFontPath("droidkufi_bold.ttf")
@@ -78,10 +76,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         )
 
 
-
 //        recycler_cats_drawer.layoutManager = LinearLayoutManager(this)
-
-
 
 
 //        Show Banner Data
@@ -95,13 +90,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         fetchDataCatList()
 
 
-
-
 //        Init RecyclerView
         recycler_news.setHasFixedSize(true)
-        var newLayoutManger =  LinearLayoutManager(this)
+        var newLayoutManger = LinearLayoutManager(this)
         recycler_news.layoutManager = newLayoutManger
-        recycler_news.addOnScrollListener(object: EndlessRecyclerViewScrollListener(newLayoutManger){
+        recycler_news.addOnScrollListener(object : EndlessRecyclerViewScrollListener(newLayoutManger) {
             override fun onLoadMore(page: Int, totalItemsCount: Int, view: RecyclerView?) {
                 var newCount = page + 1
                 progressbar.visibility = View.VISIBLE
@@ -122,7 +115,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     private fun fetchDataCatList() {
-        compositeDisposable.add(myNewsApi.getCatList().subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe{catsData -> displayCatData(catsData)})
+        compositeDisposable.add(myNewsApi.getCatList().subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { catsData -> displayCatData(catsData) })
 
     }
 
@@ -130,22 +123,20 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         try {
             addMenuItemInNavMenuDrawer(catsData)
-        }catch (e:Exception){
+        } catch (e: Exception) {
             Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
         }
     }
 
 
-
-    private fun fetchData(localPageCount:Int) {
-        compositeDisposable.add(myNewsApi.getNews(localPageCount).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe{newsData -> displayData(newsData)})
+    private fun fetchData(localPageCount: Int) {
+        compositeDisposable.add(myNewsApi.getNews(localPageCount).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { newsData -> displayData(newsData) })
 
     }
 
-    private fun fetchDataBanner (bannerTagName:String, pageBanner:Int){
-        compositeDisposable.add(myNewsApi.getBannerPosts(bannerTagName, pageBanner).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe{BannersData -> displayBannerData(BannersData)})
+    private fun fetchDataBanner(bannerTagName: String, pageBanner: Int) {
+        compositeDisposable.add(myNewsApi.getBannerPosts(bannerTagName, pageBanner).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { BannersData -> displayBannerData(BannersData) })
     }
-
 
 
     private fun displayData(newsData: News?) {
@@ -173,13 +164,19 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
 
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         when (item.itemId) {
-            R.id.action_searching -> return true
+            R.id.action_searching -> {
+                val intent = Intent(this, SearchActivity::class.java)
+                startActivity(intent)
+
+                return true
+
+            }
+
 
             else -> return super.onOptionsItemSelected(item)
         }
@@ -208,47 +205,47 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
 
-//    ForCustomFont
+    //    ForCustomFont
     override fun attachBaseContext(newBase: Context) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
     }
 
 
-//    For add item to submenu in drawerlayout
+    //    For add item to submenu in drawerlayout
     private fun addMenuItemInNavMenuDrawer(catsData: CatList?) {
-    val navView = findViewById<View>(R.id.nav_view) as NavigationView
+        val navView = findViewById<View>(R.id.nav_view) as NavigationView
 
-    val menu = navView.menu
+        val menu = navView.menu
 
-    for (item in 0 until catsData!!.categories.size){
-        menu.add(catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
-            val newId = catsData.categories[item].id
-            val newCatTitle = catsData.categories[item].title
-            val intent = Intent(this, CatActivity::class.java)
-            intent.putExtra("cat_id", newId)
-            intent.putExtra("cat_title", newCatTitle)
-            startActivity(intent)
+        for (item in 0 until catsData!!.categories.size) {
+            menu.add(catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                val newId = catsData.categories[item].id
+                val newCatTitle = catsData.categories[item].title
+                val intent = Intent(this, CatActivity::class.java)
+                intent.putExtra("cat_id", newId)
+                intent.putExtra("cat_title", newCatTitle)
+                startActivity(intent)
 
 
+                true
+            }
+        }
+
+
+        val subMenu = menu.addSubMenu("")
+
+        subMenu.add(getString(R.string.text_setting)).setIcon(R.drawable.ic_menu_add_comment_v).setOnMenuItemClickListener {
+            Toast.makeText(this, "test", Toast.LENGTH_LONG).show()
             true
         }
+        subMenu.add(getString(R.string.about_us)).setIcon(R.drawable.ic_menu_share_v)
+        subMenu.add(getString(R.string.contact_us)).setIcon(R.drawable.ic_menu_person_v)
+        subMenu.add(getString(R.string.share_app)).setIcon(R.drawable.ic_menu_clock_v)
+        subMenu.add(getString(R.string.send_bugs)).setIcon(R.drawable.ic_menu_clock_v)
+
+        navView.invalidate()
+
     }
-
-
-    val subMenu = menu.addSubMenu("")
-
-    subMenu.add(getString(R.string.text_setting)).setIcon(R.drawable.ic_menu_add_comment_v).setOnMenuItemClickListener {
-        Toast.makeText(this, "test", Toast.LENGTH_LONG).show()
-        true
-    }
-    subMenu.add(getString(R.string.about_us)).setIcon(R.drawable.ic_menu_share_v)
-    subMenu.add(getString(R.string.contact_us)).setIcon(R.drawable.ic_menu_person_v)
-    subMenu.add(getString(R.string.share_app)).setIcon(R.drawable.ic_menu_clock_v)
-    subMenu.add(getString(R.string.send_bugs)).setIcon(R.drawable.ic_menu_clock_v)
-
-    navView.invalidate()
-
-}
 
 
 }

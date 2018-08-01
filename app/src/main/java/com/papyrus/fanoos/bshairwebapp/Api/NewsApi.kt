@@ -34,4 +34,11 @@ interface NewsApi {
     @GET("get_category_posts")
     fun getPostFromCat(@Query("category_id") catId:Int,
                        @Query("page") pageNumber:Int):io.reactivex.Observable<PostFromCatIndex>
+
+
+//    For get all posts when searching
+    @GET("get_posts")
+    fun getPostFromSearching(@Query("s") searchingItem:String,
+                             @Query("page") pageNumber: Int):io.reactivex.Observable<News>
+
 }
