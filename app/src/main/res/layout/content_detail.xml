@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginStart="@dimen/half_standard_margin"
-    android:layout_marginEnd="@dimen/half_standard_margin">
+>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -12,6 +11,8 @@
         android:background="@color/white">
 
         <LinearLayout
+            android:layout_marginStart="@dimen/half_standard_margin"
+            android:layout_marginEnd="@dimen/half_standard_margin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -23,7 +24,7 @@
                 android:id="@+id/image_news_detial"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/image_news_detail_full_size"
-                android:background="@color/accent"
+                android:background="@color/white"
                 android:scaleType="centerCrop" />
 
             <LinearLayout

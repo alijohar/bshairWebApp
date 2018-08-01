@@ -1816,6 +1816,10 @@
         "source": "/Users/alijohar/Desktop/bshairWebApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_tazhib2.png.flat",
+        "source": "/Users/alijohar/Desktop/bshairWebApp/app/src/main/res/drawable/tazhib2.png"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },

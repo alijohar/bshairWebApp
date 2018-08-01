@@ -21,6 +21,7 @@
     <dimen name="line_space_detail_text">16dp</dimen>
     <dimen name="des_dialog_send_comment">200dp</dimen>
     <dimen name="large_padding">44dp</dimen>
+    <dimen name="banner_height">280dp</dimen>
     <item name="half_alpha" type="dimen" format="float">0.5</item>
     <item name="high_alpha" type="dimen" format="float">0.75</item>
 </resources>
