@@ -30,6 +30,10 @@ import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.nav_header_main.*
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
+import java.util.*
+import com.papyrus.fanoos.bshairwebapp.R.id.viewPager
+
+
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -245,7 +249,31 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         navView.invalidate()
 
+        val mTimer = Timer()
+        mTimer.scheduleAtFixedRate(MyTimerTask(), 2000, 4000)
+
     }
 
+    inner class MyTimerTask:TimerTask() {
+        override fun run() {
+            this@MainActivity.runOnUiThread {
+                if (viewPager.currentItem == 0) {
+                    viewPager.currentItem = 1
+                } else if (viewPager.currentItem == 1){
+                    viewPager.currentItem = 2
+                }else if (viewPager.currentItem == 2){
+                    viewPager.currentItem = 3
+                }else if (viewPager.currentItem == 3){
+                    viewPager.currentItem = 4
+                }else if (viewPager.currentItem == 4){
+                    viewPager.currentItem = 5
+                }else{
+                    viewPager.currentItem = 0
+                }
+
+
+            }
+        }
+    }
 
 }
