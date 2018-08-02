@@ -2,6 +2,7 @@ package com.papyrus.fanoos.bshairwebapp
 
 import android.content.Context
 import android.content.Intent
+import android.net.ConnectivityManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.NavigationView
@@ -12,7 +13,9 @@ import android.support.v7.widget.RecyclerView
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.ImageView
 import android.widget.Toast
+import com.bumptech.glide.Glide
 import com.papyrus.fanoos.bshairwebapp.Adapters.NewsAdapter
 import com.papyrus.fanoos.bshairwebapp.Api.NewsApi
 import com.papyrus.fanoos.bshairwebapp.Api.NewsClinet
@@ -28,6 +31,7 @@ import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.app_bar_main_cat.*
 import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.content_main_cat.*
+import kotlinx.android.synthetic.main.no_internet.*
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 
@@ -41,69 +45,74 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cat)
-        toolbar_cat.title = ""
-        setSupportActionBar(toolbar_cat)
+        if (!internet_connection(this)) {
+            showGifNotInternet(this)
 
-        val bundle = intent.extras
-        val idCat = bundle.getInt("cat_id")
-        val titleCat = bundle.getString("cat_title")
+        } else {
+            toolbar_cat.title = ""
+            setSupportActionBar(toolbar_cat)
 
-        title_cat.text = titleCat
+            val bundle = intent.extras
+            val idCat = bundle.getInt("cat_id")
+            val titleCat = bundle.getString("cat_title")
 
-        //        For add list of cat in the drawerLayout
-        val navigationView = findViewById<View>(R.id.nav_view_cat) as NavigationView
-        navigationView.setNavigationItemSelectedListener(this)
+            title_cat.text = titleCat
 
-        progressbar_cat.visibility = View.VISIBLE
+            //        For add list of cat in the drawerLayout
+            val navigationView = findViewById<View>(R.id.nav_view_cat) as NavigationView
+            navigationView.setNavigationItemSelectedListener(this)
+
+            progressbar_cat.visibility = View.VISIBLE
 
 
-        //        Init adapter of news
-        myNewsAdapter = NewsAdapter(this, ArrayList())
-        recycler_cats_index.adapter = myNewsAdapter
+            //        Init adapter of news
+            myNewsAdapter = NewsAdapter(this, ArrayList())
+            recycler_cats_index.adapter = myNewsAdapter
 
 
 //        Init Api
-        val myNewsClinetNew = NewsClinet.instance
-        myNewsApi = myNewsClinetNew.create(NewsApi::class.java)
+            val myNewsClinetNew = NewsClinet.instance
+            myNewsApi = myNewsClinetNew.create(NewsApi::class.java)
 
 
 //        CustomFont
-        CalligraphyConfig.initDefault(CalligraphyConfig.Builder()
-                .setDefaultFontPath("droidkufi_bold.ttf")
-                .setFontAttrId(R.attr.fontPath)
-                .build()
-        )
+            CalligraphyConfig.initDefault(CalligraphyConfig.Builder()
+                    .setDefaultFontPath("droidkufi_bold.ttf")
+                    .setFontAttrId(R.attr.fontPath)
+                    .build()
+            )
 
-        //        Show Data
-        fetchData(idCat, pageCount)
+            //        Show Data
+            fetchData(idCat, pageCount)
 
 
 //        Show Cat List Data
-        fetchDataCatList()
+            fetchDataCatList()
 
 
 //        Init RecyclerView
-        recycler_cats_index.setHasFixedSize(true)
-        var newLayoutManger = LinearLayoutManager(this)
-        recycler_cats_index.layoutManager = newLayoutManger
-        recycler_cats_index.addOnScrollListener(object : EndlessRecyclerViewScrollListener(newLayoutManger) {
-            override fun onLoadMore(page: Int, totalItemsCount: Int, view: RecyclerView?) {
-                var newCount = page + 1
-                progressbar_cat.visibility = View.VISIBLE
+            recycler_cats_index.setHasFixedSize(true)
+            var newLayoutManger = LinearLayoutManager(this)
+            recycler_cats_index.layoutManager = newLayoutManger
+            recycler_cats_index.addOnScrollListener(object : EndlessRecyclerViewScrollListener(newLayoutManger) {
+                override fun onLoadMore(page: Int, totalItemsCount: Int, view: RecyclerView?) {
+                    var newCount = page + 1
+                    progressbar_cat.visibility = View.VISIBLE
 
-                fetchData(idCat, newCount)
-
-
-            }
-        })
+                    fetchData(idCat, newCount)
 
 
-        val toggle = ActionBarDrawerToggle(
-                this, drawer_layout_cat, toolbar_cat, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
-        drawer_layout_cat.addDrawerListener(toggle)
-        toggle.syncState()
+                }
+            })
 
-        nav_view_cat.setNavigationItemSelectedListener(this)
+
+            val toggle = ActionBarDrawerToggle(
+                    this, drawer_layout_cat, toolbar_cat, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
+            drawer_layout_cat.addDrawerListener(toggle)
+            toggle.syncState()
+
+            nav_view_cat.setNavigationItemSelectedListener(this)
+        }
     }
 
     private fun fetchDataCatList() {
@@ -215,6 +224,27 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
         navView.invalidate()
 
     }
+
+    fun showGifNotInternet(context: Context) {
+        setContentView(R.layout.no_internet)
+        val noInternetImage = findViewById<ImageView>(R.id.no_internet)
+        Glide.with(context).load(R.drawable.tenor).into(noInternetImage)
+
+        try_again_to_restart_activity.setOnClickListener {
+            val intent = intent
+            finish()
+            startActivity(intent)
+        }
+    }
+
+    fun internet_connection(context: Context): Boolean {
+        //Check if connected to internet, output accordingly
+        val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+
+        val activeNetwork = cm.activeNetworkInfo
+        return activeNetwork != null && activeNetwork.isConnectedOrConnecting
+    }
+
 
 
 }

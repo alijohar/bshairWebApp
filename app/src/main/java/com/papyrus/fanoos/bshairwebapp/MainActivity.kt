@@ -1,5 +1,6 @@
 package com.papyrus.fanoos.bshairwebapp
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -32,12 +33,10 @@ import android.net.ConnectivityManager
 import android.support.v4.view.accessibility.AccessibilityEventCompat.setAction
 import android.support.v4.content.ContextCompat
 import android.support.design.widget.Snackbar
-
-
-
-
-
-
+import android.widget.ImageButton
+import android.widget.ImageView
+import com.bumptech.glide.Glide
+import kotlinx.android.synthetic.main.no_internet.*
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -53,8 +52,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     var bannerTagName: String = "test"
 
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -66,83 +63,70 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 .build()
         )
 
-        if (!internet_connection()){
-            val snackbar = Snackbar.make(findViewById(android.R.id.content),
-                    R.string.no_internet,
-                    Snackbar.LENGTH_INDEFINITE)
+        if (!internet_connection(this)) {
+            showGifNotInternet(this)
 
-
-
-            snackbar.setAction(R.string.try_again) {
-                val intent = intent
-                finish()
-                startActivity(intent)
-
-            }.show()
-
-        }else{
+        } else {
 
             setSupportActionBar(toolbar)
 
 
 //        For add list of cat in the drawerLayout
-        val navigationView = findViewById<View>(R.id.nav_view) as NavigationView
-        navigationView.setNavigationItemSelectedListener(this)
+            val navigationView = findViewById<View>(R.id.nav_view) as NavigationView
+            navigationView.setNavigationItemSelectedListener(this)
 
 
-        progressbar.visibility = View.VISIBLE
+            progressbar.visibility = View.VISIBLE
 
 //        Init adapter of news
-        myNewsAdapter = NewsAdapter(this, ArrayList())
-        recycler_news.adapter = myNewsAdapter
+            myNewsAdapter = NewsAdapter(this, ArrayList())
+            recycler_news.adapter = myNewsAdapter
 
 
 //        Init Api
-        val myNewsClinet = NewsClinet.instance
-        myNewsApi = myNewsClinet.create(NewsApi::class.java)
-
-
-
+            val myNewsClinet = NewsClinet.instance
+            myNewsApi = myNewsClinet.create(NewsApi::class.java)
 
 
 //        recycler_cats_drawer.layoutManager = LinearLayoutManager(this)
 
 
 //        Show Banner Data
-        fetchDataBanner(bannerTagName, pageCount)
+            fetchDataBanner(bannerTagName, pageCount)
 
 //        Show Data
-        fetchData(pageCount)
+            fetchData(pageCount)
 
 
 //        Show Cat List Data
-        fetchDataCatList()
+            fetchDataCatList()
 
 
 //        Init RecyclerView
-        recycler_news.setHasFixedSize(true)
-        var newLayoutManger = LinearLayoutManager(this)
-        recycler_news.layoutManager = newLayoutManger
-        recycler_news.addOnScrollListener(object : EndlessRecyclerViewScrollListener(newLayoutManger) {
-            override fun onLoadMore(page: Int, totalItemsCount: Int, view: RecyclerView?) {
-                var newCount = page + 1
-                progressbar.visibility = View.VISIBLE
+            recycler_news.setHasFixedSize(true)
+            var newLayoutManger = LinearLayoutManager(this)
+            recycler_news.layoutManager = newLayoutManger
+            recycler_news.addOnScrollListener(object : EndlessRecyclerViewScrollListener(newLayoutManger) {
+                override fun onLoadMore(page: Int, totalItemsCount: Int, view: RecyclerView?) {
+                    var newCount = page + 1
+                    progressbar.visibility = View.VISIBLE
 
-                fetchData(newCount)
-
-
-            }
-        })
+                    fetchData(newCount)
 
 
-        val toggle = ActionBarDrawerToggle(
-                this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
-        drawer_layout.addDrawerListener(toggle)
-        toggle.syncState()
+                }
+            })
 
-        nav_view.setNavigationItemSelectedListener(this)
+
+            val toggle = ActionBarDrawerToggle(
+                    this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
+            drawer_layout.addDrawerListener(toggle)
+            toggle.syncState()
+
+            nav_view.setNavigationItemSelectedListener(this)
+        }
     }
-    }
+
 
     private fun fetchDataCatList() {
         compositeDisposable.add(myNewsApi.getCatList().subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { catsData -> displayCatData(catsData) })
@@ -177,14 +161,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private fun displayBannerData(bannersData: News?) {
         myBannerAdapter = BannerAdapter(this, bannersData!!)
         viewPager.adapter = myBannerAdapter
-    }
-
-    override fun onBackPressed() {
-        if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
-            drawer_layout.closeDrawer(GravityCompat.START)
-        } else {
-            super.onBackPressed()
-        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -280,20 +256,20 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     }
 
-    inner class MyTimerTask:TimerTask() {
+    inner class MyTimerTask : TimerTask() {
         override fun run() {
             this@MainActivity.runOnUiThread {
                 if (viewPager.currentItem == 0) {
                     viewPager.currentItem = 1
-                } else if (viewPager.currentItem == 1){
+                } else if (viewPager.currentItem == 1) {
                     viewPager.currentItem = 2
-                }else if (viewPager.currentItem == 2){
+                } else if (viewPager.currentItem == 2) {
                     viewPager.currentItem = 3
-                }else if (viewPager.currentItem == 3){
+                } else if (viewPager.currentItem == 3) {
                     viewPager.currentItem = 4
-                }else if (viewPager.currentItem == 4){
+                } else if (viewPager.currentItem == 4) {
                     viewPager.currentItem = 5
-                }else{
+                } else {
                     viewPager.currentItem = 0
                 }
 
@@ -302,9 +278,21 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
-    fun internet_connection(): Boolean {
+    fun showGifNotInternet(context: Context) {
+        setContentView(R.layout.no_internet)
+        val noInternetImage = findViewById<ImageView>(R.id.no_internet)
+        Glide.with(context).load(R.drawable.tenor).into(noInternetImage)
+
+        try_again_to_restart_activity.setOnClickListener {
+            val intent = intent
+            finish()
+            startActivity(intent)
+        }
+    }
+
+    fun internet_connection(context: Context): Boolean {
         //Check if connected to internet, output accordingly
-        val cm = this.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
 
         val activeNetwork = cm.activeNetworkInfo
         return activeNetwork != null && activeNetwork.isConnectedOrConnecting

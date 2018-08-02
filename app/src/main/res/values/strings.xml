@@ -29,5 +29,5 @@
     <string name="share_app">مشاركة التطبيق</string>
     <string name="send_bugs">تقرير خطأ</string>
     <string name="try_again">حاول مجدداً</string>
-    <string name="no_internet">لا يوجد اتصال</string>
+    <string name="no_internet">يبدو أن الاتصال بالانترنت ضعيف أو غير متوفر</string>
 </resources>

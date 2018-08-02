@@ -1,6 +1,7 @@
 package com.papyrus.fanoos.bshairwebapp
 
 import android.content.Context
+import android.net.ConnectivityManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
@@ -10,7 +11,9 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.ImageView
 import android.widget.Toast
+import com.bumptech.glide.Glide
 import com.papyrus.fanoos.bshairwebapp.Adapters.CommentsAdapter
 import com.papyrus.fanoos.bshairwebapp.Api.NewsApi
 import com.papyrus.fanoos.bshairwebapp.Api.NewsClinet
@@ -22,48 +25,55 @@ import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_comment_detail.*
 import kotlinx.android.synthetic.main.app_bar_detail.*
 import kotlinx.android.synthetic.main.dialog_add_comment.view.*
+import kotlinx.android.synthetic.main.no_internet.*
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 
 class CommentDetail : AppCompatActivity() {
-    internal lateinit var myCommentAdapter:CommentsAdapter
+    internal lateinit var myCommentAdapter: CommentsAdapter
     internal var compositeDisposable = CompositeDisposable()
     internal lateinit var myNewsApi: NewsApi
-    var id:Int = 0
+    var id: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_comment_detail)
-        val toolbar = findViewById<Toolbar>(R.id.toolbar_detail)
-        setSupportActionBar(toolbar)
 
-        //Back arrow icon
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-        supportActionBar!!.setDisplayShowHomeEnabled(true)
+        if (!internet_connection(this)) {
+            showGifNotInternet(this)
 
-        //        CustomFont
-        CalligraphyConfig.initDefault(CalligraphyConfig.Builder()
-                .setDefaultFontPath("droidkufi_regular.ttf")
-                .setFontAttrId(R.attr.fontPath)
-                .build()
-        )
-        val bundel = intent.extras
-        val newId = bundel.getInt("post_id")
-        val newTitle = bundel.getString("post_title")
+        } else {
+            val toolbar = findViewById<Toolbar>(R.id.toolbar_detail)
+            setSupportActionBar(toolbar)
 
-        title_comment_detail.text = newTitle
+            //Back arrow icon
+            supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+            supportActionBar!!.setDisplayShowHomeEnabled(true)
 
-        id = newId
+            //        CustomFont
+            CalligraphyConfig.initDefault(CalligraphyConfig.Builder()
+                    .setDefaultFontPath("droidkufi_regular.ttf")
+                    .setFontAttrId(R.attr.fontPath)
+                    .build()
+            )
+            val bundel = intent.extras
+            val newId = bundel.getInt("post_id")
+            val newTitle = bundel.getString("post_title")
 
-        recycler_comments.layoutManager = LinearLayoutManager(this)
+            title_comment_detail.text = newTitle
+
+            id = newId
+
+            recycler_comments.layoutManager = LinearLayoutManager(this)
 
 //      intit Api
-        val myNewsClinet = NewsClinet.instance
-        myNewsApi = myNewsClinet.create(NewsApi::class.java)
+            val myNewsClinet = NewsClinet.instance
+            myNewsApi = myNewsClinet.create(NewsApi::class.java)
 
-        //        Show Data
-        fetchData(id)
+            //        Show Data
+            fetchData(id)
 
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -104,9 +114,9 @@ class CommentDetail : AppCompatActivity() {
         val desComment = view.des_dialog_send_comment
 
         submit.setOnClickListener {
-            if (!name.text.isEmpty() && !mail.text.isEmpty() && !desComment.text.isEmpty()){
+            if (!name.text.isEmpty() && !mail.text.isEmpty() && !desComment.text.isEmpty()) {
                 Toast.makeText(this, "message is sent", Toast.LENGTH_LONG).show()
-            }else{
+            } else {
                 if (name.text.isEmpty()) name.error = getString(R.string.not_be_empty)
                 if (mail.text.isEmpty()) mail.error = getString(R.string.not_be_empty)
                 if (desComment.text.isEmpty()) desComment.error = getString(R.string.not_be_empty)
@@ -125,7 +135,7 @@ class CommentDetail : AppCompatActivity() {
     }
 
     private fun fetchData(id: Int) {
-        compositeDisposable.add(myNewsApi.getPostComments(id).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe{ newsCommentData -> displayCommentData(newsCommentData)})
+        compositeDisposable.add(myNewsApi.getPostComments(id).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { newsCommentData -> displayCommentData(newsCommentData) })
 
 
     }
@@ -135,9 +145,30 @@ class CommentDetail : AppCompatActivity() {
         myCommentAdapter = CommentsAdapter(this, newsCommentData!!.post.comments)
         recycler_comments.adapter = myCommentAdapter
     }
+
     //    ForCustomFont
     override fun attachBaseContext(newBase: Context) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
+    }
+
+    fun showGifNotInternet(context: Context) {
+        setContentView(R.layout.no_internet)
+        val noInternetImage = findViewById<ImageView>(R.id.no_internet)
+        Glide.with(context).load(R.drawable.tenor).into(noInternetImage)
+
+        try_again_to_restart_activity.setOnClickListener {
+            val intent = intent
+            finish()
+            startActivity(intent)
+        }
+    }
+
+    fun internet_connection(context: Context): Boolean {
+        //Check if connected to internet, output accordingly
+        val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+
+        val activeNetwork = cm.activeNetworkInfo
+        return activeNetwork != null && activeNetwork.isConnectedOrConnecting
     }
 
 }
