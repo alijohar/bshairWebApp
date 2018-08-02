@@ -32,14 +32,15 @@ class SearchActivity : AppCompatActivity() {
     internal lateinit var myNewsApi: NewsApi
     internal var compositeDisposable = CompositeDisposable()
     internal lateinit var myNewsAdapter: NewsAdapter
+    val checkConnection = MainActivity()
 
     var pageCount: Int = 1
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
 
-        if (!internet_connection(this)) {
-            showGifNotInternet(this)
+        if (!checkConnection.internet_connection(this)) {
+            checkConnection.showToastNotInternet(this)
 
         } else {
             mSearchView.isIconified = false
@@ -82,11 +83,15 @@ class SearchActivity : AppCompatActivity() {
                     recycler_news_search.layoutManager = newLayoutManger
                     recycler_news_search.addOnScrollListener(object : EndlessRecyclerViewScrollListener(newLayoutManger) {
                         override fun onLoadMore(page: Int, totalItemsCount: Int, view: RecyclerView?) {
-                            var newCount = page + 1
-                            progressbar_search.visibility = View.VISIBLE
+                            if (!checkConnection.internet_connection(this@SearchActivity)){
+                                checkConnection.showToastNotInternet(this@SearchActivity)
+                            }
+                            else {
+                                var newCount = page + 1
+                                progressbar_search.visibility = View.VISIBLE
 
-                            fetchData(textSearched!!, newCount)
-
+                                fetchData(textSearched!!, newCount)
+                            }
 
                         }
                     })
@@ -115,25 +120,7 @@ class SearchActivity : AppCompatActivity() {
             super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
         }
 
-    fun showGifNotInternet(context: Context) {
-        setContentView(R.layout.no_internet)
-        val noInternetImage = findViewById<ImageView>(R.id.no_internet)
-        Glide.with(context).load(R.drawable.tenor).into(noInternetImage)
 
-        try_again_to_restart_activity.setOnClickListener {
-            val intent = intent
-            finish()
-            startActivity(intent)
-        }
-    }
-
-    fun internet_connection(context: Context): Boolean {
-        //Check if connected to internet, output accordingly
-        val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-
-        val activeNetwork = cm.activeNetworkInfo
-        return activeNetwork != null && activeNetwork.isConnectedOrConnecting
-    }
 
 
 }

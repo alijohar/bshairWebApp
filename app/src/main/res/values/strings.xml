@@ -30,4 +30,5 @@
     <string name="send_bugs">تقرير خطأ</string>
     <string name="try_again">حاول مجدداً</string>
     <string name="no_internet">يبدو أن الاتصال بالانترنت ضعيف أو غير متوفر</string>
+    <string name="app_link">www.google.com</string>
 </resources>

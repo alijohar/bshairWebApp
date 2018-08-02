@@ -28,7 +28,7 @@
         android:layout_height="@dimen/progressSize"
         android:layout_marginBottom="@dimen/miniMargin"
         android:visibility="gone"
-        android:layout_gravity="bottom|center"
+        android:layout_gravity="center_horizontal|top"
  />
 
     </FrameLayout>

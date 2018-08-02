@@ -10,6 +10,7 @@ import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -41,12 +42,13 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
     internal lateinit var myNewsAdapter: NewsAdapter
 
     var pageCount: Int = 1
+    val checkConnection = MainActivity()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cat)
-        if (!internet_connection(this)) {
-            showGifNotInternet(this)
+        if (!checkConnection.internet_connection(this)) {
+            checkConnection.showToastNotInternet(this)
 
         } else {
             toolbar_cat.title = ""
@@ -212,38 +214,18 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
 
         val subMenu = menu.addSubMenu("")
 
-        subMenu.add(getString(R.string.text_setting)).setIcon(R.drawable.ic_menu_add_comment_v).setOnMenuItemClickListener {
-            Toast.makeText(this, "test", Toast.LENGTH_LONG).show()
-            true
-        }
+        subMenu.add(getString(R.string.text_setting)).setIcon(R.drawable.ic_menu_add_comment_v)
         subMenu.add(getString(R.string.about_us)).setIcon(R.drawable.ic_menu_share_v)
         subMenu.add(getString(R.string.contact_us)).setIcon(R.drawable.ic_menu_person_v)
         subMenu.add(getString(R.string.share_app)).setIcon(R.drawable.ic_menu_clock_v)
         subMenu.add(getString(R.string.send_bugs)).setIcon(R.drawable.ic_menu_clock_v)
 
+
+
         navView.invalidate()
 
     }
 
-    fun showGifNotInternet(context: Context) {
-        setContentView(R.layout.no_internet)
-        val noInternetImage = findViewById<ImageView>(R.id.no_internet)
-        Glide.with(context).load(R.drawable.tenor).into(noInternetImage)
-
-        try_again_to_restart_activity.setOnClickListener {
-            val intent = intent
-            finish()
-            startActivity(intent)
-        }
-    }
-
-    fun internet_connection(context: Context): Boolean {
-        //Check if connected to internet, output accordingly
-        val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-
-        val activeNetwork = cm.activeNetworkInfo
-        return activeNetwork != null && activeNetwork.isConnectedOrConnecting
-    }
 
 
 

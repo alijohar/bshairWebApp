@@ -33,10 +33,13 @@ import android.net.ConnectivityManager
 import android.support.v4.view.accessibility.AccessibilityEventCompat.setAction
 import android.support.v4.content.ContextCompat
 import android.support.design.widget.Snackbar
+import android.util.Log
 import android.widget.ImageButton
 import android.widget.ImageView
 import com.bumptech.glide.Glide
+import kotlinx.android.synthetic.main.activity_news_detail.*
 import kotlinx.android.synthetic.main.no_internet.*
+import kotlin.collections.ArrayList
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -108,12 +111,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             recycler_news.layoutManager = newLayoutManger
             recycler_news.addOnScrollListener(object : EndlessRecyclerViewScrollListener(newLayoutManger) {
                 override fun onLoadMore(page: Int, totalItemsCount: Int, view: RecyclerView?) {
-                    var newCount = page + 1
-                    progressbar.visibility = View.VISIBLE
+                    if (!internet_connection(this@MainActivity)){
+                        showToastNotInternet(this@MainActivity)
+                    }
+                    else {
+                        var newCount = page + 1
+                        progressbar.visibility = View.VISIBLE
 
-                    fetchData(newCount)
+                        fetchData(newCount)
 
-
+                    }
                 }
             })
 
@@ -192,7 +199,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.nav_camera -> {
-                // Handle the camera action
+
             }
             R.id.nav_gallery -> {
 
@@ -223,8 +230,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         val menu = navView.menu
 
+        val subMenu = menu.addSubMenu(R.string.cats)
+
         for (item in 0 until catsData!!.categories.size) {
-            menu.add(catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+            subMenu.add(catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
                 val newId = catsData.categories[item].id
                 val newCatTitle = catsData.categories[item].title
                 val intent = Intent(this, CatActivity::class.java)
@@ -237,17 +246,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
         }
 
-
-        val subMenu = menu.addSubMenu("")
-
-        subMenu.add(getString(R.string.text_setting)).setIcon(R.drawable.ic_menu_add_comment_v).setOnMenuItemClickListener {
-            Toast.makeText(this, "test", Toast.LENGTH_LONG).show()
-            true
-        }
-        subMenu.add(getString(R.string.about_us)).setIcon(R.drawable.ic_menu_share_v)
-        subMenu.add(getString(R.string.contact_us)).setIcon(R.drawable.ic_menu_person_v)
-        subMenu.add(getString(R.string.share_app)).setIcon(R.drawable.ic_menu_clock_v)
-        subMenu.add(getString(R.string.send_bugs)).setIcon(R.drawable.ic_menu_clock_v)
 
         navView.invalidate()
 
@@ -296,6 +294,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         val activeNetwork = cm.activeNetworkInfo
         return activeNetwork != null && activeNetwork.isConnectedOrConnecting
+    }
+
+    fun showToastNotInternet(context: Context){
+        Toast.makeText(context, R.string.no_internet, Toast.LENGTH_LONG).show()
+
     }
 
 

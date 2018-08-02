@@ -34,13 +34,14 @@ class CommentDetail : AppCompatActivity() {
     internal var compositeDisposable = CompositeDisposable()
     internal lateinit var myNewsApi: NewsApi
     var id: Int = 0
+    val checkConnection = MainActivity()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_comment_detail)
 
-        if (!internet_connection(this)) {
-            showGifNotInternet(this)
+        if (!checkConnection.internet_connection(this)) {
+            checkConnection.showToastNotInternet(this)
 
         } else {
             val toolbar = findViewById<Toolbar>(R.id.toolbar_detail)
@@ -151,24 +152,6 @@ class CommentDetail : AppCompatActivity() {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
     }
 
-    fun showGifNotInternet(context: Context) {
-        setContentView(R.layout.no_internet)
-        val noInternetImage = findViewById<ImageView>(R.id.no_internet)
-        Glide.with(context).load(R.drawable.tenor).into(noInternetImage)
 
-        try_again_to_restart_activity.setOnClickListener {
-            val intent = intent
-            finish()
-            startActivity(intent)
-        }
-    }
-
-    fun internet_connection(context: Context): Boolean {
-        //Check if connected to internet, output accordingly
-        val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-
-        val activeNetwork = cm.activeNetworkInfo
-        return activeNetwork != null && activeNetwork.isConnectedOrConnecting
-    }
 
 }
