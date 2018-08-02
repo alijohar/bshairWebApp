@@ -9,8 +9,6 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.SearchView
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -27,11 +25,17 @@ import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_main.*
-import kotlinx.android.synthetic.main.nav_header_main.*
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 import java.util.*
-import com.papyrus.fanoos.bshairwebapp.R.id.viewPager
+import android.net.ConnectivityManager
+import android.support.v4.view.accessibility.AccessibilityEventCompat.setAction
+import android.support.v4.content.ContextCompat
+import android.support.design.widget.Snackbar
+
+
+
+
 
 
 
@@ -49,10 +53,36 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     var bannerTagName: String = "test"
 
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setSupportActionBar(toolbar)
+
+        //        CustomFont
+        CalligraphyConfig.initDefault(CalligraphyConfig.Builder()
+                .setDefaultFontPath("droidkufi_bold.ttf")
+                .setFontAttrId(R.attr.fontPath)
+                .build()
+        )
+
+        if (!internet_connection()){
+            val snackbar = Snackbar.make(findViewById(android.R.id.content),
+                    R.string.no_internet,
+                    Snackbar.LENGTH_INDEFINITE)
+
+
+
+            snackbar.setAction(R.string.try_again) {
+                val intent = intent
+                finish()
+                startActivity(intent)
+
+            }.show()
+
+        }else{
+
+            setSupportActionBar(toolbar)
 
 
 //        For add list of cat in the drawerLayout
@@ -72,12 +102,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         myNewsApi = myNewsClinet.create(NewsApi::class.java)
 
 
-//        CustomFont
-        CalligraphyConfig.initDefault(CalligraphyConfig.Builder()
-                .setDefaultFontPath("droidkufi_bold.ttf")
-                .setFontAttrId(R.attr.fontPath)
-                .build()
-        )
+
 
 
 //        recycler_cats_drawer.layoutManager = LinearLayoutManager(this)
@@ -116,6 +141,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
+    }
     }
 
     private fun fetchDataCatList() {
@@ -275,5 +301,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
         }
     }
+
+    fun internet_connection(): Boolean {
+        //Check if connected to internet, output accordingly
+        val cm = this.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+
+        val activeNetwork = cm.activeNetworkInfo
+        return activeNetwork != null && activeNetwork.isConnectedOrConnecting
+    }
+
 
 }
