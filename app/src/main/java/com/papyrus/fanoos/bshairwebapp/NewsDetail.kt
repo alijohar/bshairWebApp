@@ -15,7 +15,9 @@ import kotlinx.android.synthetic.main.app_bar_detail.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_detail.*
 import android.content.Intent
+import android.os.Handler
 import android.support.v7.app.AlertDialog
+import android.telecom.Call
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
@@ -23,6 +25,9 @@ import kotlinx.android.synthetic.main.dialog_add_comment.*
 import kotlinx.android.synthetic.main.dialog_add_comment.view.*
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
+import android.widget.TextView
+
+
 
 
 class NewsDetail : AppCompatActivity() {
@@ -33,6 +38,19 @@ class NewsDetail : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_news_detail)
+
+
+
+        news_detail_swipe.setOnTouchListener(object:OnSwipeTouchListener(this) {
+
+            override fun onSwipeRight() {
+                finish()
+                this@NewsDetail.overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right)            }
+            override fun onSwipeLeft() {
+
+            }
+
+        })
         setSupportActionBar(toolbar_detail)
 
         //        CustomFont
@@ -75,6 +93,7 @@ class NewsDetail : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
 
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
