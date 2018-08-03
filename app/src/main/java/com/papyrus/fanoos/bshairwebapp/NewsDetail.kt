@@ -28,8 +28,6 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 import android.widget.TextView
 
 
-
-
 class NewsDetail : AppCompatActivity() {
     var urlPost: String? = null
     var urlPostWithTitle: String? = null
@@ -40,17 +38,30 @@ class NewsDetail : AppCompatActivity() {
         setContentView(R.layout.activity_news_detail)
 
 
+        val isRightToLeft = resources.getBoolean(R.bool.is_rtl)
 
-        news_detail_swipe.setOnTouchListener(object:OnSwipeTouchListener(this) {
+        if (isRightToLeft) {
+            news_detail_swipe.setOnTouchListener(object : OnSwipeTouchListener(this) {
 
-            override fun onSwipeRight() {
-                finish()
-                this@NewsDetail.overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right)            }
-            override fun onSwipeLeft() {
 
-            }
+                override fun onSwipeLeft() {
+                    finish()
+                    this@NewsDetail.overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+                }
 
-        })
+            })
+        } else {
+            news_detail_swipe.setOnTouchListener(object : OnSwipeTouchListener(this) {
+
+
+                override fun onSwipeRight() {
+                    finish()
+                    this@NewsDetail.overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+                }
+
+            })
+        }
+
         setSupportActionBar(toolbar_detail)
 
         //        CustomFont
@@ -88,12 +99,11 @@ class NewsDetail : AppCompatActivity() {
 
         comment_display.setOnClickListener {
             var intent = Intent(this, CommentDetail::class.java)
-                intent.putExtra("post_id", postIdNew)
-                intent.putExtra("post_title", title)
+            intent.putExtra("post_id", postIdNew)
+            intent.putExtra("post_title", title)
             startActivity(intent)
         }
     }
-
 
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -136,9 +146,9 @@ class NewsDetail : AppCompatActivity() {
         val desComment = view.des_dialog_send_comment
 
         submit.setOnClickListener {
-            if (!name.text.isEmpty() && !mail.text.isEmpty() && !desComment.text.isEmpty()){
+            if (!name.text.isEmpty() && !mail.text.isEmpty() && !desComment.text.isEmpty()) {
                 Toast.makeText(this, "message is sent", Toast.LENGTH_LONG).show()
-            }else{
+            } else {
                 if (name.text.isEmpty()) name.error = getString(R.string.not_be_empty)
                 if (mail.text.isEmpty()) mail.error = getString(R.string.not_be_empty)
                 if (desComment.text.isEmpty()) desComment.error = getString(R.string.not_be_empty)

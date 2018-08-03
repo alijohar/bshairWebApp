@@ -104,12 +104,12 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/b75ed1061fca3353fb0172d8899efaa2/res/layout/notification_media_action.xml"
     },
     {
-        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/Users/alijohar/Desktop/bshairWebApp/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/layout_app_bar_detail.xml.flat",
         "source": "/Users/alijohar/Desktop/bshairWebApp/app/src/main/res/layout/app_bar_detail.xml"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/alijohar/Desktop/bshairWebApp/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_menu_search.png.flat",
@@ -144,12 +144,12 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/drawable-xxhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-v21_ic_menu_slideshow.xml.flat",
-        "source": "/Users/alijohar/Desktop/bshairWebApp/app/src/main/res/drawable-v21/ic_menu_slideshow.xml"
-    },
-    {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/color_abc_tint_btn_checkable.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-v21_ic_menu_slideshow.xml.flat",
+        "source": "/Users/alijohar/Desktop/bshairWebApp/app/src/main/res/drawable-v21/ic_menu_slideshow.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -256,6 +256,10 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
+        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/anim_slide_in_left.xml.flat",
+        "source": "/Users/alijohar/Desktop/bshairWebApp/app/src/main/res/anim/slide_in_left.xml"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/color-v23_abc_tint_switch_track.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/color-v23/abc_tint_switch_track.xml"
     },
@@ -264,12 +268,12 @@
         "source": "/Users/alijohar/Desktop/bshairWebApp/app/src/main/res/menu/main.xml"
     },
     {
-        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
-        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -284,12 +288,16 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/drawable-xxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
-        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
-        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png"
+        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/anim_slide_out_right.xml.flat",
+        "source": "/Users/alijohar/Desktop/bshairWebApp/app/src/main/res/anim/slide_out_right.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_notification_bg_low.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/d7c19288b7f09d0a964f518846430bcd/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -368,28 +376,28 @@
         "source": "/Users/alijohar/Desktop/bshairWebApp/app/src/main/res/layout/slide_image_item.xml"
     },
     {
-        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_item_layout.xml.flat",
-        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/layout/abc_popup_menu_item_layout.xml"
+        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_abc_ic_ab_back_material.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/drawable/abc_ic_ab_back_material.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_menu_bshair_v.png.flat",
         "source": "/Users/alijohar/Desktop/bshairWebApp/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_menu_bshair_v.png"
     },
     {
-        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_abc_ic_ab_back_material.xml.flat",
-        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/drawable/abc_ic_ab_back_material.xml"
+        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_item_layout.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/anim_abc_popup_enter.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/anim/abc_popup_enter.xml"
     },
     {
-        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_menu_person_v.xml.flat",
-        "source": "/Users/alijohar/Desktop/bshairWebApp/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_menu_person_v.xml"
-    },
-    {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_menu_person_v.xml.flat",
+        "source": "/Users/alijohar/Desktop/bshairWebApp/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_menu_person_v.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_navigation_empty_icon.xml.flat",
@@ -1316,6 +1324,10 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/cd0625f0aa9e42cc0ee47e0cfc45a2dd/res/drawable-mdpi-v4/design_ic_visibility_off.png"
     },
     {
+        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/anim_slide_in_right.xml.flat",
+        "source": "/Users/alijohar/Desktop/bshairWebApp/app/src/main/res/anim/slide_in_right.xml"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/layout_select_dialog_multichoice_material.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/layout/select_dialog_multichoice_material.xml"
     },
@@ -2210,6 +2222,10 @@
     {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/drawable-hdpi-v4/abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/anim_slide_out_left.xml.flat",
+        "source": "/Users/alijohar/Desktop/bshairWebApp/app/src/main/res/anim/slide_out_left.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",

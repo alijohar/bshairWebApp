@@ -44,4 +44,6 @@
     <string name="no_clinet_for_mail">لا يوجد تطبيقاً للبريد الالكتروني لإرسال الرسالة</string>
     <string name="subject_mail_error">إرسال خطأ من تطبيق بشائر للاندرويد</string>
     <string name="bshair_mail_erro">mailto:error@bshairdammam.com</string>
+    <bool name="is_rtl">false</bool>
+
 </resources>
