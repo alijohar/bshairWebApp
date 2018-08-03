@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
 >
 
+
     <ScrollView
         android:id="@+id/news_detail_swipe"
         android:layout_width="match_parent"
