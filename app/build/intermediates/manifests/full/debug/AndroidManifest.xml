@@ -33,6 +33,11 @@
         <activity android:name="com.papyrus.fanoos.bshairwebapp.CommentDetail" />
         <activity android:name="com.papyrus.fanoos.bshairwebapp.CatActivity" />
         <activity android:name="com.papyrus.fanoos.bshairwebapp.SearchActivity" />
+        <activity
+            android:name="com.papyrus.fanoos.bshairwebapp.AboutUS"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_about_us"
+            android:theme="@style/FullscreenTheme" />
     </application>
 
 </manifest>

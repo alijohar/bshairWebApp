@@ -24,7 +24,12 @@
         <activity android:name=".NewsDetail" />
         <activity android:name=".CommentDetail" />
         <activity android:name=".CatActivity" />
-        <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".SearchActivity" />
+        <activity
+            android:name=".AboutUS"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_about_us"
+            android:theme="@style/FullscreenTheme"></activity>
     </application>
 
 </manifest>

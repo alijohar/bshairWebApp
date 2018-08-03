@@ -30,5 +30,18 @@
     <string name="send_bugs">تقرير خطأ</string>
     <string name="try_again">حاول مجدداً</string>
     <string name="no_internet">يبدو أن الاتصال بالانترنت ضعيف أو غير متوفر</string>
-    <string name="app_link">www.google.com</string>
+    <string name="app_link">http://bshairdammam.com/download</string>
+    <string name="share_title">تطبيق بشائر</string>
+    <string name="share_des">نقترح عليكم تحميل تطبيق بشائر لمتابعة آخر الأخبار</string>
+
+    <string name="title_activity_about_us">AboutUS</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="bshairMail">mailto:info@bshairdammam.com</string>
+    <string name="subject_mail">من تطبيق بشائر الدمام</string>
+    <string name="say_some_thing">اكتب نصاً</string>
+    <string name="send_mail">إرسال الرسالة</string>
+    <string name="no_clinet_for_mail">لا يوجد تطبيقاً للبريد الالكتروني لإرسال الرسالة</string>
+    <string name="subject_mail_error">إرسال خطأ من تطبيق بشائر للاندرويد</string>
+    <string name="bshair_mail_erro">mailto:error@bshairdammam.com</string>
 </resources>

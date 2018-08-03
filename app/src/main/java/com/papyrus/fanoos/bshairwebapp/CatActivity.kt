@@ -125,7 +125,7 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
     private fun displayCatData(catsData: CatList?) {
 
         try {
-            addMenuItemInNavMenuDrawer(catsData)
+            addMenuItemInNavMenuDrawer(catsData, this)
         } catch (e: Exception) {
             Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
         }
@@ -167,22 +167,23 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.nav_camera -> {
-                // Handle the camera action
+            R.id.nav_share -> {
+                checkConnection.shareTextUrl()
             }
-            R.id.nav_gallery -> {
+            R.id.nav_about -> {
+                checkConnection.openAboutActivity(this)
 
             }
-            R.id.nav_slideshow -> {
-
+            R.id.nav_contact -> {
+                checkConnection.sendMail(this)
             }
-            R.id.nav_manage -> {
-
+            R.id.nav_error -> {
+                checkConnection.sendBugMail(this)
             }
 
         }
 
-        drawer_layout.closeDrawer(GravityCompat.START)
+        drawer_layout_cat.closeDrawer(GravityCompat.START)
         return true
     }
 
@@ -192,18 +193,21 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
     }
 
-
     //    For add item to submenu in drawerlayout
-    private fun addMenuItemInNavMenuDrawer(catsData: CatList?) {
+    fun addMenuItemInNavMenuDrawer(catsData: CatList?, context: Context) {
         val navView = findViewById<View>(R.id.nav_view_cat) as NavigationView
 
         val menu = navView.menu
 
+        val subMenu = menu.addSubMenu(R.string.cats)
+
         for (item in 0 until catsData!!.categories.size) {
-            menu.add(catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+            subMenu.add(catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
                 val newId = catsData.categories[item].id
-                val intent = Intent(this, CatActivity::class.java)
+                val newCatTitle = catsData.categories[item].title
+                val intent = Intent(context, CatActivity::class.java)
                 intent.putExtra("cat_id", newId)
+                intent.putExtra("cat_title", newCatTitle)
                 startActivity(intent)
 
 
@@ -212,21 +216,5 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
         }
 
 
-        val subMenu = menu.addSubMenu("")
-
-        subMenu.add(getString(R.string.text_setting)).setIcon(R.drawable.ic_menu_add_comment_v)
-        subMenu.add(getString(R.string.about_us)).setIcon(R.drawable.ic_menu_share_v)
-        subMenu.add(getString(R.string.contact_us)).setIcon(R.drawable.ic_menu_person_v)
-        subMenu.add(getString(R.string.share_app)).setIcon(R.drawable.ic_menu_clock_v)
-        subMenu.add(getString(R.string.send_bugs)).setIcon(R.drawable.ic_menu_clock_v)
-
-
-
-        navView.invalidate()
-
     }
-
-
-
-
 }

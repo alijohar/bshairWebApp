@@ -30,6 +30,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 import java.util.*
 import android.net.ConnectivityManager
+import android.net.Uri
 import android.support.v4.view.accessibility.AccessibilityEventCompat.setAction
 import android.support.v4.content.ContextCompat
 import android.support.design.widget.Snackbar
@@ -143,7 +144,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private fun displayCatData(catsData: CatList?) {
 
         try {
-            addMenuItemInNavMenuDrawer(catsData)
+            addMenuItemInNavMenuDrawer(catsData, this)
         } catch (e: Exception) {
             Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
         }
@@ -198,23 +199,62 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.nav_camera -> {
+            R.id.nav_share -> {
+                shareTextUrl()
+            }
+            R.id.nav_about -> {
+                openAboutActivity(this)
 
             }
-            R.id.nav_gallery -> {
-
+            R.id.nav_contact -> {
+                sendMail(this)
             }
-            R.id.nav_slideshow -> {
-
-            }
-            R.id.nav_manage -> {
-
+            R.id.nav_error -> {
+                sendBugMail(this)
             }
 
         }
 
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
+    }
+
+    fun sendMail(context: Context) {
+        val intent = Intent(Intent.ACTION_SENDTO) // it's not ACTION_SEND
+        intent.type = "text/plain"
+        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.subject_mail))
+        intent.putExtra(Intent.EXTRA_TEXT, getString(R.string.say_some_thing))
+        intent.data = Uri.parse(getString(R.string.bshairMail)) // or just "mailto:" for blank
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK) // this will make such that when user returns to your app, your app is displayed, instead of the email app.
+
+        try {
+            startActivity(intent)
+        } catch (ex: android.content.ActivityNotFoundException) {
+            Toast.makeText(context, getText(R.string.no_clinet_for_mail), Toast.LENGTH_SHORT).show()
+        }
+
+
+    }
+
+    fun sendBugMail(context: Context) {
+        val intent = Intent(Intent.ACTION_SENDTO) // it's not ACTION_SEND
+        intent.type = "text/plain"
+        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.subject_mail_error))
+        intent.putExtra(Intent.EXTRA_TEXT, getString(R.string.say_some_thing))
+        intent.data = Uri.parse(getString(R.string.bshair_mail_erro)) // or just "mailto:" for blank
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK) // this will make such that when user returns to your app, your app is displayed, instead of the email app.
+
+        try {
+            startActivity(intent)
+        } catch (ex: android.content.ActivityNotFoundException) {
+            Toast.makeText(context, getText(R.string.no_clinet_for_mail), Toast.LENGTH_SHORT).show()
+        }
+
+
+    }
+    fun openAboutActivity(context: Context) {
+        val intent = Intent(context, AboutUS::class.java)
+        startActivity(intent)
     }
 
 
@@ -225,7 +265,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
     //    For add item to submenu in drawerlayout
-    private fun addMenuItemInNavMenuDrawer(catsData: CatList?) {
+    fun addMenuItemInNavMenuDrawer(catsData: CatList?, context: Context) {
         val navView = findViewById<View>(R.id.nav_view) as NavigationView
 
         val menu = navView.menu
@@ -236,7 +276,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             subMenu.add(catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
                 val newId = catsData.categories[item].id
                 val newCatTitle = catsData.categories[item].title
-                val intent = Intent(this, CatActivity::class.java)
+                val intent = Intent(context, CatActivity::class.java)
                 intent.putExtra("cat_id", newId)
                 intent.putExtra("cat_title", newCatTitle)
                 startActivity(intent)
@@ -298,6 +338,22 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     fun showToastNotInternet(context: Context){
         Toast.makeText(context, R.string.no_internet, Toast.LENGTH_LONG).show()
+
+    }
+
+    fun shareTextUrl() {
+        try {
+            val i = Intent(Intent.ACTION_SEND)
+            i.type = "text/plain"
+            i.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.share_title))
+            var sAux = "\n" + getString(R.string.share_des) + "\n\n"
+            sAux += "https://play.google.com/store/apps/details?id=com.papyrus.fanoos.bshairwebapp \n\n"
+            i.putExtra(Intent.EXTRA_TEXT, sAux)
+            startActivity(Intent.createChooser(i, getString(R.string.share_app)))
+        } catch (e: Exception) {
+            //e.toString();
+        }
+
 
     }
 

@@ -1,18 +1,18 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-35:12
 MERGED from [com.android.support:design:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/cd0625f0aa9e42cc0ee47e0cfc45a2dd/AndroidManifest.xml:17:1-22:12
 MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/3fb7a9f28a05c948902db156cbdf2d5e/AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/08025a9267581dc0d1f1a950cf19d501/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/8b965752070932d41f9ff9a76777725c/AndroidManifest.xml:17:1-22:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/6405b3960c67b9214972b1c736d809ec/AndroidManifest.xml:15:1-21:12
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/0003ef287574d73992e7d39bbe7c66bd/AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/929488dd08696147e371bc6172a7ba36/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/bd088ae41db22f4e8ec73397c55a3216/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/8b965752070932d41f9ff9a76777725c/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/016eecfaec90f2c53c03cd09c9d5609d/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:transition:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/78fff2edf3177b3a94cc7a7794379e9c/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/98cf3696c933efdbef1a00985af37081/AndroidManifest.xml:2:1-11:12
@@ -26,20 +26,20 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/alijohar/.gradle
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5ca177a8e9346132a151b71bb2377d22/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a0296212fa9b98bfd36bf781647f2b00/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/947db7ef5cbf5368b628bc8dacf315db/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:3:5-46
 		INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-30:12
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-35:12
 		INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-30:12
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-35:12
 		INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:11-69
@@ -52,7 +52,7 @@ ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml
 	android:name
 		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:8:5-28:19
+ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:8:5-33:19
 MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/3fb7a9f28a05c948902db156cbdf2d5e/AndroidManifest.xml:11:5-20
 MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/3fb7a9f28a05c948902db156cbdf2d5e/AndroidManifest.xml:11:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/08025a9267581dc0d1f1a950cf19d501/AndroidManifest.xml:9:5-20
@@ -102,9 +102,19 @@ ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml
 	android:name
 		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:26:19-46
 activity#com.papyrus.fanoos.bshairwebapp.SearchActivity
-ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:27:9-61
+ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:27:9-52
 	android:name
 		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:27:19-49
+activity#com.papyrus.fanoos.bshairwebapp.AboutUS
+ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:28:9-32:63
+	android:label
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:31:13-60
+	android:configChanges
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:30:13-74
+	android:theme
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:32:13-51
+	android:name
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:29:13-36
 uses-sdk
 INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml
@@ -117,6 +127,8 @@ MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/alijohar/.gradle/ca
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/08025a9267581dc0d1f1a950cf19d501/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/08025a9267581dc0d1f1a950cf19d501/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/8b965752070932d41f9ff9a76777725c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/8b965752070932d41f9ff9a76777725c/AndroidManifest.xml:20:5-44
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/6405b3960c67b9214972b1c736d809ec/AndroidManifest.xml:19:5-43
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/6405b3960c67b9214972b1c736d809ec/AndroidManifest.xml:19:5-43
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/0003ef287574d73992e7d39bbe7c66bd/AndroidManifest.xml:7:5-9:41
@@ -125,8 +137,6 @@ MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/alijohar/.gradle
 MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/929488dd08696147e371bc6172a7ba36/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/bd088ae41db22f4e8ec73397c55a3216/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/bd088ae41db22f4e8ec73397c55a3216/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/8b965752070932d41f9ff9a76777725c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/8b965752070932d41f9ff9a76777725c/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/016eecfaec90f2c53c03cd09c9d5609d/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/016eecfaec90f2c53c03cd09c9d5609d/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/78fff2edf3177b3a94cc7a7794379e9c/AndroidManifest.xml:20:5-44

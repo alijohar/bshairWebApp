@@ -11,4 +11,8 @@
     <item name="ic_menu_add_comment_v" type="drawable">@drawable/ic_menu_add_comment</item>
     <item name="ic_menu_person_v" type="drawable">@drawable/ic_menu_person</item>
     <item name="ic_menu_clock_v" type="drawable">@drawable/ic_menu_clock</item>
+    <item name="ic_menu_about_v" type="drawable">@drawable/ic_menu_about</item>
+    <item name="ic_menu_contact_v" type="drawable">@drawable/ic_menu_contact</item>
+    <item name="ic_menu_send_bug_v" type="drawable">@drawable/ic_menu_send_bug</item>
+
 </resources>
