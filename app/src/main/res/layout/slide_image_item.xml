@@ -24,11 +24,12 @@
         android:layout_height="@dimen/banner_title_height"
         android:layout_gravity="bottom"
         android:background="@color/light_bg_dark_disabled_text"
+        android:textAppearance="@style/TextAppearance.FontPath"
         android:text="@string/test_title"
         android:gravity="center"
         android:textColor="@color/white"
-        android:textStyle="bold"
         android:maxLines="1"
+        android:textSize="@dimen/caption_text_size"
         />
     </android.support.v7.widget.CardView>
 </FrameLayout>

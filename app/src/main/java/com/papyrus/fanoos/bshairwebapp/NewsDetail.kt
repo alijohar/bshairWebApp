@@ -26,6 +26,11 @@ import kotlinx.android.synthetic.main.dialog_add_comment.view.*
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 import android.widget.TextView
+import android.os.Build
+import android.preference.PreferenceManager
+import android.text.Spanned
+import android.webkit.WebViewClient
+import java.sql.Date
 
 
 class NewsDetail : AppCompatActivity() {
@@ -33,9 +38,17 @@ class NewsDetail : AppCompatActivity() {
     var urlPostWithTitle: String? = null
 
 
+
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_news_detail)
+
+
+
+
 
 
         val isRightToLeft = resources.getBoolean(R.bool.is_rtl)
@@ -49,6 +62,8 @@ class NewsDetail : AppCompatActivity() {
                     this@NewsDetail.overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
                 }
 
+
+
             })
         } else {
             news_detail_swipe.setOnTouchListener(object : OnSwipeTouchListener(this) {
@@ -56,7 +71,7 @@ class NewsDetail : AppCompatActivity() {
 
                 override fun onSwipeRight() {
                     finish()
-                    this@NewsDetail.overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+                    this@NewsDetail.overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
                 }
 
             })
@@ -66,7 +81,7 @@ class NewsDetail : AppCompatActivity() {
 
         //        CustomFont
         CalligraphyConfig.initDefault(CalligraphyConfig.Builder()
-                .setDefaultFontPath("droidkufi_bold.ttf")
+                .setDefaultFontPath("droidkufi_regular.ttf")
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         )
@@ -81,10 +96,45 @@ class NewsDetail : AppCompatActivity() {
         val time = bundle.getString("time_post")
         val postIdNew = bundle.getInt("post_id")
         val timeS = time.split(" ")
+        val newFontNameByUser = bundle.getString("font_name")
+        val newFontSizeByUser = bundle.getString("font_size")
+        Log.i("fontName", newFontNameByUser)
         urlPost = bundle.getString("post_url")
         urlPostWithTitle = title + "\n" + urlPost
 
-        des_news_detail.text = Html.fromHtml(Html.fromHtml(content).toString())
+        var text = "<head><style type=\"text/css\">\n" +
+                "@font-face {\n" +
+                " font-family: 'MyCustomFont';\n" +
+                " src: url('$newFontNameByUser') \n" +
+                "}\n" +
+                "\n" +
+                "\n" +
+                "body{\n" +
+                "  font-size: $newFontSizeByUser;\n" +
+                "  font-family:  'MyCustomFont';\n" +
+                "  text-align: justify;\n" +
+                "  direction: rtl;\n" +
+                "  line-height: 2.5;\n" +
+                "}\n" +
+                "\n" +
+                "img{\n" +
+                "  height: auto;\n" +
+                "  width: 100%;\n" +
+                "  display: block;\n" +
+                "  margin-left: auto;\n" +
+                "  margin-right: auto;\n" +
+                "}\n" +
+                "\n" +
+                "h1, h2, h3, h4, h5, h5 {\n" +
+                "  color: red;\n" +
+                "  text-align: center;\n" +
+                "}</style>\n\n</head><html><body dir=\"rtl\"; style=\"text-align:justify;\">";
+        text += content
+        text += "</body></html>"
+
+        des_news_detail.loadDataWithBaseURL("file:///android_asset/",text,"text/html","utf-8",null)
+
+
         title_news_detail.text = title
         Glide.with(this).load(fullImage).into(image_news_detial)
 
@@ -185,6 +235,13 @@ class NewsDetail : AppCompatActivity() {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
     }
 
+    fun fromHtmlNew(html: String): Spanned {
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            Html.fromHtml(html, Html.FROM_HTML_MODE_LEGACY)
+        } else {
+            Html.fromHtml(html)
+        }
+    }
 
 }
 

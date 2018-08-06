@@ -14,5 +14,7 @@
     <item name="ic_menu_about_v" type="drawable">@drawable/ic_menu_about</item>
     <item name="ic_menu_contact_v" type="drawable">@drawable/ic_menu_contact</item>
     <item name="ic_menu_send_bug_v" type="drawable">@drawable/ic_menu_send_bug</item>
-
+    <item name="ic_menu_send_news_v" type="drawable">@drawable/ic_menu_send_news</item>
+    <item name="ic_menu_text_format_v" type="drawable">@drawable/ic_menu_text_format</item>
+    <item name="ic_menu_text_format_new_v" type="drawable">@drawable/ic_menu_text_format_new</item>
 </resources>

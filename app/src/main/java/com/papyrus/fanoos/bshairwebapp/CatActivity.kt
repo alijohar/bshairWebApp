@@ -2,7 +2,6 @@ package com.papyrus.fanoos.bshairwebapp
 
 import android.content.Context
 import android.content.Intent
-import android.net.ConnectivityManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.NavigationView
@@ -10,29 +9,21 @@ import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.ImageView
 import android.widget.Toast
-import com.bumptech.glide.Glide
 import com.papyrus.fanoos.bshairwebapp.Adapters.NewsAdapter
 import com.papyrus.fanoos.bshairwebapp.Api.NewsApi
 import com.papyrus.fanoos.bshairwebapp.Api.NewsClinet
 import com.papyrus.fanoos.bshairwebapp.Models.CatList
-import com.papyrus.fanoos.bshairwebapp.Models.News
 import com.papyrus.fanoos.bshairwebapp.Models.PostFromCatIndex
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_cat.*
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.app_bar_main_cat.*
-import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.content_main_cat.*
-import kotlinx.android.synthetic.main.no_internet.*
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 
@@ -42,13 +33,13 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
     internal lateinit var myNewsAdapter: NewsAdapter
 
     var pageCount: Int = 1
-    val checkConnection = MainActivity()
+    val mainActivityObject = MainActivity()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cat)
-        if (!checkConnection.internet_connection(this)) {
-            checkConnection.showToastNotInternet(this)
+        if (!mainActivityObject.internet_connection(this)) {
+            mainActivityObject.showToastNotInternet(this)
 
         } else {
             toolbar_cat.title = ""
@@ -79,7 +70,7 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
 
 //        CustomFont
             CalligraphyConfig.initDefault(CalligraphyConfig.Builder()
-                    .setDefaultFontPath("droidkufi_bold.ttf")
+                    .setDefaultFontPath("droidkufi_regular.ttf")
                     .setFontAttrId(R.attr.fontPath)
                     .build()
             )
@@ -118,7 +109,11 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
     }
 
     private fun fetchDataCatList() {
-        compositeDisposable.add(myNewsApi.getCatList().subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { catsData -> displayCatData(catsData) })
+        try {
+            compositeDisposable.add(myNewsApi.getCatList().subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { catsData -> displayCatData(catsData) })
+        } catch (e: Exception) {
+            mainActivityObject.showToastNotInternet(this)
+        }
 
     }
 
@@ -133,7 +128,12 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
 
 
     private fun fetchData(idCat: Int, localPageCount: Int) {
-        compositeDisposable.add(myNewsApi.getPostFromCat(idCat, localPageCount).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { newsData -> displayData(newsData) })
+        try {
+            compositeDisposable.add(myNewsApi.getPostFromCat(idCat, localPageCount).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { newsData -> displayData(newsData) })
+
+        }catch (e:Exception){
+            mainActivityObject.showToastNotInternet(this)
+        }
 
     }
 
@@ -168,17 +168,17 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.nav_share -> {
-                checkConnection.shareTextUrl()
+                mainActivityObject.shareTextUrl(this)
             }
             R.id.nav_about -> {
-                checkConnection.openAboutActivity(this)
+                mainActivityObject.openAboutActivity(this)
 
             }
             R.id.nav_contact -> {
-                checkConnection.sendMail(this)
+                mainActivityObject.sendMail(this)
             }
             R.id.nav_error -> {
-                checkConnection.sendBugMail(this)
+                mainActivityObject.sendBugMail(this)
             }
 
         }

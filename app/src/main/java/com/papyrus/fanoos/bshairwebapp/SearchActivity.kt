@@ -16,6 +16,7 @@ import com.papyrus.fanoos.bshairwebapp.Adapters.NewsAdapter
 import com.papyrus.fanoos.bshairwebapp.Api.NewsApi
 import com.papyrus.fanoos.bshairwebapp.Api.NewsClinet
 import com.papyrus.fanoos.bshairwebapp.Models.News
+import com.papyrus.fanoos.bshairwebapp.Models.Post
 import com.papyrus.fanoos.bshairwebapp.Models.PostFromCatIndex
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
@@ -33,6 +34,7 @@ class SearchActivity : AppCompatActivity() {
     internal var compositeDisposable = CompositeDisposable()
     internal lateinit var myNewsAdapter: NewsAdapter
     val checkConnection = MainActivity()
+    var isRunOneTimeAtLeast:Boolean? = null
 
     var pageCount: Int = 1
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -67,7 +69,7 @@ class SearchActivity : AppCompatActivity() {
 
 //        CustomFont
                     CalligraphyConfig.initDefault(CalligraphyConfig.Builder()
-                            .setDefaultFontPath("droidkufi_bold.ttf")
+                            .setDefaultFontPath("droidkufi_regular.ttf")
                             .setFontAttrId(R.attr.fontPath)
                             .build()
                     )
@@ -83,10 +85,9 @@ class SearchActivity : AppCompatActivity() {
                     recycler_news_search.layoutManager = newLayoutManger
                     recycler_news_search.addOnScrollListener(object : EndlessRecyclerViewScrollListener(newLayoutManger) {
                         override fun onLoadMore(page: Int, totalItemsCount: Int, view: RecyclerView?) {
-                            if (!checkConnection.internet_connection(this@SearchActivity)){
+                            if (!checkConnection.internet_connection(this@SearchActivity)) {
                                 checkConnection.showToastNotInternet(this@SearchActivity)
-                            }
-                            else {
+                            } else {
                                 var newCount = page + 1
                                 progressbar_search.visibility = View.VISIBLE
 
@@ -106,21 +107,51 @@ class SearchActivity : AppCompatActivity() {
 
         }
     }
-        private fun fetchData(textSearched: String, localPageCount: Int) {
+
+    private fun fetchData(textSearched: String, localPageCount: Int) {
+        try {
             compositeDisposable.add(myNewsApi.getPostFromSearching(textSearched, localPageCount).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { newsData -> displayData(newsData) })
+
+        }catch (e:Exception){
+            checkConnection.showToastNotInternet(this)
         }
 
-        private fun displayData(newsData: News?) {
+    }
+
+    private fun displayData(newsData: News?) {
+        if (newsData!!.posts.isNotEmpty()) {
+            isRunOneTimeAtLeast = true
+            no_item_text_view.visibility = View.GONE
             progressbar_search.visibility = View.GONE
-            myNewsAdapter.addMoreItem(newsData!!.posts)
+            myNewsAdapter.addMoreItem(newsData.posts)
+
+
         }
+            else{
+            if (isRunOneTimeAtLeast == true){
+                if (myNewsAdapter.setNewsList().size == 0){
+                    progressbar_search.visibility = View.GONE
+                    no_item_text_view.text = getText(R.string.no_item)
+                    no_item_text_view.visibility = View.VISIBLE
+                }else{
+                    progressbar_search.visibility = View.GONE
+                    no_item_text_view.visibility = View.GONE
+                }
 
-        //    ForCustomFont
-        override fun attachBaseContext(newBase: Context) {
-            super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
+
+            }else if (isRunOneTimeAtLeast == null) {
+            progressbar_search.visibility = View.GONE
+            no_item_text_view.text = getText(R.string.no_item)
+            no_item_text_view.visibility = View.VISIBLE
+
         }
+    }
+    }
 
-
+    //    ForCustomFont
+    override fun attachBaseContext(newBase: Context) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
+    }
 
 
 }

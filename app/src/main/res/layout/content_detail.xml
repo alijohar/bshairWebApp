@@ -16,7 +16,7 @@
             android:layout_marginStart="@dimen/half_standard_margin"
             android:layout_marginEnd="@dimen/half_standard_margin"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:background="@color/white"
             >
@@ -136,15 +136,13 @@
 
             </LinearLayout>
 
-            <TextView
+            <WebView
                 android:id="@+id/des_news_detail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="@dimen/line_space_detail_text"
                 android:text="@string/test_title"
                 android:layout_marginTop="@dimen/miniMargin"
                 android:padding="@dimen/half_standard_margin"
-                android:textSize="@dimen/caption_text_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"

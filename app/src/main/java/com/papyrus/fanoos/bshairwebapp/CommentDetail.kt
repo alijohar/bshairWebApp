@@ -24,6 +24,7 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_comment_detail.*
 import kotlinx.android.synthetic.main.app_bar_detail.*
+import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.dialog_add_comment.view.*
 import kotlinx.android.synthetic.main.no_internet.*
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
@@ -136,15 +137,25 @@ class CommentDetail : AppCompatActivity() {
     }
 
     private fun fetchData(id: Int) {
-        compositeDisposable.add(myNewsApi.getPostComments(id).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { newsCommentData -> displayCommentData(newsCommentData) })
+        try {
+            compositeDisposable.add(myNewsApi.getPostComments(id).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { newsCommentData -> displayCommentData(newsCommentData) })
+        }catch (e:Exception){
+            checkConnection.showToastNotInternet(this)
+        }
 
 
     }
 
     private fun displayCommentData(newsCommentData: NewsComments?) {
         comment_progressbar.visibility = View.GONE
-        myCommentAdapter = CommentsAdapter(this, newsCommentData!!.post.comments)
-        recycler_comments.adapter = myCommentAdapter
+        if (newsCommentData!!.post.comments.isEmpty()){
+            no_item_text_view.text = getText(R.string.no_comment)
+            no_item_text_view.visibility = View.VISIBLE
+        }else {
+            myCommentAdapter = CommentsAdapter(this, newsCommentData!!.post.comments)
+            recycler_comments.adapter = myCommentAdapter
+        }
+
     }
 
     //    ForCustomFont

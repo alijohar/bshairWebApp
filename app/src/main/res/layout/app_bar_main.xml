@@ -55,6 +55,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/app_name"
                 android:gravity="center"
+                android:textColor="?attr/colorControlNormal"
                 android:textSize="@dimen/appbar_text_size"
                 android:textAppearance="@style/TextAppearance.FontPath"/>
             </LinearLayout>

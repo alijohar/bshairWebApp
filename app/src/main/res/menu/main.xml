@@ -9,5 +9,12 @@
         app:showAsAction="always"
          />
 
+    <item
+        android:id="@+id/action_sending_news"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_menu_send_news_v"
+        android:title="@string/sending_news"
+        app:showAsAction="ifRoom"
+        />
 
 </menu>

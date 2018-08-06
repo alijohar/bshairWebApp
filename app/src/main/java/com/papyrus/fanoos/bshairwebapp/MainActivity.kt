@@ -1,6 +1,5 @@
 package com.papyrus.fanoos.bshairwebapp
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -31,14 +30,15 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 import java.util.*
 import android.net.ConnectivityManager
 import android.net.Uri
-import android.support.v4.view.accessibility.AccessibilityEventCompat.setAction
-import android.support.v4.content.ContextCompat
-import android.support.design.widget.Snackbar
+import android.preference.PreferenceManager
+import android.support.v7.app.AlertDialog
 import android.util.Log
-import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.NumberPicker
 import com.bumptech.glide.Glide
-import kotlinx.android.synthetic.main.activity_news_detail.*
+import kotlinx.android.synthetic.main.content_detail.*
+import kotlinx.android.synthetic.main.dialog_font_chooser.*
+import kotlinx.android.synthetic.main.dialog_font_chooser.view.*
 import kotlinx.android.synthetic.main.no_internet.*
 import kotlin.collections.ArrayList
 
@@ -49,12 +49,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     internal lateinit var myNewsAdapter: NewsAdapter
     internal lateinit var myBannerAdapter: BannerAdapter
 
-
     var pageCount: Int = 1
-
+    var oldFontName = 1
+    var oldFontSize = 1
     //    TODO: Must change var below when website datas changed
     var bannerTagName: String = "test"
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -62,7 +61,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         //        CustomFont
         CalligraphyConfig.initDefault(CalligraphyConfig.Builder()
-                .setDefaultFontPath("droidkufi_bold.ttf")
+                .setDefaultFontPath("droidkufi_regular.ttf")
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         )
@@ -137,7 +136,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
     private fun fetchDataCatList() {
-        compositeDisposable.add(myNewsApi.getCatList().subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { catsData -> displayCatData(catsData) })
+        try {
+            compositeDisposable.add(myNewsApi.getCatList().subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { catsData -> displayCatData(catsData) })
+        }catch (e:Exception){
+            showToastNotInternet(this)
+        }
 
     }
 
@@ -152,12 +155,22 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
     private fun fetchData(localPageCount: Int) {
-        compositeDisposable.add(myNewsApi.getNews(localPageCount).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { newsData -> displayData(newsData) })
+        try {
+            compositeDisposable.add(myNewsApi.getNews(localPageCount).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { newsData -> displayData(newsData) })
+        }catch (e:Exception){
+            showErrorWhenGetJson(this)
+        }
+
 
     }
 
     private fun fetchDataBanner(bannerTagName: String, pageBanner: Int) {
-        compositeDisposable.add(myNewsApi.getBannerPosts(bannerTagName, pageBanner).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { BannersData -> displayBannerData(BannersData) })
+        try {
+            compositeDisposable.add(myNewsApi.getBannerPosts(bannerTagName, pageBanner).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { BannersData -> displayBannerData(BannersData) })
+
+        }catch (e:Exception){
+            showErrorWhenGetJson(this)
+        }
     }
 
 
@@ -190,7 +203,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 return true
 
             }
-
+            R.id.action_sending_news -> {
+                sendNews(this)
+                return true
+            }
 
             else -> return super.onOptionsItemSelected(item)
         }
@@ -200,7 +216,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.nav_share -> {
-                shareTextUrl()
+                shareTextUrl(this)
             }
             R.id.nav_about -> {
                 openAboutActivity(this)
@@ -212,6 +228,137 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_error -> {
                 sendBugMail(this)
             }
+            R.id.change_font_and_size -> {
+
+                val commentDialog = AlertDialog.Builder(this)
+                val view = layoutInflater.inflate(R.layout.dialog_font_chooser, null)
+                var fontArray = ArrayList<String>()
+                fontArray.add("yaali.ttf")
+                fontArray.add("droidkufi_regular.ttf")
+                fontArray.add("AdobeNaskh.ttf")
+
+                var fontSizeArray = ArrayList<String>()
+                fontSizeArray.add("75%")
+                fontSizeArray.add("100%")
+                fontSizeArray.add("125%")
+                fontSizeArray.add("150%")
+                fontSizeArray.add("175%")
+
+
+                view.font_name_chooser.minValue = 0
+                view.font_name_chooser.maxValue = fontArray.size-1
+                view.font_name_chooser.displayedValues = arrayOf<String>("خط يا علي", "خط درويد كوفي", "خط نسخ")
+                view.font_name_chooser.value = oldFontName
+
+                view.font_size_chooser.displayedValues = arrayOf<String>("75%", "100%", "125%", "150%", "175%")
+                view.font_size_chooser.minValue = 0
+                view.font_size_chooser.maxValue = fontSizeArray.size-1
+
+                view.font_size_chooser.value = oldFontSize
+
+                var font_name:String = fontArray[view.font_name_chooser.value]
+                var font_size:String = fontSizeArray[view.font_size_chooser.value]
+                val dialog = commentDialog.setView(view).create()
+                dialog.show()
+                dialog.setCancelable(true)
+
+
+                view.font_size_chooser.setOnValueChangedListener { picker, oldVal, newVal ->
+                    font_size = fontSizeArray[newVal]
+                    var text = "<head><style type=\"text/css\">\n" +
+                            "@font-face {\n" +
+                            " font-family: 'MyCustomFont';\n" +
+                            " src: url('$font_name') \n" +
+                            "}\n" +
+                            "\n" +
+                            "\n" +
+                            "body{\n" +
+                            "  font-size: $font_size;\n" +
+                            "  font-family:  'MyCustomFont';\n" +
+                            "  text-align: center;\n" +
+                            "  direction: rtl;\n" +
+                            "  line-height: 2.5;\n" +
+                            "}\n" +
+                            "\n" +
+                            "img{\n" +
+                            "  height: auto;\n" +
+                            "  width: 100%;\n" +
+                            "  display: block;\n" +
+                            "  margin-left: auto;\n" +
+                            "  margin-right: auto;\n" +
+                            "}\n" +
+                            "\n" +
+                            "h1, h2, h3, h4, h5, h5 {\n" +
+                            "  color: red;\n" +
+                            "  text-align: center;\n" +
+                            "}</style>\n\n</head><html><body>"
+                    text += "<p> من يكتب يقرأ مرتين</p>"
+                    text += "</body></html>"
+                    view.text_display_after_change_font.loadDataWithBaseURL("file:///android_asset/",text,"text/html","utf-8",null)
+
+                    oldFontSize = newVal
+
+                }
+
+                view.font_name_chooser.setOnValueChangedListener { picker, oldVal, newVal ->
+                    font_name = fontArray[newVal]
+                    var text = "<head><style type=\"text/css\">\n" +
+                            "@font-face {\n" +
+                            " font-family: 'MyCustomFont';\n" +
+                            " src: url('$font_name') \n" +
+                            "}\n" +
+                            "\n" +
+                            "\n" +
+                            "body{\n" +
+                            "  font-size: $font_size;\n" +
+                            "  font-family:  'MyCustomFont';\n" +
+                            "  text-align: center;\n" +
+                            "  direction: rtl;\n" +
+                            "  line-height: 2.5;\n" +
+                            "}\n" +
+                            "\n" +
+                            "img{\n" +
+                            "  height: auto;\n" +
+                            "  width: 100%;\n" +
+                            "  display: block;\n" +
+                            "  margin-left: auto;\n" +
+                            "  margin-right: auto;\n" +
+                            "}\n" +
+                            "\n" +
+                            "h1, h2, h3, h4, h5, h5 {\n" +
+                            "  color: red;\n" +
+                            "  text-align: center;\n" +
+                            "}</style>\n\n</head><html><body>";
+                    text += "<p> من يكتب يقرأ مرتين</p>"
+                    text += "</body></html>"
+                    view.text_display_after_change_font.loadDataWithBaseURL("file:///android_asset/",text,"text/html","utf-8",null)
+
+                    oldFontName = newVal
+                }
+
+
+                view.send_dialog_font_chooser.setOnClickListener {
+
+                    Log.i("fontnameandsize","$font_name $font_size")
+
+                    myNewsAdapter.getFontName(font_name, font_size)
+                    dialog.dismiss()
+
+
+
+
+                }
+
+
+
+
+
+
+                view.cancel_dialog_font_chooser.setOnClickListener {
+                    dialog.dismiss()
+                }
+
+            }
 
         }
 
@@ -219,16 +366,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         return true
     }
 
+
+
     fun sendMail(context: Context) {
         val intent = Intent(Intent.ACTION_SENDTO) // it's not ACTION_SEND
         intent.type = "text/plain"
-        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.subject_mail))
-        intent.putExtra(Intent.EXTRA_TEXT, getString(R.string.say_some_thing))
-        intent.data = Uri.parse(getString(R.string.bshairMail)) // or just "mailto:" for blank
+        intent.putExtra(Intent.EXTRA_SUBJECT, context.getString(R.string.subject_mail))
+        intent.putExtra(Intent.EXTRA_TEXT, context.getString(R.string.say_some_thing))
+        intent.data = Uri.parse(context.getString(R.string.bshairMail)) // or just "mailto:" for blank
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK) // this will make such that when user returns to your app, your app is displayed, instead of the email app.
 
         try {
-            startActivity(intent)
+            context.startActivity(intent)
         } catch (ex: android.content.ActivityNotFoundException) {
             Toast.makeText(context, getText(R.string.no_clinet_for_mail), Toast.LENGTH_SHORT).show()
         }
@@ -239,13 +388,30 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     fun sendBugMail(context: Context) {
         val intent = Intent(Intent.ACTION_SENDTO) // it's not ACTION_SEND
         intent.type = "text/plain"
-        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.subject_mail_error))
-        intent.putExtra(Intent.EXTRA_TEXT, getString(R.string.say_some_thing))
-        intent.data = Uri.parse(getString(R.string.bshair_mail_erro)) // or just "mailto:" for blank
+        intent.putExtra(Intent.EXTRA_SUBJECT, context.getString(R.string.subject_mail_error))
+        intent.putExtra(Intent.EXTRA_TEXT, context.getString(R.string.say_some_thing))
+        intent.data = Uri.parse(context.getString(R.string.bshair_mail_erro)) // or just "mailto:" for blank
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK) // this will make such that when user returns to your app, your app is displayed, instead of the email app.
 
         try {
-            startActivity(intent)
+            context.startActivity(intent)
+        } catch (ex: android.content.ActivityNotFoundException) {
+            Toast.makeText(context, getText(R.string.no_clinet_for_mail), Toast.LENGTH_SHORT).show()
+        }
+
+
+    }
+
+    fun sendNews(context: Context) {
+        val intent = Intent(Intent.ACTION_SENDTO) // it's not ACTION_SEND
+        intent.type = "text/plain"
+        intent.putExtra(Intent.EXTRA_SUBJECT, context.getString(R.string.subject_mail_news))
+        intent.putExtra(Intent.EXTRA_TEXT, context.getString(R.string.say_some_thing))
+        intent.data = Uri.parse(context.getString(R.string.bshairMail_news)) // or just "mailto:" for blank
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK) // this will make such that when user returns to your app, your app is displayed, instead of the email app.
+
+        try {
+            context.startActivity(intent)
         } catch (ex: android.content.ActivityNotFoundException) {
             Toast.makeText(context, getText(R.string.no_clinet_for_mail), Toast.LENGTH_SHORT).show()
         }
@@ -254,7 +420,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
     fun openAboutActivity(context: Context) {
         val intent = Intent(context, AboutUS::class.java)
-        startActivity(intent)
+        context.startActivity(intent)
     }
 
 
@@ -341,15 +507,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     }
 
-    fun shareTextUrl() {
+    fun shareTextUrl(context: Context) {
         try {
             val i = Intent(Intent.ACTION_SEND)
             i.type = "text/plain"
-            i.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.share_title))
-            var sAux = "\n" + getString(R.string.share_des) + "\n\n"
+            i.putExtra(Intent.EXTRA_SUBJECT, context.getString(R.string.share_title))
+            var sAux = "\n" + context.getString(R.string.share_des) + "\n\n"
             sAux += "https://play.google.com/store/apps/details?id=com.papyrus.fanoos.bshairwebapp \n\n"
             i.putExtra(Intent.EXTRA_TEXT, sAux)
-            startActivity(Intent.createChooser(i, getString(R.string.share_app)))
+            context.startActivity(Intent.createChooser(i, context.getString(R.string.share_app)))
         } catch (e: Exception) {
             //e.toString();
         }
@@ -357,5 +523,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     }
 
+    fun showErrorWhenGetJson(context: Context){
+        Toast.makeText(context, getText(R.string.some_error), Toast.LENGTH_SHORT).show()
+    }
 
 }
