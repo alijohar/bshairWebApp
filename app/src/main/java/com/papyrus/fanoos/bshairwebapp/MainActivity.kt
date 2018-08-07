@@ -33,6 +33,7 @@ import android.net.Uri
 import android.preference.PreferenceManager
 import android.support.v7.app.AlertDialog
 import android.util.Log
+import android.view.LayoutInflater
 import android.widget.ImageView
 import android.widget.NumberPicker
 import com.bumptech.glide.Glide
@@ -46,7 +47,7 @@ import kotlin.collections.ArrayList
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     internal lateinit var myNewsApi: NewsApi
     internal var compositeDisposable = CompositeDisposable()
-    internal lateinit var myNewsAdapter: NewsAdapter
+    var myNewsAdapter =  NewsAdapter(this, ArrayList())
     internal lateinit var myBannerAdapter: BannerAdapter
 
     var pageCount: Int = 1
@@ -229,143 +230,139 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 sendBugMail(this)
             }
             R.id.change_font_and_size -> {
-
-                val commentDialog = AlertDialog.Builder(this)
-                val view = layoutInflater.inflate(R.layout.dialog_font_chooser, null)
-                var fontArray = ArrayList<String>()
-                fontArray.add("yaali.ttf")
-                fontArray.add("droidkufi_regular.ttf")
-                fontArray.add("AdobeNaskh.ttf")
-
-                var fontSizeArray = ArrayList<String>()
-                fontSizeArray.add("75%")
-                fontSizeArray.add("100%")
-                fontSizeArray.add("125%")
-                fontSizeArray.add("150%")
-                fontSizeArray.add("175%")
-
-
-                view.font_name_chooser.minValue = 0
-                view.font_name_chooser.maxValue = fontArray.size-1
-                view.font_name_chooser.displayedValues = arrayOf<String>("خط يا علي", "خط درويد كوفي", "خط نسخ")
-                view.font_name_chooser.value = oldFontName
-
-                view.font_size_chooser.displayedValues = arrayOf<String>("75%", "100%", "125%", "150%", "175%")
-                view.font_size_chooser.minValue = 0
-                view.font_size_chooser.maxValue = fontSizeArray.size-1
-
-                view.font_size_chooser.value = oldFontSize
-
-                var font_name:String = fontArray[view.font_name_chooser.value]
-                var font_size:String = fontSizeArray[view.font_size_chooser.value]
-                val dialog = commentDialog.setView(view).create()
-                dialog.show()
-                dialog.setCancelable(true)
-
-
-                view.font_size_chooser.setOnValueChangedListener { picker, oldVal, newVal ->
-                    font_size = fontSizeArray[newVal]
-                    var text = "<head><style type=\"text/css\">\n" +
-                            "@font-face {\n" +
-                            " font-family: 'MyCustomFont';\n" +
-                            " src: url('$font_name') \n" +
-                            "}\n" +
-                            "\n" +
-                            "\n" +
-                            "body{\n" +
-                            "  font-size: $font_size;\n" +
-                            "  font-family:  'MyCustomFont';\n" +
-                            "  text-align: center;\n" +
-                            "  direction: rtl;\n" +
-                            "  line-height: 2.5;\n" +
-                            "}\n" +
-                            "\n" +
-                            "img{\n" +
-                            "  height: auto;\n" +
-                            "  width: 100%;\n" +
-                            "  display: block;\n" +
-                            "  margin-left: auto;\n" +
-                            "  margin-right: auto;\n" +
-                            "}\n" +
-                            "\n" +
-                            "h1, h2, h3, h4, h5, h5 {\n" +
-                            "  color: red;\n" +
-                            "  text-align: center;\n" +
-                            "}</style>\n\n</head><html><body>"
-                    text += "<p> من يكتب يقرأ مرتين</p>"
-                    text += "</body></html>"
-                    view.text_display_after_change_font.loadDataWithBaseURL("file:///android_asset/",text,"text/html","utf-8",null)
-
-                    oldFontSize = newVal
-
-                }
-
-                view.font_name_chooser.setOnValueChangedListener { picker, oldVal, newVal ->
-                    font_name = fontArray[newVal]
-                    var text = "<head><style type=\"text/css\">\n" +
-                            "@font-face {\n" +
-                            " font-family: 'MyCustomFont';\n" +
-                            " src: url('$font_name') \n" +
-                            "}\n" +
-                            "\n" +
-                            "\n" +
-                            "body{\n" +
-                            "  font-size: $font_size;\n" +
-                            "  font-family:  'MyCustomFont';\n" +
-                            "  text-align: center;\n" +
-                            "  direction: rtl;\n" +
-                            "  line-height: 2.5;\n" +
-                            "}\n" +
-                            "\n" +
-                            "img{\n" +
-                            "  height: auto;\n" +
-                            "  width: 100%;\n" +
-                            "  display: block;\n" +
-                            "  margin-left: auto;\n" +
-                            "  margin-right: auto;\n" +
-                            "}\n" +
-                            "\n" +
-                            "h1, h2, h3, h4, h5, h5 {\n" +
-                            "  color: red;\n" +
-                            "  text-align: center;\n" +
-                            "}</style>\n\n</head><html><body>";
-                    text += "<p> من يكتب يقرأ مرتين</p>"
-                    text += "</body></html>"
-                    view.text_display_after_change_font.loadDataWithBaseURL("file:///android_asset/",text,"text/html","utf-8",null)
-
-                    oldFontName = newVal
-                }
-
-
-                view.send_dialog_font_chooser.setOnClickListener {
-
-                    Log.i("fontnameandsize","$font_name $font_size")
-
-                    myNewsAdapter.getFontName(font_name, font_size)
-                    dialog.dismiss()
-
-
-
-
-                }
-
-
-
-
-
-
-                view.cancel_dialog_font_chooser.setOnClickListener {
-                    dialog.dismiss()
-                }
+                showDialogFontChooser(this)
 
             }
-
         }
 
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
     }
 
+    fun showDialogFontChooser(context: Context) {
+        val commentDialog = AlertDialog.Builder(context)
+        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        val view = inflater.inflate(R.layout.dialog_font_chooser, null)
+        var fontArray = ArrayList<String>()
+        fontArray.add("yaali.ttf")
+        fontArray.add("droidkufi_regular.ttf")
+        fontArray.add("AdobeNaskh.ttf")
+
+        var fontSizeArray = ArrayList<String>()
+        fontSizeArray.add("75%")
+        fontSizeArray.add("100%")
+        fontSizeArray.add("125%")
+        fontSizeArray.add("150%")
+        fontSizeArray.add("175%")
+
+
+        view.font_name_chooser.minValue = 0
+        view.font_name_chooser.maxValue = fontArray.size-1
+        view.font_name_chooser.displayedValues = arrayOf<String>("خط يا علي", "خط درويد كوفي", "خط نسخ")
+        oldFontName = view.font_name_chooser.value
+
+        view.font_size_chooser.displayedValues = arrayOf<String>("75%", "100%", "125%", "150%", "175%")
+        view.font_size_chooser.minValue = 0
+        view.font_size_chooser.maxValue = fontSizeArray.size-1
+
+        oldFontSize = view.font_size_chooser.value
+
+        var font_name:String = fontArray[view.font_name_chooser.value]
+        var font_size:String = fontSizeArray[view.font_size_chooser.value]
+        val dialog = commentDialog.setView(view).create()
+        dialog.show()
+        dialog.setCancelable(true)
+
+
+        view.font_size_chooser.setOnValueChangedListener { picker, oldVal, newVal ->
+            font_size = fontSizeArray[newVal]
+            var text = "<head><style type=\"text/css\">\n" +
+                    "@font-face {\n" +
+                    " font-family: 'MyCustomFont';\n" +
+                    " src: url('$font_name') \n" +
+                    "}\n" +
+                    "\n" +
+                    "\n" +
+                    "body{\n" +
+                    "  font-size: $font_size;\n" +
+                    "  font-family:  'MyCustomFont';\n" +
+                    "  text-align: center;\n" +
+                    "  direction: rtl;\n" +
+                    "  line-height: 2.5;\n" +
+                    "}\n" +
+                    "\n" +
+                    "img{\n" +
+                    "  height: auto;\n" +
+                    "  width: 100%;\n" +
+                    "  display: block;\n" +
+                    "  margin-left: auto;\n" +
+                    "  margin-right: auto;\n" +
+                    "}\n" +
+                    "\n" +
+                    "h1, h2, h3, h4, h5, h5 {\n" +
+                    "  color: red;\n" +
+                    "  text-align: center;\n" +
+                    "}</style>\n\n</head><html><body>"
+            text += "<p> من يكتب يقرأ مرتين</p>"
+            text += "</body></html>"
+            view.text_display_after_change_font.loadDataWithBaseURL("file:///android_asset/",text,"text/html","utf-8",null)
+
+            oldFontSize = newVal
+
+        }
+
+        view.font_name_chooser.setOnValueChangedListener { picker, oldVal, newVal ->
+            font_name = fontArray[newVal]
+            var text = "<head><style type=\"text/css\">\n" +
+                    "@font-face {\n" +
+                    " font-family: 'MyCustomFont';\n" +
+                    " src: url('$font_name') \n" +
+                    "}\n" +
+                    "\n" +
+                    "\n" +
+                    "body{\n" +
+                    "  font-size: $font_size;\n" +
+                    "  font-family:  'MyCustomFont';\n" +
+                    "  text-align: center;\n" +
+                    "  direction: rtl;\n" +
+                    "  line-height: 2.5;\n" +
+                    "}\n" +
+                    "\n" +
+                    "img{\n" +
+                    "  height: auto;\n" +
+                    "  width: 100%;\n" +
+                    "  display: block;\n" +
+                    "  margin-left: auto;\n" +
+                    "  margin-right: auto;\n" +
+                    "}\n" +
+                    "\n" +
+                    "h1, h2, h3, h4, h5, h5 {\n" +
+                    "  color: red;\n" +
+                    "  text-align: center;\n" +
+                    "}</style>\n\n</head><html><body>";
+            text += "<p> من يكتب يقرأ مرتين</p>"
+            text += "</body></html>"
+            view.text_display_after_change_font.loadDataWithBaseURL("file:///android_asset/",text,"text/html","utf-8",null)
+
+            oldFontName = newVal
+        }
+
+
+        view.send_dialog_font_chooser.setOnClickListener {
+
+            Log.i("sss","$font_name $font_size")
+
+            myNewsAdapter.getFontName(font_name, font_size)
+            dialog.dismiss()
+        }
+
+
+
+        view.cancel_dialog_font_chooser.setOnClickListener {
+            dialog.dismiss()
+        }
+
+    }
 
 
     fun sendMail(context: Context) {

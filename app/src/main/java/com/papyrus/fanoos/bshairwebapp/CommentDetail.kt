@@ -8,6 +8,7 @@ import android.support.v7.app.AlertDialog
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.Toolbar
 import android.util.Log
+import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -18,6 +19,7 @@ import com.papyrus.fanoos.bshairwebapp.Adapters.CommentsAdapter
 import com.papyrus.fanoos.bshairwebapp.Api.NewsApi
 import com.papyrus.fanoos.bshairwebapp.Api.NewsClinet
 import com.papyrus.fanoos.bshairwebapp.Models.NewsComments
+import com.papyrus.fanoos.bshairwebapp.Models.commentStatus
 import io.reactivex.Scheduler
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
@@ -29,13 +31,23 @@ import kotlinx.android.synthetic.main.dialog_add_comment.view.*
 import kotlinx.android.synthetic.main.no_internet.*
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
+import java.security.AccessController.getContext
 
 class CommentDetail : AppCompatActivity() {
     internal lateinit var myCommentAdapter: CommentsAdapter
     internal var compositeDisposable = CompositeDisposable()
-    internal lateinit var myNewsApi: NewsApi
     var id: Int = 0
+    //      intit Api
+    val myNewsClinet = NewsClinet.instance
+    var myNewsApi = myNewsClinet.create(NewsApi::class.java)
     val checkConnection = MainActivity()
+    lateinit var commentDialog:AlertDialog.Builder
+    lateinit var view:View
+    lateinit var dialog:AlertDialog
+
+
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -60,6 +72,7 @@ class CommentDetail : AppCompatActivity() {
             )
             val bundel = intent.extras
             val newId = bundel.getInt("post_id")
+
             val newTitle = bundel.getString("post_title")
 
             title_comment_detail.text = newTitle
@@ -68,9 +81,6 @@ class CommentDetail : AppCompatActivity() {
 
             recycler_comments.layoutManager = LinearLayoutManager(this)
 
-//      intit Api
-            val myNewsClinet = NewsClinet.instance
-            myNewsApi = myNewsClinet.create(NewsApi::class.java)
 
             //        Show Data
             fetchData(id)
@@ -91,7 +101,7 @@ class CommentDetail : AppCompatActivity() {
         when (item.itemId) {
 
             R.id.action_adding_comment -> {
-                addComment()
+                addComment(this, id)
 
                 return true
 
@@ -105,9 +115,11 @@ class CommentDetail : AppCompatActivity() {
         }
     }
 
-    private fun addComment() {
-        val commentDialog = AlertDialog.Builder(this)
-        val view = layoutInflater.inflate(R.layout.dialog_add_comment, null)
+    fun addComment(context:Context, localId: Int) {
+        commentDialog = AlertDialog.Builder(context)
+        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        view = inflater.inflate(R.layout.dialog_add_comment, null)
+        dialog = commentDialog.setView(view).create()
 
         val submit = view.send_dialog_send_comment
         val cancel = view.cancel_dialog_send_comment
@@ -115,9 +127,13 @@ class CommentDetail : AppCompatActivity() {
         val mail = view.email_dialog_send_comment
         val desComment = view.des_dialog_send_comment
 
+        dialog.show()
+        dialog.setCancelable(false)
+
+
         submit.setOnClickListener {
             if (!name.text.isEmpty() && !mail.text.isEmpty() && !desComment.text.isEmpty()) {
-                Toast.makeText(this, "message is sent", Toast.LENGTH_LONG).show()
+                sendData(localId, name.text.toString(), mail.text.toString(), desComment.text.toString(), context)
             } else {
                 if (name.text.isEmpty()) name.error = getString(R.string.not_be_empty)
                 if (mail.text.isEmpty()) mail.error = getString(R.string.not_be_empty)
@@ -125,15 +141,33 @@ class CommentDetail : AppCompatActivity() {
             }
         }
 
-        val dialog = commentDialog.setView(view).create()
-        dialog.show()
-        dialog.setCancelable(false)
+
 
 
 
         cancel.setOnClickListener {
             dialog.dismiss()
         }
+    }
+
+    private fun sendData(postId:Int, name:String, email:String, content:String, newContext: Context) {
+        try {
+            compositeDisposable.add(myNewsApi.submitComment(postId, name, email, content).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe{ statusOfComment -> displayCommentStatus(statusOfComment, newContext)})
+
+        }catch (e:Exception){
+            Toast.makeText(newContext, e.message, Toast.LENGTH_LONG).show()
+        }
+    }
+
+    private fun displayCommentStatus(statusOfComment: commentStatus?, context: Context) {
+
+        if (statusOfComment!!.status == "pending" || statusOfComment.status == "ok"){
+            Toast.makeText(context, R.string.comment_sent_to_admin, Toast.LENGTH_LONG).show()
+            dialog.dismiss()
+        }else{
+            Toast.makeText(context, R.string.cannot_send_comment, Toast.LENGTH_LONG).show()
+        }
+
     }
 
     private fun fetchData(id: Int) {

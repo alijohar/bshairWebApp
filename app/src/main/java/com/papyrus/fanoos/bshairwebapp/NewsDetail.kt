@@ -30,16 +30,20 @@ import android.os.Build
 import android.preference.PreferenceManager
 import android.text.Spanned
 import android.webkit.WebViewClient
+import com.papyrus.fanoos.bshairwebapp.Api.NewsApi
+import com.papyrus.fanoos.bshairwebapp.Api.NewsClinet
+import io.reactivex.disposables.CompositeDisposable
 import java.sql.Date
 
 
 class NewsDetail : AppCompatActivity() {
     var urlPost: String? = null
     var urlPostWithTitle: String? = null
-
-
-
-
+    lateinit var commentDialog:AlertDialog.Builder
+    lateinit var view:View
+    lateinit var dialog:AlertDialog
+    var newCommentDetail = CommentDetail()
+    var locatDetailId:Int = 0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,12 +53,10 @@ class NewsDetail : AppCompatActivity() {
 
 
 
-
-
         val isRightToLeft = resources.getBoolean(R.bool.is_rtl)
 
         if (isRightToLeft) {
-            news_detail_swipe.setOnTouchListener(object : OnSwipeTouchListener(this) {
+            des_news_detail.setOnTouchListener(object : OnSwipeTouchListener(this) {
 
 
                 override fun onSwipeLeft() {
@@ -66,7 +68,7 @@ class NewsDetail : AppCompatActivity() {
 
             })
         } else {
-            news_detail_swipe.setOnTouchListener(object : OnSwipeTouchListener(this) {
+            des_news_detail.setOnTouchListener(object : OnSwipeTouchListener(this) {
 
 
                 override fun onSwipeRight() {
@@ -95,6 +97,7 @@ class NewsDetail : AppCompatActivity() {
         val authorName = bundle.getString("author_name")
         val time = bundle.getString("time_post")
         val postIdNew = bundle.getInt("post_id")
+        locatDetailId = postIdNew
         val timeS = time.split(" ")
         val newFontNameByUser = bundle.getString("font_name")
         val newFontSizeByUser = bundle.getString("font_size")
@@ -172,7 +175,7 @@ class NewsDetail : AppCompatActivity() {
                 return true
             }
             R.id.action_adding_comment -> {
-                addComment()
+                newCommentDetail.addComment(this, locatDetailId)
                 return true
 
 
@@ -185,36 +188,6 @@ class NewsDetail : AppCompatActivity() {
         }
     }
 
-    private fun addComment() {
-        val commentDialog = AlertDialog.Builder(this)
-        val view = layoutInflater.inflate(R.layout.dialog_add_comment, null)
-
-        val submit = view.send_dialog_send_comment
-        val cancel = view.cancel_dialog_send_comment
-        val name = view.name_dialog_send_comment
-        val mail = view.email_dialog_send_comment
-        val desComment = view.des_dialog_send_comment
-
-        submit.setOnClickListener {
-            if (!name.text.isEmpty() && !mail.text.isEmpty() && !desComment.text.isEmpty()) {
-                Toast.makeText(this, "message is sent", Toast.LENGTH_LONG).show()
-            } else {
-                if (name.text.isEmpty()) name.error = getString(R.string.not_be_empty)
-                if (mail.text.isEmpty()) mail.error = getString(R.string.not_be_empty)
-                if (desComment.text.isEmpty()) desComment.error = getString(R.string.not_be_empty)
-            }
-        }
-
-        val dialog = commentDialog.setView(view).create()
-        dialog.show()
-        dialog.setCancelable(false)
-
-
-
-        cancel.setOnClickListener {
-            dialog.dismiss()
-        }
-    }
 
     private fun sharePostLink() {
 

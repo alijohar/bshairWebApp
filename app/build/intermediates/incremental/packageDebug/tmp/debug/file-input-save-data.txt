@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Aug 06 15:23:37 IRDT 2018
+#Tue Aug 07 14:07:17 IRDT 2018
 2.base=/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/assets/debug
 0.path=AdobeNaskh.ttf
 2.baseType=DIRECTORY

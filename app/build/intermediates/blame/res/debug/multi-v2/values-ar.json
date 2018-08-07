@@ -4,23 +4,6 @@
             "outputFile": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ar/values-ar.xml",
             "map": [
                 {
-                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/d7c19288b7f09d0a964f518846430bcd/res/values-ar/values-ar.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "54",
-                        "startColumns": "4",
-                        "startOffsets": "3904",
-                        "endColumns": "100",
-                        "endOffsets": "4000"
-                    }
-                },
-                {
                     "source": "/Users/alijohar/Desktop/bshairWebApp/app/src/main/res/values-ar/strings.xml",
                     "from": {
                         "startLines": "45,26,11,8,7,10,32,1,38,44,19,24,22,21,27,36,37,6,5,4,3,2,42,31,23,40,18,29,20,41,12,28,34,33,39,43,14,13,9,25,35,30,16,15,17",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6fa9efab331d68472d625c8165c5ad70/res/values-ar/values-ar.xml",
+                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/ee7c134e6f84196a63d5175257836549/res/values-ar/values-ar.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "54",
+                        "startColumns": "4",
+                        "startOffsets": "3904",
+                        "endColumns": "100",
+                        "endOffsets": "4000"
+                    }
+                },
+                {
+                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e0cdbb1b1639f4693521bebf77d47273/res/values-ar/values-ar.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

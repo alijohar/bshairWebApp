@@ -180,6 +180,9 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
             R.id.nav_error -> {
                 mainActivityObject.sendBugMail(this)
             }
+            R.id.change_font_and_size-> {
+                mainActivityObject.showDialogFontChooser(this)
+            }
 
         }
 

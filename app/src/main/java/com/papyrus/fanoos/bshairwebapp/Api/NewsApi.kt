@@ -1,10 +1,7 @@
 package com.papyrus.fanoos.bshairwebapp.Api
 
-import com.papyrus.fanoos.bshairwebapp.Models.CatList
-import com.papyrus.fanoos.bshairwebapp.Models.News
-import com.papyrus.fanoos.bshairwebapp.Models.NewsComments
-import com.papyrus.fanoos.bshairwebapp.Models.PostFromCatIndex
-import retrofit2.http.GET
+import com.papyrus.fanoos.bshairwebapp.Models.*
+import retrofit2.http.*
 import retrofit2.http.Query
 
 interface NewsApi {
@@ -40,5 +37,13 @@ interface NewsApi {
     @GET("get_posts")
     fun getPostFromSearching(@Query("s") searchingItem:String,
                              @Query("page") pageNumber: Int):io.reactivex.Observable<News>
+
+//    For submit comment
+    @FormUrlEncoded
+    @POST("submit_comment")
+    fun submitComment(@Field("post_id") post_id:Int,
+                      @Field("name") commenterName:String,
+                      @Field("email") commenterMail:String,
+                      @Field("content") commentContent:String):io.reactivex.Observable<commentStatus>
 
 }

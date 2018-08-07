@@ -56,6 +56,9 @@ class NewsAdapter(internal var context: Context, internal var newsList: ArrayLis
                 newsIntent.putExtra("post_id", postId)
                 newsIntent.putExtra("font_name", font_name)
                 newsIntent.putExtra("font_size", font_size)
+                Log.i("fontName", font_name)
+
+
 
 
 
@@ -77,9 +80,11 @@ class NewsAdapter(internal var context: Context, internal var newsList: ArrayLis
     }
 
     fun getFontName(newFont_name:String, newFont_size:String){
-        Log.i("fontName", font_name)
+        Log.i("fontName", newFont_name)
         font_name = newFont_name
         font_size = newFont_size
+        Log.i("fontName", font_name)
+
 
     }
 

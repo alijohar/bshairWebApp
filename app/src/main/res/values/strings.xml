@@ -54,6 +54,8 @@
     <string name="choose_font">اختر فونتاً للعرض</string>
     <string name="choose_size_font">اختر حجم الفونت</string>
     <string name="submit">موافق</string>
+    <string name="comment_sent_to_admin">تم إرسال التعليق للإدارة، وبعد الموافقة سيتم النشر</string>
+    <string name="cannot_send_comment">للأسف لم يتم إرسال التعليق بنجاح</string>
     <bool name="is_rtl">false</bool>
 
 </resources>

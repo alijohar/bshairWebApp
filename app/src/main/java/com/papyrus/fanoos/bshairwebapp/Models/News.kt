@@ -167,3 +167,13 @@ data class PostFromCatIndex(
     val posts: List<Post>
 )
 
+
+data class commentStatus(
+    val status: String,
+    val id: Int,
+    val name: String,
+    val url: String,
+    val date: String,
+    val content: String,
+    val parent: Int
+)

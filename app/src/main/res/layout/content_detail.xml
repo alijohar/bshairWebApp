@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
->
+    >
 
 
     <ScrollView
-        android:id="@+id/news_detail_swipe"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white">
@@ -16,7 +16,7 @@
             android:layout_marginStart="@dimen/half_standard_margin"
             android:layout_marginEnd="@dimen/half_standard_margin"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="@color/white"
             >
@@ -137,6 +137,7 @@
             </LinearLayout>
 
             <WebView
+
                 android:id="@+id/des_news_detail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -146,7 +147,9 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                android:textAppearance="@style/TextAppearance.FontPath_regular"/>
+                tools:ignore="WebViewLayout" />
+
+
         </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
