@@ -27,14 +27,19 @@
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/nav_header_vertical_spacing"
             android:text="@string/nav_header_title"
+            android:textColor="@color/grey_200"
+            android:textSize="@dimen/caption_text_size"
             android:gravity="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            android:textAppearance="@style/TextAppearance.FontPath" />
 
         <TextView
             android:id="@+id/textView"
+            android:textColor="@color/grey_500"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
+            android:textSize="@dimen/smal_caption_size"
+            android:textAppearance="@style/TextAppearance.FontPath_regular"
+        android:gravity="center"
             android:text="@string/nav_header_subtitle" />
     </LinearLayout>
 

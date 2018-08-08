@@ -131,7 +131,7 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
         try {
             compositeDisposable.add(myNewsApi.getPostFromCat(idCat, localPageCount).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { newsData -> displayData(newsData) })
 
-        }catch (e:Exception){
+        } catch (e: Exception) {
             mainActivityObject.showToastNotInternet(this)
         }
 
@@ -158,6 +158,10 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
             R.id.action_searching -> {
                 val intent = Intent(this, SearchActivity::class.java)
                 startActivity(intent)
+                return true
+            }
+            R.id.action_sending_news -> {
+                mainActivityObject.sendNews(this)
                 return true
             }
             else -> return super.onOptionsItemSelected(item)

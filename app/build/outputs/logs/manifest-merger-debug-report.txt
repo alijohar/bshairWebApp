@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-35:12
+ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-34:12
 MERGED from [com.android.support:design:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/d67e0e3080a79f154a7d88e900031ace/AndroidManifest.xml:17:1-22:12
 MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/39d7d70bca6992ef333a282efd9d0e48/AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e0cdbb1b1639f4693521bebf77d47273/AndroidManifest.xml:17:1-22:12
@@ -26,20 +26,20 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/alijohar/.gradle
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/720156b9d5802da8bf69a6f5c0e8ec60/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/374d658491d90708d6b167dc89dca24c/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b5d8c403f392184b35390f628918466f/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-34:12
 	package
 		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:3:5-46
 		INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-35:12
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-34:12
 		INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-35:12
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-34:12
 		INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:2:11-69
@@ -52,7 +52,7 @@ ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml
 	android:name
 		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:8:5-33:19
+ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:8:5-32:19
 MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/39d7d70bca6992ef333a282efd9d0e48/AndroidManifest.xml:11:5-20
 MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/39d7d70bca6992ef333a282efd9d0e48/AndroidManifest.xml:11:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/f98ba5600b60e37a28de0394367743fb/AndroidManifest.xml:9:5-20
@@ -62,59 +62,57 @@ MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/alijohar/.gradle/cach
 MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/3f216f839c94c45ef2779276c8a4cabd/AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/3f216f839c94c45ef2779276c8a4cabd/AndroidManifest.xml:9:5-20
 	android:supportsRtl
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:12:9-35
 	android:label
 		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:11:9-41
-	android:roundIcon
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:12:9-54
 	android:icon
 		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:10:9-43
 	android:allowBackup
 		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:14:9-40
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:13:9-40
 activity#com.papyrus.fanoos.bshairwebapp.MainActivity
-ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:15:9-23:20
+ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:14:9-22:20
 	android:label
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:17:13-45
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:16:13-45
 	android:name
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:16:13-41
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:15:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:18:13-22:29
+ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:19:17-69
+ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:19:25-66
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:21:17-77
+ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:21:27-74
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:20:27-74
 activity#com.papyrus.fanoos.bshairwebapp.NewsDetail
-ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:24:9-48
+ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:23:9-48
 	android:name
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:24:19-45
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:23:19-45
 activity#com.papyrus.fanoos.bshairwebapp.CommentDetail
-ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:25:9-51
+ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:24:9-51
 	android:name
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:25:19-48
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:24:19-48
 activity#com.papyrus.fanoos.bshairwebapp.CatActivity
-ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:26:9-49
+ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:25:9-49
 	android:name
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:26:19-46
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:25:19-46
 activity#com.papyrus.fanoos.bshairwebapp.SearchActivity
-ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:27:9-52
+ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:26:9-52
 	android:name
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:27:19-49
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:26:19-49
 activity#com.papyrus.fanoos.bshairwebapp.AboutUS
-ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:28:9-32:63
+ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:27:9-31:63
 	android:label
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:31:13-60
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:30:13-60
 	android:configChanges
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:30:13-74
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:29:13-74
 	android:theme
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:32:13-51
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:31:13-51
 	android:name
-		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:29:13-36
+		ADDED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml:28:13-36
 uses-sdk
 INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/alijohar/Desktop/bshairWebApp/app/src/main/AndroidManifest.xml

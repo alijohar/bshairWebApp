@@ -1,5 +1,6 @@
 package com.papyrus.fanoos.bshairwebapp
 
+import android.app.PendingIntent.getActivity
 import android.content.Context
 import android.net.ConnectivityManager
 import android.support.v7.app.AppCompatActivity
@@ -32,6 +33,7 @@ import kotlinx.android.synthetic.main.no_internet.*
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 import java.security.AccessController.getContext
+import java.util.regex.Pattern
 
 class CommentDetail : AppCompatActivity() {
     internal lateinit var myCommentAdapter: CommentsAdapter
@@ -79,7 +81,13 @@ class CommentDetail : AppCompatActivity() {
 
             id = newId
 
-            recycler_comments.layoutManager = LinearLayoutManager(this)
+
+            val mLayoutManager = LinearLayoutManager(this)
+//To reverse recyclerView 
+            mLayoutManager.reverseLayout = true
+            mLayoutManager.stackFromEnd = true
+
+            recycler_comments.layoutManager = mLayoutManager
 
 
             //        Show Data
@@ -133,11 +141,16 @@ class CommentDetail : AppCompatActivity() {
 
         submit.setOnClickListener {
             if (!name.text.isEmpty() && !mail.text.isEmpty() && !desComment.text.isEmpty()) {
-                sendData(localId, name.text.toString(), mail.text.toString(), desComment.text.toString(), context)
+                if (isEmailValid(mail.text.toString())) {
+                    sendData(localId, name.text.toString(), mail.text.toString(), desComment.text.toString(), context)
+                }else  {
+                    mail.error = context.getString(R.string.mail_not_valid)
+                }
+
             } else {
-                if (name.text.isEmpty()) name.error = getString(R.string.not_be_empty)
-                if (mail.text.isEmpty()) mail.error = getString(R.string.not_be_empty)
-                if (desComment.text.isEmpty()) desComment.error = getString(R.string.not_be_empty)
+                if (name.text.isEmpty()) name.error = context.getString(R.string.not_be_empty)
+                if (mail.text.isEmpty()) mail.error = context.getString(R.string.not_be_empty)
+                if (desComment.text.isEmpty()) desComment.error = context.getString(R.string.not_be_empty)
             }
         }
 
@@ -188,9 +201,18 @@ class CommentDetail : AppCompatActivity() {
         }else {
             myCommentAdapter = CommentsAdapter(this, newsCommentData!!.post.comments)
             recycler_comments.adapter = myCommentAdapter
+
         }
 
     }
+
+    fun isEmailValid(email: String): Boolean {
+        val expression = "^[\\w\\.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$"
+        val pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE)
+        val matcher = pattern.matcher(email)
+        return matcher.matches()
+    }
+
 
     //    ForCustomFont
     override fun attachBaseContext(newBase: Context) {

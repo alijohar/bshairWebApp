@@ -101,7 +101,6 @@ class NewsDetail : AppCompatActivity() {
         val timeS = time.split(" ")
         val newFontNameByUser = bundle.getString("font_name")
         val newFontSizeByUser = bundle.getString("font_size")
-        Log.i("fontName", newFontNameByUser)
         urlPost = bundle.getString("post_url")
         urlPostWithTitle = title + "\n" + urlPost
 

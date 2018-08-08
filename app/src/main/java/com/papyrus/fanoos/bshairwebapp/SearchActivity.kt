@@ -46,6 +46,7 @@ class SearchActivity : AppCompatActivity() {
 
         } else {
             mSearchView.isIconified = false
+            mSearchView.queryHint = getString(R.string.search)
             mSearchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
                 override fun onQueryTextChange(newText: String?): Boolean {
 

@@ -56,6 +56,8 @@
     <string name="submit">موافق</string>
     <string name="comment_sent_to_admin">تم إرسال التعليق للإدارة، وبعد الموافقة سيتم النشر</string>
     <string name="cannot_send_comment">للأسف لم يتم إرسال التعليق بنجاح</string>
+    <string name="search">بحث ...</string>
+    <string name="mail_not_valid">يبدو أن البريد الإكتروني غير صحيح</string>
     <bool name="is_rtl">false</bool>
 
 </resources>

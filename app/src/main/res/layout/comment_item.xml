@@ -19,6 +19,7 @@
         android:textColor="@color/grey_900"
         app:layout_constraintStart_toStartOf="parent"
         android:maxLength="28"
+        android:textSize="@dimen/smal_caption_size"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
