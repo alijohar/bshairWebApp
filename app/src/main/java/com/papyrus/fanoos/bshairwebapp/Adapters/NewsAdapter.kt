@@ -3,18 +3,15 @@ package com.papyrus.fanoos.bshairwebapp.Adapters
 import android.content.Context
 import android.content.Intent
 import android.support.v7.widget.RecyclerView
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.papyrus.fanoos.bshairwebapp.Models.Post
 import com.papyrus.fanoos.bshairwebapp.R
-import com.papyrus.fanoos.bshairwebapp.NewsDetail
+import com.papyrus.fanoos.bshairwebapp.Ui.NewsDetail
 
 class NewsAdapter(internal var context: Context, internal var newsList: ArrayList<Post>) : RecyclerView.Adapter<NewsHolder>() {
-    var font_name = "droidkufi_regular.ttf"
-    var font_size = "100%"
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.news_item, parent, false)
 
@@ -54,9 +51,7 @@ class NewsAdapter(internal var context: Context, internal var newsList: ArrayLis
                 newsIntent.putExtra("author_name", authorName)
                 newsIntent.putExtra("time_post", timePosting)
                 newsIntent.putExtra("post_id", postId)
-                newsIntent.putExtra("font_name", font_name)
-                newsIntent.putExtra("font_size", font_size)
-                Log.i("fontName", font_name)
+
 
 
 
@@ -79,14 +74,6 @@ class NewsAdapter(internal var context: Context, internal var newsList: ArrayLis
         return newsList
     }
 
-    fun getFontName(newFont_name:String, newFont_size:String){
-        Log.i("fontName", newFont_name)
-        font_name = newFont_name
-        font_size = newFont_size
-        Log.i("fontName", font_name)
-
-
-    }
 
 
 

@@ -20,7 +20,7 @@
     <dimen name="smal_caption_size">10sp</dimen>
     <dimen name="very_small_caption">8sp</dimen>
     <dimen name="line_space_detail_text">16dp</dimen>
-    <dimen name="des_dialog_send_comment">200dp</dimen>
+    <dimen name="des_dialog_send_comment">70dp</dimen>
     <dimen name="large_padding">44dp</dimen>
     <dimen name="banner_height">280dp</dimen>
     <item name="half_alpha" type="dimen" format="float">0.5</item>

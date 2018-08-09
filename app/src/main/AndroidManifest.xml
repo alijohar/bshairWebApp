@@ -12,20 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:name=".Ui.MainActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NewsDetail" />
-        <activity android:name=".CommentDetail" />
-        <activity android:name=".CatActivity" />
-        <activity android:name=".SearchActivity" />
+        <activity android:name=".Ui.NewsDetail"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".Ui.CommentDetail"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".Ui.CatActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".Ui.SearchActivity"
+            android:configChanges="orientation|screenSize"/>
         <activity
-            android:name=".AboutUS"
+            android:name=".Ui.AboutUS"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_about_us"
             android:theme="@style/FullscreenTheme"></activity>

@@ -152,12 +152,12 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e0cdbb1b1639f4693521bebf77d47273/res/drawable-xxhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/color_abc_tint_btn_checkable.xml.flat",
-        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e0cdbb1b1639f4693521bebf77d47273/res/color/abc_tint_btn_checkable.xml"
-    },
-    {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-v21_ic_menu_slideshow.xml.flat",
         "source": "/Users/alijohar/Desktop/bshairWebApp/app/src/main/res/drawable-v21/ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/color_abc_tint_btn_checkable.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e0cdbb1b1639f4693521bebf77d47273/res/color/abc_tint_btn_checkable.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -288,12 +288,12 @@
         "source": "/Users/alijohar/Desktop/bshairWebApp/app/src/main/res/menu/main.xml"
     },
     {
-        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
-        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e0cdbb1b1639f4693521bebf77d47273/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
-    },
-    {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e0cdbb1b1639f4693521bebf77d47273/res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e0cdbb1b1639f4693521bebf77d47273/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -316,12 +316,12 @@
         "source": "/Users/alijohar/Desktop/bshairWebApp/app/build/generated/res/pngs/debug/drawable-mdpi/ic_menu_send_news_v.png"
     },
     {
-        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_notification_bg_low.xml.flat",
-        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/ee7c134e6f84196a63d5175257836549/res/drawable/notification_bg_low.xml"
-    },
-    {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e0cdbb1b1639f4693521bebf77d47273/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_notification_bg_low.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/ee7c134e6f84196a63d5175257836549/res/drawable/notification_bg_low.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",

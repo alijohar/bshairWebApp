@@ -10,9 +10,7 @@ import android.view.LayoutInflater
 import android.widget.*
 import com.bumptech.glide.Glide
 import com.papyrus.fanoos.bshairwebapp.Models.News
-import com.papyrus.fanoos.bshairwebapp.Models.Post
-import com.papyrus.fanoos.bshairwebapp.NewsDetail
-import com.papyrus.fanoos.bshairwebapp.R.id.banner_image
+import com.papyrus.fanoos.bshairwebapp.Ui.NewsDetail
 import kotlinx.android.synthetic.main.slide_image_item.view.*
 
 class BannerAdapter(val context:Context, val localBannerArray:News): PagerAdapter() {

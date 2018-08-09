@@ -20,7 +20,8 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.papyrus.fanoos.bshairwebapp.MainActivity"
+            android:name="com.papyrus.fanoos.bshairwebapp.Ui.MainActivity"
+            android:configChanges="orientation|screenSize"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,12 +29,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.papyrus.fanoos.bshairwebapp.NewsDetail" />
-        <activity android:name="com.papyrus.fanoos.bshairwebapp.CommentDetail" />
-        <activity android:name="com.papyrus.fanoos.bshairwebapp.CatActivity" />
-        <activity android:name="com.papyrus.fanoos.bshairwebapp.SearchActivity" />
         <activity
-            android:name="com.papyrus.fanoos.bshairwebapp.AboutUS"
+            android:name="com.papyrus.fanoos.bshairwebapp.Ui.NewsDetail"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.papyrus.fanoos.bshairwebapp.Ui.CommentDetail"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.papyrus.fanoos.bshairwebapp.Ui.CatActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.papyrus.fanoos.bshairwebapp.Ui.SearchActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.papyrus.fanoos.bshairwebapp.Ui.AboutUS"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_about_us"
             android:theme="@style/FullscreenTheme" />

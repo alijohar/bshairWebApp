@@ -20,6 +20,10 @@
             android:orientation="vertical"
             android:background="@color/white"
             >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
 
             <ImageView
                 android:layout_marginTop="@dimen/half_standard_margin"
@@ -29,6 +33,12 @@
                 android:background="@color/white"
                 android:scaleType="centerCrop" />
 
+                <ProgressBar
+                    android:id="@+id/imag_progress_bar"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
