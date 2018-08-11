@@ -1,5 +1,6 @@
 package com.papyrus.fanoos.bshairwebapp.Ui
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -49,7 +50,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     var myNewsAdapter =  NewsAdapter(this, ArrayList())
     internal lateinit var myBannerAdapter: BannerAdapter
     var pageCount: Int = 1
-
+    var isShowErrorPageBefor:Boolean = false
     //    TODO: Must change var below when website datas changed
     var bannerTagName: String = "test"
 
@@ -179,8 +180,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     fun displayError(error: Throwable?, context: Context) {
-        progressbar.visibility = View.GONE
-        showGifNotInternet(context)
+        if (!isShowErrorPageBefor){
+            isShowErrorPageBefor = true
+            showGifNotInternet(context)
+        }else{
+            Log.i("ErrorConnecting", "this log is show because error page already showed now + $error")
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -482,10 +487,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     fun showGifNotInternet(context: Context) {
         setContentView(R.layout.no_internet)
         val noInternetImage = findViewById<ImageView>(R.id.no_internet)
-        Glide.with(baseContext).load(R.drawable.tenor).into(noInternetImage)
-
+        Glide.with(context).load(R.drawable.tenor).into(noInternetImage)
         try_again_to_restart_activity.setOnClickListener {
-            val intent = intent
+            var intent = intent
             finish()
             startActivity(intent)
         }

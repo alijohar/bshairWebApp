@@ -1,16 +1,20 @@
 package com.papyrus.fanoos.bshairwebapp.Ui
 
+import android.app.Activity
 import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.Toolbar
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.ImageView
 import android.widget.Toast
+import com.bumptech.glide.Glide
 import com.papyrus.fanoos.bshairwebapp.Adapters.CommentsAdapter
 import com.papyrus.fanoos.bshairwebapp.Api.NewsApi
 import com.papyrus.fanoos.bshairwebapp.Api.NewsClinet
@@ -22,6 +26,7 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_comment_detail.*
 import kotlinx.android.synthetic.main.dialog_add_comment.view.*
+import kotlinx.android.synthetic.main.no_internet.*
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 import java.util.regex.Pattern
@@ -37,10 +42,7 @@ class CommentDetail : AppCompatActivity() {
     lateinit var commentDialog:AlertDialog.Builder
     lateinit var view:View
     lateinit var dialog:AlertDialog
-
-
-
-
+    var isShowErrorPageBefor:Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -176,7 +178,7 @@ class CommentDetail : AppCompatActivity() {
 
     private fun fetchData(id: Int) {
         try {
-            compositeDisposable.add(myNewsApi.getPostComments(id).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { newsCommentData -> displayCommentData(newsCommentData) })
+            compositeDisposable.add(myNewsApi.getPostComments(id).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe ({ newsCommentData -> displayCommentData(newsCommentData) }, { error -> displayError(error, this)}))
         }catch (e:Exception){
             objectMainActivity.showToastNotInternet(this)
         }
@@ -208,6 +210,26 @@ class CommentDetail : AppCompatActivity() {
     //    ForCustomFont
     override fun attachBaseContext(newBase: Context) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
+    }
+
+    fun displayError(error: Throwable?, context: Context) {
+        if (!isShowErrorPageBefor){
+            isShowErrorPageBefor = true
+            showGifNotInternet(context)
+        }else{
+            Log.i("ErrorConnecting", "this log is show because error page already showed now + $error")
+        }
+    }
+
+    fun showGifNotInternet(context: Context) {
+        setContentView(R.layout.no_internet)
+        val noInternetImage = findViewById<ImageView>(R.id.no_internet)
+        Glide.with(context).load(R.drawable.tenor).into(noInternetImage)
+        try_again_to_restart_activity.setOnClickListener {
+            var intent = intent
+            finish()
+            startActivity(intent)
+        }
     }
 
 

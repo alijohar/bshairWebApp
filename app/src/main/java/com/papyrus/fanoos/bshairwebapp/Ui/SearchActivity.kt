@@ -1,5 +1,6 @@
 package com.papyrus.fanoos.bshairwebapp.Ui
 
+import android.app.Activity
 import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -8,6 +9,8 @@ import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.SearchView
 import android.util.Log
 import android.view.View
+import android.widget.ImageView
+import com.bumptech.glide.Glide
 import com.papyrus.fanoos.bshairwebapp.Adapters.NewsAdapter
 import com.papyrus.fanoos.bshairwebapp.Api.NewsApi
 import com.papyrus.fanoos.bshairwebapp.Api.NewsClinet
@@ -19,6 +22,7 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.app_bar_main_search.*
 import kotlinx.android.synthetic.main.content_main_search.*
+import kotlinx.android.synthetic.main.no_internet.*
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 
@@ -29,6 +33,7 @@ class SearchActivity : AppCompatActivity() {
     internal lateinit var myNewsAdapter: NewsAdapter
     val checkConnection = MainActivity()
     var isRunOneTimeAtLeast:Boolean? = null
+    var isShowErrorPageBefor:Boolean = false
 
     var pageCount: Int = 1
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -105,7 +110,7 @@ class SearchActivity : AppCompatActivity() {
 
     private fun fetchData(textSearched: String, localPageCount: Int) {
         try {
-            compositeDisposable.add(myNewsApi.getPostFromSearching(textSearched, localPageCount).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { newsData -> displayData(newsData) })
+            compositeDisposable.add(myNewsApi.getPostFromSearching(textSearched, localPageCount).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe ({ newsData -> displayData(newsData) }, { error-> displayError(error, this)}))
 
         }catch (e:Exception){
             checkConnection.showToastNotInternet(this)
@@ -146,6 +151,23 @@ class SearchActivity : AppCompatActivity() {
     override fun attachBaseContext(newBase: Context) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase))
     }
+    fun displayError(error: Throwable?, context: Context) {
+        if (!isShowErrorPageBefor){
+            isShowErrorPageBefor = true
+            showGifNotInternet(context)
+        }else{
+            Log.i("ErrorConnecting", "this log is show because error page already showed now + $error")
+        }
+    }
 
-
+    fun showGifNotInternet(context: Context) {
+        setContentView(R.layout.no_internet)
+        val noInternetImage = findViewById<ImageView>(R.id.no_internet)
+        Glide.with(context).load(R.drawable.tenor).into(noInternetImage)
+        try_again_to_restart_activity.setOnClickListener {
+            var intent = intent
+            finish()
+            startActivity(intent)
+        }
+    }
 }
