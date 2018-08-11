@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.SearchView
+import android.util.Log
 import android.view.View
 import com.papyrus.fanoos.bshairwebapp.Adapters.NewsAdapter
 import com.papyrus.fanoos.bshairwebapp.Api.NewsApi
@@ -117,9 +118,8 @@ class SearchActivity : AppCompatActivity() {
             isRunOneTimeAtLeast = true
             no_item_text_view.visibility = View.GONE
             progressbar_search.visibility = View.GONE
-            myNewsAdapter.addMoreItem(newsData.posts)
-
-
+            Log.i("newSlist1", newsData.posts.size.toString())
+            myNewsAdapter.addMoreItemForSearch(newsData.posts)
         }
             else{
             if (isRunOneTimeAtLeast == true){

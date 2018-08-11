@@ -27,6 +27,7 @@ interface NewsApi {
     fun getCatList():io.reactivex.Observable<CatList>
 
 
+
 //    For get all posts in special cat
     @GET("get_category_posts")
     fun getPostFromCat(@Query("category_id") catId:Int,

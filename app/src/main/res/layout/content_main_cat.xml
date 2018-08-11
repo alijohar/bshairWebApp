@@ -8,8 +8,7 @@
     tools:context=".Ui.MainActivity"
     tools:showIn="@layout/app_bar_main_cat"
     android:orientation="vertical"
-    android:paddingStart="@dimen/activity_horizontal_margin"
-    android:paddingEnd="@dimen/activity_horizontal_margin">
+>
 
 
     <FrameLayout

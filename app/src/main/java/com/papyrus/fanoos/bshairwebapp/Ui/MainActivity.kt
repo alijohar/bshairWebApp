@@ -92,6 +92,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             myNewsApi = myNewsClinet.create(NewsApi::class.java)
 
 
+
 //        recycler_cats_drawer.layoutManager = LinearLayoutManager(this)
 
 
@@ -137,12 +138,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
     private fun fetchDataCatList() {
-        try {
-            compositeDisposable.add(myNewsApi.getCatList().subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { catsData -> displayCatData(catsData) })
-        }catch (e:Exception){
-            showToastNotInternet(this)
-        }
-
+            compositeDisposable.add(myNewsApi.getCatList().subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe ({ catsData -> displayCatData(catsData) }, { error-> displayError(error, this)}))
     }
 
     private fun displayCatData(catsData: CatList?) {
@@ -156,23 +152,20 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
     private fun fetchData(localPageCount: Int) {
-        try {
-            compositeDisposable.add(myNewsApi.getNews(localPageCount).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { newsData -> displayData(newsData) })
-        }catch (e:Exception){
-            showErrorWhenGetJson(this)
-        }
-
-
+            compositeDisposable.add(myNewsApi.getNews(localPageCount).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe ({ newsData -> displayData(newsData) }, {error->displayError(error, this)}))
     }
 
     private fun fetchDataBanner(bannerTagName: String, pageBanner: Int) {
-        try {
-            compositeDisposable.add(myNewsApi.getBannerPosts(bannerTagName, pageBanner).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { BannersData -> displayBannerData(BannersData) })
+            compositeDisposable.add(myNewsApi.getBannerPosts(bannerTagName, pageBanner)
+                    .subscribeOn(Schedulers.io())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe({bannersData -> displayBannerData(bannersData)},{error->displayError(error, this)})
+            )
 
-        }catch (e:Exception){
-            showErrorWhenGetJson(this)
-        }
     }
+
+
+
 
 
     private fun displayData(newsData: News?) {
@@ -183,6 +176,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private fun displayBannerData(bannersData: News?) {
         myBannerAdapter = BannerAdapter(this, bannersData!!)
         viewPager.adapter = myBannerAdapter
+    }
+
+    fun displayError(error: Throwable?, context: Context) {
+        progressbar.visibility = View.GONE
+        showGifNotInternet(context)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -484,7 +482,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     fun showGifNotInternet(context: Context) {
         setContentView(R.layout.no_internet)
         val noInternetImage = findViewById<ImageView>(R.id.no_internet)
-        Glide.with(context).load(R.drawable.tenor).into(noInternetImage)
+        Glide.with(baseContext).load(R.drawable.tenor).into(noInternetImage)
 
         try_again_to_restart_activity.setOnClickListener {
             val intent = intent

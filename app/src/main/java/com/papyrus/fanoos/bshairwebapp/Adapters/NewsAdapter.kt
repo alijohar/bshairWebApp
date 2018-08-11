@@ -3,6 +3,7 @@ package com.papyrus.fanoos.bshairwebapp.Adapters
 import android.content.Context
 import android.content.Intent
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
@@ -66,6 +67,12 @@ class NewsAdapter(internal var context: Context, internal var newsList: ArrayLis
 
 
     fun addMoreItem(posts: List<Post>) {
+        newsList.addAll(posts)
+        this.notifyDataSetChanged()
+    }
+
+    fun addMoreItemForSearch(posts: List<Post>){
+        newsList.clear()
         newsList.addAll(posts)
         this.notifyDataSetChanged()
     }

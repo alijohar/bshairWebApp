@@ -33,7 +33,7 @@ class CommentDetail : AppCompatActivity() {
     //      intit Api
     val myNewsClinet = NewsClinet.instance
     var myNewsApi = myNewsClinet.create(NewsApi::class.java)
-    val checkConnection = MainActivity()
+    val objectMainActivity = MainActivity()
     lateinit var commentDialog:AlertDialog.Builder
     lateinit var view:View
     lateinit var dialog:AlertDialog
@@ -46,8 +46,8 @@ class CommentDetail : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_comment_detail)
 
-        if (!checkConnection.internet_connection(this)) {
-            checkConnection.showToastNotInternet(this)
+        if (!objectMainActivity.internet_connection(this)) {
+            objectMainActivity.showToastNotInternet(this)
 
         } else {
             val toolbar = findViewById<Toolbar>(R.id.toolbar_detail)
@@ -156,7 +156,7 @@ class CommentDetail : AppCompatActivity() {
 
     private fun sendData(postId:Int, name:String, email:String, content:String, newContext: Context) {
         try {
-            compositeDisposable.add(myNewsApi.submitComment(postId, name, email, content).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe{ statusOfComment -> displayCommentStatus(statusOfComment, newContext)})
+            compositeDisposable.add(myNewsApi.submitComment(postId, name, email, content).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { statusOfComment -> displayCommentStatus(statusOfComment, newContext)})
 
         }catch (e:Exception){
             Toast.makeText(newContext, e.message, Toast.LENGTH_LONG).show()
@@ -178,7 +178,7 @@ class CommentDetail : AppCompatActivity() {
         try {
             compositeDisposable.add(myNewsApi.getPostComments(id).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { newsCommentData -> displayCommentData(newsCommentData) })
         }catch (e:Exception){
-            checkConnection.showToastNotInternet(this)
+            objectMainActivity.showToastNotInternet(this)
         }
 
 
