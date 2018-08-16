@@ -4,7 +4,7 @@
             "outputFile": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/ef68c408c093a30c9530c89adcd48c45/res/values-v24/values-v24.xml",
+                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/9d7f25adce706c1683c3f6afab1b18ed/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e0cdbb1b1639f4693521bebf77d47273/res/values-v24/values-v24.xml",
+                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/9087c884920f81e2000c7af13e8fc0b0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

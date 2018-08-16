@@ -36,9 +36,11 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.widget.ImageView
 import com.bumptech.glide.Glide
+import com.crashlytics.android.Crashlytics
 import com.papyrus.fanoos.bshairwebapp.Util.EndlessRecyclerViewScrollListener
 import com.papyrus.fanoos.bshairwebapp.Preferences.Preferences
 import com.papyrus.fanoos.bshairwebapp.R
+import io.fabric.sdk.android.Fabric
 import kotlinx.android.synthetic.main.dialog_font_chooser.view.*
 import kotlinx.android.synthetic.main.no_internet.*
 import kotlin.collections.ArrayList
@@ -56,6 +58,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Fabric.with(this, Crashlytics())
         setContentView(R.layout.activity_main)
 
 
@@ -487,7 +490,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     fun showGifNotInternet(context: Context) {
         setContentView(R.layout.no_internet)
         val noInternetImage = findViewById<ImageView>(R.id.no_internet)
-        Glide.with(context).load(R.drawable.tenor).into(noInternetImage)
+        Glide.with(this).load(R.drawable.tenor).into(noInternetImage)
         try_again_to_restart_activity.setOnClickListener {
             var intent = intent
             finish()

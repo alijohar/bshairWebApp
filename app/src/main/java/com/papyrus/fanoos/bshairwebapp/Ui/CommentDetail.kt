@@ -158,11 +158,16 @@ class CommentDetail : AppCompatActivity() {
 
     private fun sendData(postId:Int, name:String, email:String, content:String, newContext: Context) {
         try {
-            compositeDisposable.add(myNewsApi.submitComment(postId, name, email, content).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe { statusOfComment -> displayCommentStatus(statusOfComment, newContext)})
+            compositeDisposable.add(myNewsApi.submitComment(postId, name, email, content).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe ({ statusOfComment -> displayCommentStatus(statusOfComment, newContext)}, {error -> displayErrorToast(error, this)}))
 
         }catch (e:Exception){
             Toast.makeText(newContext, e.message, Toast.LENGTH_LONG).show()
         }
+    }
+
+    private fun displayErrorToast(error: Throwable?, context: Context) {
+        dialog.dismiss()
+        Toast.makeText(context, getText(R.string.commenet_error_send), Toast.LENGTH_LONG).show()
     }
 
     private fun displayCommentStatus(statusOfComment: commentStatus?, context: Context) {

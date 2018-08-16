@@ -53,13 +53,6 @@ class NewsAdapter(internal var context: Context, internal var newsList: ArrayLis
                 newsIntent.putExtra("time_post", timePosting)
                 newsIntent.putExtra("post_id", postId)
 
-
-
-
-
-
-
-
                 context.startActivity(newsIntent)
             }
 

@@ -58,6 +58,7 @@
     <string name="cannot_send_comment">للأسف لم يتم إرسال التعليق بنجاح</string>
     <string name="search">بحث ...</string>
     <string name="mail_not_valid">يبدو أن البريد الإكتروني غير صحيح</string>
+    <string name="commenet_error_send">للأسف إرسال التعليق غير مسموح</string>
     <bool name="is_rtl">false</bool>
 
 </resources>

@@ -4,7 +4,7 @@
             "outputFile": "/Users/alijohar/Desktop/bshairWebApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/d8c5cbf240e1b209c826057d772d7c0c/res/values-v23/values-v23.xml",
+                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/2a6e2c4b9bef413ef5892985bf3aea10/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e0cdbb1b1639f4693521bebf77d47273/res/values-v23/values-v23.xml",
+                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/9087c884920f81e2000c7af13e8fc0b0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

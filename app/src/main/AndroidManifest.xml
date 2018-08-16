@@ -34,6 +34,10 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_about_us"
             android:theme="@style/FullscreenTheme"></activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="4a453df463908b2235acc05282cdace47c9e4501" />
     </application>
 
 </manifest>

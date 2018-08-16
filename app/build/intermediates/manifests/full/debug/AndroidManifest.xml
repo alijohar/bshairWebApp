@@ -46,6 +46,16 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_about_us"
             android:theme="@style/FullscreenTheme" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="4a453df463908b2235acc05282cdace47c9e4501" />
+
+        <provider
+            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+            android:authorities="com.papyrus.fanoos.bshairwebapp.crashlyticsinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
     </application>
 
 </manifest>
