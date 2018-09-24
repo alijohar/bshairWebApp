@@ -10,7 +10,7 @@ object NewsClinet {
     val instance: Retrofit
         get() {
             if (NewsClinet.ourInstance == null){
-                NewsClinet.ourInstance = Retrofit.Builder().baseUrl("http://bshairdammam.com/bs/api/")
+                NewsClinet.ourInstance = Retrofit.Builder().baseUrl("http://bshaer.net/bs/api/")
                         .addConverterFactory(GsonConverterFactory.create())
                         .addCallAdapterFactory(RxJava2CallAdapterFactory.create()).build()
             }
