@@ -30,25 +30,25 @@
     <string name="send_bugs">تقرير خطأ</string>
     <string name="try_again">حاول مجدداً</string>
     <string name="no_internet">يبدو أن الاتصال بالانترنت ضعيف أو غير متوفر</string>
-    <string name="app_link">http://bshairdammam.com/download</string>
+    <string name="app_link">http://bshaer.net/download</string>
     <string name="share_title">تطبيق بشائر</string>
     <string name="share_des">نقترح عليكم تحميل تطبيق بشائر لمتابعة آخر الأخبار</string>
 
     <string name="title_activity_about_us">AboutUS</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="bshairMail">mailto:info@bshairdammam.com</string>
+    <string name="bshairMail">mailto:info@bshaer.net</string>
     <string name="subject_mail">من تطبيق بشائر الدمام</string>
     <string name="say_some_thing">اكتب نصاً</string>
     <string name="send_mail">إرسال الرسالة</string>
     <string name="no_clinet_for_mail">لا يوجد تطبيقاً للبريد الالكتروني لإرسال الرسالة</string>
     <string name="subject_mail_error">إرسال خطأ من تطبيق بشائر للاندرويد</string>
-    <string name="bshair_mail_erro">mailto:error@bshairdammam.com</string>
+    <string name="bshair_mail_erro">mailto:error@bshaer.net</string>
     <string name="no_item">للأسف لا توجد نتيجة ... </string>
     <string name="no_comment">لا يوجد تعليق، يمكنك إضافة تعليق من الايقونة أعلاه</string>
     <string name="some_error">للأسف، حدث خطأ أثناء استلام المعلومات، يرجى إغلاق التطبيق والمحاولة من جديد</string>
     <string name="sending_news">أرسل خبراً</string>
-    <string name="bshairMail_news">mailto:news@bshairdammam.com</string>
+    <string name="bshairMail_news">mailto:news@bshaer.net</string>
     <string name="subject_mail_news">إرسال خبر من تطبيق بشائر</string>
     <string name="change_font_and_size">إعدادات النص</string>
     <string name="choose_font">اختر فونتاً للعرض</string>
@@ -59,6 +59,7 @@
     <string name="search">بحث ...</string>
     <string name="mail_not_valid">يبدو أن البريد الإكتروني غير صحيح</string>
     <string name="commenet_error_send">للأسف إرسال التعليق غير مسموح</string>
+    <string name="about_us_text"><![CDATA[<p>  تطبيق بشائر يغطي حاجة المجتمع في وجود منصة إلكترونية يمكن عبرها تبادل الأخبار الإجتماعية ومعرفة أخر مستجداتها عبر التطبيق, حيث يحتوي على أقسام متعددة تغطي احتياجات المستخدمين. بإمكان المستخدم أن يعرف ماهي أخر أخبار الوفيات, أو المواليد, أو مناسبات الزواج في المجتمع. أيضا يمكن عبر التطبيق تبادل الأعلانات التجارية والدورات التنموية والتي تسهم في دفع عجلة المجتمع إلى الأمام.     </p>]]></string>
     <bool name="is_rtl">false</bool>
 
 </resources>

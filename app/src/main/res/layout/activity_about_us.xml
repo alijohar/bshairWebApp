@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey_700"
-    tools:context=".Ui.AboutUS">
+    tools:context="com.papyrus.bshairwebapp.Ui.AboutUS">
 
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
@@ -16,9 +16,10 @@
         android:gravity="center"
         android:keepScreenOn="true"
         android:textAppearance="@style/TextAppearance.FontPath_regular"
-        android:text="@string/about_us"
-        android:textSize="50sp"
+        android:text="@string/about_us_text"
+        android:textSize="20sp"
         android:textColor="@color/grey_200"
+        android:padding="@dimen/large_padding"
         android:textStyle="bold" />
 
     <!-- This FrameLayout insets its children based on system windows using

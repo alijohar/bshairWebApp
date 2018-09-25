@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.papyrus.fanoos.bshairwebapp">
+    package="com.papyrus.bshairwebapp.bshairwebapp">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Ui.MainActivity"
+            android:name="com.papyrus.bshairwebapp.Ui.MainActivity"
             android:label="@string/app_name"
             android:configChanges="orientation|screenSize">
             <intent-filter>
@@ -21,16 +21,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Ui.NewsDetail"
+        <activity android:name="com.papyrus.bshairwebapp.Ui.NewsDetail"
             android:configChanges="orientation|screenSize"/>
-        <activity android:name=".Ui.CommentDetail"
+        <activity android:name="com.papyrus.bshairwebapp.Ui.CommentDetail"
             android:configChanges="orientation|screenSize"/>
-        <activity android:name=".Ui.CatActivity"
+        <activity android:name="com.papyrus.bshairwebapp.Ui.CatActivity"
             android:configChanges="orientation|screenSize"/>
-        <activity android:name=".Ui.SearchActivity"
+        <activity android:name="com.papyrus.bshairwebapp.Ui.SearchActivity"
             android:configChanges="orientation|screenSize"/>
         <activity
-            android:name=".Ui.AboutUS"
+            android:name="com.papyrus.bshairwebapp.Ui.AboutUS"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_about_us"
             android:theme="@style/FullscreenTheme"></activity>

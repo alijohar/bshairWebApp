@@ -11,10 +11,10 @@
             android:id="@+id/nav_share"
             android:icon="@drawable/ic_menu_share_v"
             android:title="@string/share_app" />
-        <item
-            android:id="@+id/nav_about"
-            android:icon="@drawable/ic_menu_about_v"
-            android:title="@string/about_us" />
+        <!--<item-->
+            <!--android:id="@+id/nav_about"-->
+            <!--android:icon="@drawable/ic_menu_about_v"-->
+            <!--android:title="@string/about_us" />-->
         <item
             android:id="@+id/nav_contact"
             android:icon="@drawable/ic_menu_contact_v"

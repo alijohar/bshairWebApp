@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ui.NewsDetail"
+    tools:context="com.papyrus.bshairwebapp.Ui.NewsDetail"
     android:id="@+id/news_detail"
     >
 

@@ -1,0 +1,290 @@
+{
+  "project_info": {
+    "project_number": "138885522241",
+    "firebase_url": "https://papyrus-5d9a9.firebaseio.com",
+    "project_id": "papyrus-5d9a9",
+    "storage_bucket": "papyrus-5d9a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138885522241:android:fffa60ad55d656b7",
+        "android_client_info": {
+          "package_name": "com.johar.testapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138885522241-u3n8e7a76akim7jbe1pukdj2p1puh7d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy4xWPkwJfkZ2CZLPBEk41DzLlb4lyohA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138885522241:android:296650ea149d1cb7",
+        "android_client_info": {
+          "package_name": "com.mehdok.papyrus.fanoos.alborhan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138885522241-u3n8e7a76akim7jbe1pukdj2p1puh7d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy4xWPkwJfkZ2CZLPBEk41DzLlb4lyohA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138885522241:android:a75a54ee803e20f4",
+        "android_client_info": {
+          "package_name": "com.mehdok.papyrus.fanoos.alfadhli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138885522241-u3n8e7a76akim7jbe1pukdj2p1puh7d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy4xWPkwJfkZ2CZLPBEk41DzLlb4lyohA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138885522241:android:d8475a1be6e550ac",
+        "android_client_info": {
+          "package_name": "com.mehdok.papyrus.fanoos.alhadith"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138885522241-u3n8e7a76akim7jbe1pukdj2p1puh7d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy4xWPkwJfkZ2CZLPBEk41DzLlb4lyohA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138885522241:android:6e40ec03d60aeb8a",
+        "android_client_info": {
+          "package_name": "com.mehdok.papyrus.fanoos.bihar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138885522241-u3n8e7a76akim7jbe1pukdj2p1puh7d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy4xWPkwJfkZ2CZLPBEk41DzLlb4lyohA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138885522241:android:60d7da4b565b67fa",
+        "android_client_info": {
+          "package_name": "com.mehdok.papyrus.fanoos.biharf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138885522241-u3n8e7a76akim7jbe1pukdj2p1puh7d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy4xWPkwJfkZ2CZLPBEk41DzLlb4lyohA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138885522241:android:cfef57517b478389",
+        "android_client_info": {
+          "package_name": "com.mehdok.papyrus.fanoos.moshafalrahman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138885522241-u3n8e7a76akim7jbe1pukdj2p1puh7d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy4xWPkwJfkZ2CZLPBEk41DzLlb4lyohA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138885522241:android:1f26aaaee5ac009f",
+        "android_client_info": {
+          "package_name": "com.papyrus.bshairwebapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138885522241-u3n8e7a76akim7jbe1pukdj2p1puh7d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy4xWPkwJfkZ2CZLPBEk41DzLlb4lyohA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138885522241:android:8819f8e5f6ffe0eb",
+        "android_client_info": {
+          "package_name": "org.masaha.mafatih_a"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138885522241-u3n8e7a76akim7jbe1pukdj2p1puh7d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy4xWPkwJfkZ2CZLPBEk41DzLlb4lyohA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

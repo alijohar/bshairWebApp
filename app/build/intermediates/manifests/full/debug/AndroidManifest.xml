@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.papyrus.fanoos.bshairwebapp"
+    package="com.papyrus.bshairwebapp"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -20,7 +20,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.papyrus.fanoos.bshairwebapp.Ui.MainActivity"
+            android:name="com.papyrus.bshairwebapp.Ui.MainActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name" >
             <intent-filter>
@@ -30,19 +30,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.papyrus.fanoos.bshairwebapp.Ui.NewsDetail"
+            android:name="com.papyrus.bshairwebapp.Ui.NewsDetail"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name="com.papyrus.fanoos.bshairwebapp.Ui.CommentDetail"
+            android:name="com.papyrus.bshairwebapp.Ui.CommentDetail"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name="com.papyrus.fanoos.bshairwebapp.Ui.CatActivity"
+            android:name="com.papyrus.bshairwebapp.Ui.CatActivity"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name="com.papyrus.fanoos.bshairwebapp.Ui.SearchActivity"
+            android:name="com.papyrus.bshairwebapp.Ui.SearchActivity"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name="com.papyrus.fanoos.bshairwebapp.Ui.AboutUS"
+            android:name="com.papyrus.bshairwebapp.Ui.AboutUS"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_about_us"
             android:theme="@style/FullscreenTheme" />
@@ -53,7 +53,7 @@
 
         <provider
             android:name="com.crashlytics.android.CrashlyticsInitProvider"
-            android:authorities="com.papyrus.fanoos.bshairwebapp.crashlyticsinitprovider"
+            android:authorities="com.papyrus.bshairwebapp.crashlyticsinitprovider"
             android:exported="false"
             android:initOrder="100" />
     </application>

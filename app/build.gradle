@@ -8,7 +8,7 @@ apply plugin: 'io.fabric'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.papyrus.fanoos.bshairwebapp"
+        applicationId "com.papyrus.bshairwebapp"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
