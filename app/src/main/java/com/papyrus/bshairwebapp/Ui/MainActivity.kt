@@ -516,7 +516,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             i.type = "text/plain"
             i.putExtra(Intent.EXTRA_SUBJECT, context.getString(R.string.share_title))
             var sAux = "\n" + context.getString(R.string.share_des) + "\n\n"
-            sAux += "https://play.google.com/store/apps/details?id=com.papyrus.fanoos.bshairwebapp \n\n"
+            sAux += "https://play.google.com/store/apps/details?id=com.papyrus.bshairwebapp \n\n"
             i.putExtra(Intent.EXTRA_TEXT, sAux)
             context.startActivity(Intent.createChooser(i, context.getString(R.string.share_app)))
         } catch (e: Exception) {
