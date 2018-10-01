@@ -4,33 +4,33 @@ ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/a
 INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-43:12
 INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-43:12
 INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-43:12
-MERGED from [com.android.support:design:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/a876e86a661e445fc685858904d4139c/AndroidManifest.xml:17:1-22:12
-MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/fc29375f2806f19baa019d827186e09a/AndroidManifest.xml:2:1-13:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/1ec04cee8686d49ccf9ba08f3c217574/AndroidManifest.xml:17:1-22:12
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/dfada6ff9efe8047b6969f52226fdbf0/AndroidManifest.xml:2:1-19:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/fd832372a0cae033602c5eb0dde45578/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-v4:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/86fb1f7f7a4dc6b1314304c12c1df3b9/AndroidManifest.xml:17:1-22:12
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/c4c06360afa662aa6ef157835b4c4a39/AndroidManifest.xml:15:1-21:12
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/54be382c26eebddb3633d66cf7aa6a22/AndroidManifest.xml:2:1-13:12
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/6c14c5735018414c9752769e9b7893cb/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/b16784d0c140fffe8d66606742c6f604/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/79f6f2d3a8a3658b074c5877e51e7ea8/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/53839ede79d65fc332a9386de490b980/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/1f0db3098ccb910221b48198a1b63f02/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/185763756355621a538e6bce4f50393b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/6b1a0960151aa266a4c658965c80d0b2/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/dda43b2930d2aaabc3dd77a704d3e428/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/2f701415b538de24228c7f8f3aa4757a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/d7ce7a517f25f032156dba1aa89ab264/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/e14e79e255877dd8eaf6386419bc4a1e/AndroidManifest.xml:2:1-11:12
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/a931f718d18c2e08f98b052f800195c4/AndroidManifest.xml:45:1-56:12
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/dd9c9674749883e3a3a7cbbd6d3cb8db/AndroidManifest.xml:2:1-13:12
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/1af5866945f8696a6aba7ef97299b498/AndroidManifest.xml:2:1-13:12
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/dae88d68c0a29c3592f13fe9fea6f878/AndroidManifest.xml:22:1-33:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/7a8731a6e17e01a2f7de2728004bf1c3/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/3f4c4b9a7a92c81a373a7f322990112b/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a3d0e0c662950417a19a5e2fe5628007/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b66ef0bb92054b23f508e0d872c7b5f7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:design:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/d8d1db09583c2e90f0571a473d188fa1/AndroidManifest.xml:17:1-22:12
+MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/b0802b9dc6067a35056d8793054fc390/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:2:1-19:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/d415eb3983cfd8839855f6987ba86a16/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/f4aea3a0c533212449eb0d1ab517627c/AndroidManifest.xml:17:1-22:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/4319656474530d27ec3ee8b96d6b006d/AndroidManifest.xml:15:1-21:12
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/be208db09350a59f1c3fc822b781c547/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/b0602d3995c3112b3a5d97803b178944/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/11d0092018a1cf68a423dd581fde8756/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/374bfcf837dc6d387b4f70b54415f993/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/86c7944a97452577ffc9bb55ca1b0360/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ca583ef941099808a341a2f9606490f7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3445a957b7205bab8de4b1d51742b946/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/f73b2e1e06778e395b07827178718887/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/e099c1bdebf0d1f90009e928f2ae9e1b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/185427b6ebf503702b0906ec263b1772/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/468dae0bea9ddff18494e35961cf2ad2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/84c018e08e119bd977570389fa101a71/AndroidManifest.xml:2:1-11:12
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/e36a22b8d058b1a2be82f1a68aab1c88/AndroidManifest.xml:45:1-56:12
+MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/4e72ffe96b4073e7422147b8f4ede83b/AndroidManifest.xml:2:1-13:12
+MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/407c77607dcff222196e3e47a1a2da27/AndroidManifest.xml:2:1-13:12
+MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/128c4d54c5d072bec371507cd7bf6513/AndroidManifest.xml:22:1-33:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/bc2ad6d24074234b39a02d92db5a02aa/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/9a42cb7b7b7adf8d1e5bc09e8de86661/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/91d0b7e6146be25aa22a8063a93ad194/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0cfd35e6e13d373664a756da91cb887c/AndroidManifest.xml:17:1-22:12
 INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-43:12
 INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-43:12
 INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-43:12
@@ -54,38 +54,38 @@ ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/a
 		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:5:22-76
 uses-permission#android.permission.INTERNET
 ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:6:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/dfada6ff9efe8047b6969f52226fdbf0/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/dfada6ff9efe8047b6969f52226fdbf0/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/a931f718d18c2e08f98b052f800195c4/AndroidManifest.xml:52:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/a931f718d18c2e08f98b052f800195c4/AndroidManifest.xml:52:5-67
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/dd9c9674749883e3a3a7cbbd6d3cb8db/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/dd9c9674749883e3a3a7cbbd6d3cb8db/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/1af5866945f8696a6aba7ef97299b498/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/1af5866945f8696a6aba7ef97299b498/AndroidManifest.xml:9:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/dae88d68c0a29c3592f13fe9fea6f878/AndroidManifest.xml:29:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/dae88d68c0a29c3592f13fe9fea6f878/AndroidManifest.xml:29:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/e36a22b8d058b1a2be82f1a68aab1c88/AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/e36a22b8d058b1a2be82f1a68aab1c88/AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/4e72ffe96b4073e7422147b8f4ede83b/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/4e72ffe96b4073e7422147b8f4ede83b/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/407c77607dcff222196e3e47a1a2da27/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/407c77607dcff222196e3e47a1a2da27/AndroidManifest.xml:9:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/128c4d54c5d072bec371507cd7bf6513/AndroidManifest.xml:29:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/128c4d54c5d072bec371507cd7bf6513/AndroidManifest.xml:29:5-67
 	android:name
 		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:6:22-64
 application
 ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:8:5-41:19
-MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/fc29375f2806f19baa019d827186e09a/AndroidManifest.xml:11:5-20
-MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/fc29375f2806f19baa019d827186e09a/AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/dfada6ff9efe8047b6969f52226fdbf0/AndroidManifest.xml:11:5-17:19
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/dfada6ff9efe8047b6969f52226fdbf0/AndroidManifest.xml:11:5-17:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/fd832372a0cae033602c5eb0dde45578/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/fd832372a0cae033602c5eb0dde45578/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/54be382c26eebddb3633d66cf7aa6a22/AndroidManifest.xml:11:5-20
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/54be382c26eebddb3633d66cf7aa6a22/AndroidManifest.xml:11:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/e14e79e255877dd8eaf6386419bc4a1e/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/e14e79e255877dd8eaf6386419bc4a1e/AndroidManifest.xml:9:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/a931f718d18c2e08f98b052f800195c4/AndroidManifest.xml:54:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/a931f718d18c2e08f98b052f800195c4/AndroidManifest.xml:54:5-20
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/dd9c9674749883e3a3a7cbbd6d3cb8db/AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/dd9c9674749883e3a3a7cbbd6d3cb8db/AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/1af5866945f8696a6aba7ef97299b498/AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/1af5866945f8696a6aba7ef97299b498/AndroidManifest.xml:11:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/dae88d68c0a29c3592f13fe9fea6f878/AndroidManifest.xml:31:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/dae88d68c0a29c3592f13fe9fea6f878/AndroidManifest.xml:31:5-20
+MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/b0802b9dc6067a35056d8793054fc390/AndroidManifest.xml:11:5-20
+MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/b0802b9dc6067a35056d8793054fc390/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:11:5-17:19
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:11:5-17:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/d415eb3983cfd8839855f6987ba86a16/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/d415eb3983cfd8839855f6987ba86a16/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/be208db09350a59f1c3fc822b781c547/AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/be208db09350a59f1c3fc822b781c547/AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/84c018e08e119bd977570389fa101a71/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/84c018e08e119bd977570389fa101a71/AndroidManifest.xml:9:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/e36a22b8d058b1a2be82f1a68aab1c88/AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/e36a22b8d058b1a2be82f1a68aab1c88/AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/4e72ffe96b4073e7422147b8f4ede83b/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/4e72ffe96b4073e7422147b8f4ede83b/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/407c77607dcff222196e3e47a1a2da27/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/407c77607dcff222196e3e47a1a2da27/AndroidManifest.xml:11:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/128c4d54c5d072bec371507cd7bf6513/AndroidManifest.xml:31:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/128c4d54c5d072bec371507cd7bf6513/AndroidManifest.xml:31:5-20
 	android:supportsRtl
 		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:12:9-35
 	android:label
@@ -158,60 +158,60 @@ uses-sdk
 INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml
 INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:design:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/a876e86a661e445fc685858904d4139c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/a876e86a661e445fc685858904d4139c/AndroidManifest.xml:20:5-44
-MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/fc29375f2806f19baa019d827186e09a/AndroidManifest.xml:7:5-9:41
-MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/fc29375f2806f19baa019d827186e09a/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/1ec04cee8686d49ccf9ba08f3c217574/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/1ec04cee8686d49ccf9ba08f3c217574/AndroidManifest.xml:20:5-44
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/dfada6ff9efe8047b6969f52226fdbf0/AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/dfada6ff9efe8047b6969f52226fdbf0/AndroidManifest.xml:7:5-43
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/fd832372a0cae033602c5eb0dde45578/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/fd832372a0cae033602c5eb0dde45578/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-v4:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/86fb1f7f7a4dc6b1314304c12c1df3b9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/86fb1f7f7a4dc6b1314304c12c1df3b9/AndroidManifest.xml:20:5-44
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/c4c06360afa662aa6ef157835b4c4a39/AndroidManifest.xml:19:5-43
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/c4c06360afa662aa6ef157835b4c4a39/AndroidManifest.xml:19:5-43
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/54be382c26eebddb3633d66cf7aa6a22/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/54be382c26eebddb3633d66cf7aa6a22/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/6c14c5735018414c9752769e9b7893cb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/6c14c5735018414c9752769e9b7893cb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/b16784d0c140fffe8d66606742c6f604/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/b16784d0c140fffe8d66606742c6f604/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/79f6f2d3a8a3658b074c5877e51e7ea8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/79f6f2d3a8a3658b074c5877e51e7ea8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/53839ede79d65fc332a9386de490b980/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/53839ede79d65fc332a9386de490b980/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/1f0db3098ccb910221b48198a1b63f02/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/1f0db3098ccb910221b48198a1b63f02/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/185763756355621a538e6bce4f50393b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/185763756355621a538e6bce4f50393b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/6b1a0960151aa266a4c658965c80d0b2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/6b1a0960151aa266a4c658965c80d0b2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/dda43b2930d2aaabc3dd77a704d3e428/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/dda43b2930d2aaabc3dd77a704d3e428/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/2f701415b538de24228c7f8f3aa4757a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/2f701415b538de24228c7f8f3aa4757a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/d7ce7a517f25f032156dba1aa89ab264/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/d7ce7a517f25f032156dba1aa89ab264/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/e14e79e255877dd8eaf6386419bc4a1e/AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/e14e79e255877dd8eaf6386419bc4a1e/AndroidManifest.xml:5:5-7:41
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/a931f718d18c2e08f98b052f800195c4/AndroidManifest.xml:50:5-43
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/a931f718d18c2e08f98b052f800195c4/AndroidManifest.xml:50:5-43
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/dd9c9674749883e3a3a7cbbd6d3cb8db/AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/dd9c9674749883e3a3a7cbbd6d3cb8db/AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/1af5866945f8696a6aba7ef97299b498/AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/1af5866945f8696a6aba7ef97299b498/AndroidManifest.xml:7:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/dae88d68c0a29c3592f13fe9fea6f878/AndroidManifest.xml:27:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/dae88d68c0a29c3592f13fe9fea6f878/AndroidManifest.xml:27:5-43
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/7a8731a6e17e01a2f7de2728004bf1c3/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/7a8731a6e17e01a2f7de2728004bf1c3/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/3f4c4b9a7a92c81a373a7f322990112b/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/3f4c4b9a7a92c81a373a7f322990112b/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a3d0e0c662950417a19a5e2fe5628007/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/a3d0e0c662950417a19a5e2fe5628007/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b66ef0bb92054b23f508e0d872c7b5f7/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b66ef0bb92054b23f508e0d872c7b5f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/d8d1db09583c2e90f0571a473d188fa1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/d8d1db09583c2e90f0571a473d188fa1/AndroidManifest.xml:20:5-44
+MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/b0802b9dc6067a35056d8793054fc390/AndroidManifest.xml:7:5-9:41
+MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/b0802b9dc6067a35056d8793054fc390/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/AndroidManifest.xml:20:5-44
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:7:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/d415eb3983cfd8839855f6987ba86a16/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/d415eb3983cfd8839855f6987ba86a16/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/f4aea3a0c533212449eb0d1ab517627c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/f4aea3a0c533212449eb0d1ab517627c/AndroidManifest.xml:20:5-44
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/4319656474530d27ec3ee8b96d6b006d/AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/4319656474530d27ec3ee8b96d6b006d/AndroidManifest.xml:19:5-43
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/be208db09350a59f1c3fc822b781c547/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/be208db09350a59f1c3fc822b781c547/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/b0602d3995c3112b3a5d97803b178944/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/b0602d3995c3112b3a5d97803b178944/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/11d0092018a1cf68a423dd581fde8756/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/11d0092018a1cf68a423dd581fde8756/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/374bfcf837dc6d387b4f70b54415f993/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/374bfcf837dc6d387b4f70b54415f993/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/86c7944a97452577ffc9bb55ca1b0360/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/86c7944a97452577ffc9bb55ca1b0360/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ca583ef941099808a341a2f9606490f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ca583ef941099808a341a2f9606490f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3445a957b7205bab8de4b1d51742b946/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3445a957b7205bab8de4b1d51742b946/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/f73b2e1e06778e395b07827178718887/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/f73b2e1e06778e395b07827178718887/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/e099c1bdebf0d1f90009e928f2ae9e1b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/e099c1bdebf0d1f90009e928f2ae9e1b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/185427b6ebf503702b0906ec263b1772/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/185427b6ebf503702b0906ec263b1772/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/468dae0bea9ddff18494e35961cf2ad2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/468dae0bea9ddff18494e35961cf2ad2/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/84c018e08e119bd977570389fa101a71/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/84c018e08e119bd977570389fa101a71/AndroidManifest.xml:5:5-7:41
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/e36a22b8d058b1a2be82f1a68aab1c88/AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/e36a22b8d058b1a2be82f1a68aab1c88/AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/4e72ffe96b4073e7422147b8f4ede83b/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/4e72ffe96b4073e7422147b8f4ede83b/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/407c77607dcff222196e3e47a1a2da27/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/407c77607dcff222196e3e47a1a2da27/AndroidManifest.xml:7:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/128c4d54c5d072bec371507cd7bf6513/AndroidManifest.xml:27:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/128c4d54c5d072bec371507cd7bf6513/AndroidManifest.xml:27:5-43
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/bc2ad6d24074234b39a02d92db5a02aa/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/bc2ad6d24074234b39a02d92db5a02aa/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/9a42cb7b7b7adf8d1e5bc09e8de86661/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/9a42cb7b7b7adf8d1e5bc09e8de86661/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/91d0b7e6146be25aa22a8063a93ad194/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/91d0b7e6146be25aa22a8063a93ad194/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0cfd35e6e13d373664a756da91cb887c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0cfd35e6e13d373664a756da91cb887c/AndroidManifest.xml:20:5-44
 INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml
 INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -223,12 +223,12 @@ INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebAp
 		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml
 provider#com.crashlytics.android.CrashlyticsInitProvider
-ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/dfada6ff9efe8047b6969f52226fdbf0/AndroidManifest.xml:12:9-16:39
+ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:12:9-16:39
 	android:authorities
-		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/dfada6ff9efe8047b6969f52226fdbf0/AndroidManifest.xml:14:13-75
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:14:13-75
 	android:exported
-		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/dfada6ff9efe8047b6969f52226fdbf0/AndroidManifest.xml:15:13-37
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:15:13-37
 	android:initOrder
-		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/dfada6ff9efe8047b6969f52226fdbf0/AndroidManifest.xml:16:13-36
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:16:13-36
 	android:name
-		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/dfada6ff9efe8047b6969f52226fdbf0/AndroidManifest.xml:13:13-75
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:13:13-75
