@@ -1,14 +1,22 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-43:12
+ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-44:12
 MERGED from [com.android.support:design:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/d8d1db09583c2e90f0571a473d188fa1/AndroidManifest.xml:17:1-22:12
 MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/b0802b9dc6067a35056d8793054fc390/AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/AndroidManifest.xml:17:1-22:12
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:2:1-19:12
+MERGED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:2:1-108:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/d415eb3983cfd8839855f6987ba86a16/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-messaging:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/b8c54abd8c7252976e7d0be8b0576606/AndroidManifest.xml:16:1-30:12
+MERGED from [com.google.android.gms:play-services-location:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-location-11.6.2.aar/94b39184077ede6d413590bc86f6e81a/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-base:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:16:1-47:12
+MERGED from [com.google.firebase:firebase-common:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-common-11.6.2.aar/3337bd2a4f622c4627f44dc0e0f0e976/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.6.2.aar/c4c72215683515090b3828ca91c1e1ed/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/e3939b4a5b79b27d374230e4a714428b/AndroidManifest.xml:16:1-23:12
 MERGED from [com.android.support:support-v4:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/f4aea3a0c533212449eb0d1ab517627c/AndroidManifest.xml:17:1-22:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/4319656474530d27ec3ee8b96d6b006d/AndroidManifest.xml:15:1-21:12
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/be208db09350a59f1c3fc822b781c547/AndroidManifest.xml:2:1-13:12
@@ -16,11 +24,12 @@ MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/alijohar/.gradle
 MERGED from [com.android.support:cardview-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/11d0092018a1cf68a423dd581fde8756/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/374bfcf837dc6d387b4f70b54415f993/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/86c7944a97452577ffc9bb55ca1b0360/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customtabs:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/customtabs-27.1.1.aar/a28248c3f75ec5b66d55ae7c63d4af55/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ca583ef941099808a341a2f9606490f7/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3445a957b7205bab8de4b1d51742b946/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/185427b6ebf503702b0906ec263b1772/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:transition:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/f73b2e1e06778e395b07827178718887/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/e099c1bdebf0d1f90009e928f2ae9e1b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/185427b6ebf503702b0906ec263b1772/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/468dae0bea9ddff18494e35961cf2ad2/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/84c018e08e119bd977570389fa101a71/AndroidManifest.xml:2:1-11:12
 MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/e36a22b8d058b1a2be82f1a68aab1c88/AndroidManifest.xml:45:1-56:12
@@ -29,33 +38,48 @@ MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/alijohar/.gradle/
 MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/128c4d54c5d072bec371507cd7bf6513/AndroidManifest.xml:22:1-33:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/bc2ad6d24074234b39a02d92db5a02aa/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/9a42cb7b7b7adf8d1e5bc09e8de86661/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-messaging-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-11.6.2.aar/58c3207a59f6227b14bfa153e95d12d4/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-location-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.6.2.aar/97c28a9224c4eae7da2b7dab448a22e7/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.6.2.aar/ae9fda4a8f054c95026f79a3cf26154f/AndroidManifest.xml:2:1-6:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/91d0b7e6146be25aa22a8063a93ad194/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0cfd35e6e13d373664a756da91cb887c/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-43:12
+MERGED from [com.google.firebase:firebase-iid-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.6.2.aar/9f3db50ff7a08262540b3cd969deb1ff/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.6.2.aar/a575f5ff9f9851d3aca3cdfd184f732e/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-common-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.6.2.aar/a5373ecb72dbcb9df9cd0178ce0ae997/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.6.2.aar/9578bd43849d00d76cb86a88e4fe10f4/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-44:12
 	package
 		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:3:5-52
 		INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-43:12
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-44:12
 		INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-43:12
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:1-44:12
 		INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:5:5-79
+MERGED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:25:5-79
+MERGED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:19:5-78
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:19:5-78
 	android:name
 		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:5:22-76
 uses-permission#android.permission.INTERNET
 ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:6:5-67
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:9:5-67
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:9:5-67
+MERGED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:17:5-67
+MERGED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:17:5-67
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:20:5-66
 MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/e36a22b8d058b1a2be82f1a68aab1c88/AndroidManifest.xml:52:5-67
 MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-core-2.6.3.aar/e36a22b8d058b1a2be82f1a68aab1c88/AndroidManifest.xml:52:5-67
 MERGED from [com.crashlytics.sdk.android:beta:1.2.9] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/beta-1.2.9.aar/4e72ffe96b4073e7422147b8f4ede83b/AndroidManifest.xml:9:5-67
@@ -67,13 +91,29 @@ MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/
 	android:name
 		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:8:5-41:19
+ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:8:5-42:19
 MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/b0802b9dc6067a35056d8793054fc390/AndroidManifest.xml:11:5-20
 MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/calligraphy-2.3.0.aar/b0802b9dc6067a35056d8793054fc390/AndroidManifest.xml:11:5-20
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:11:5-17:19
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:11:5-17:19
+MERGED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:49:5-106:19
+MERGED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:49:5-106:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/d415eb3983cfd8839855f6987ba86a16/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/d415eb3983cfd8839855f6987ba86a16/AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-messaging:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/b8c54abd8c7252976e7d0be8b0576606/AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.firebase:firebase-messaging:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/b8c54abd8c7252976e7d0be8b0576606/AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.android.gms:play-services-location:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-location-11.6.2.aar/94b39184077ede6d413590bc86f6e81a/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-location:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-location-11.6.2.aar/94b39184077ede6d413590bc86f6e81a/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-base:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:29:5-46:19
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:29:5-46:19
+MERGED from [com.google.firebase:firebase-common:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-common-11.6.2.aar/3337bd2a4f622c4627f44dc0e0f0e976/AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.firebase:firebase-common:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-common-11.6.2.aar/3337bd2a4f622c4627f44dc0e0f0e976/AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.6.2.aar/c4c72215683515090b3828ca91c1e1ed/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.6.2.aar/c4c72215683515090b3828ca91c1e1ed/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/e3939b4a5b79b27d374230e4a714428b/AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/e3939b4a5b79b27d374230e4a714428b/AndroidManifest.xml:19:5-21:19
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/be208db09350a59f1c3fc822b781c547/AndroidManifest.xml:11:5-20
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/be208db09350a59f1c3fc822b781c547/AndroidManifest.xml:11:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/84c018e08e119bd977570389fa101a71/AndroidManifest.xml:9:5-20
@@ -86,6 +126,20 @@ MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/alijohar/.gradle/
 MERGED from [com.crashlytics.sdk.android:answers:1.4.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/answers-1.4.2.aar/407c77607dcff222196e3e47a1a2da27/AndroidManifest.xml:11:5-20
 MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/128c4d54c5d072bec371507cd7bf6513/AndroidManifest.xml:31:5-20
 MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/fabric-1.4.3.aar/128c4d54c5d072bec371507cd7bf6513/AndroidManifest.xml:31:5-20
+MERGED from [com.google.firebase:firebase-messaging-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-11.6.2.aar/58c3207a59f6227b14bfa153e95d12d4/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-messaging-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-11.6.2.aar/58c3207a59f6227b14bfa153e95d12d4/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-location-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.6.2.aar/97c28a9224c4eae7da2b7dab448a22e7/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-location-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.6.2.aar/97c28a9224c4eae7da2b7dab448a22e7/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.6.2.aar/ae9fda4a8f054c95026f79a3cf26154f/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.6.2.aar/ae9fda4a8f054c95026f79a3cf26154f/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-iid-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.6.2.aar/9f3db50ff7a08262540b3cd969deb1ff/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-iid-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.6.2.aar/9f3db50ff7a08262540b3cd969deb1ff/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.6.2.aar/a575f5ff9f9851d3aca3cdfd184f732e/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.6.2.aar/a575f5ff9f9851d3aca3cdfd184f732e/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-common-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.6.2.aar/a5373ecb72dbcb9df9cd0178ce0ae997/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-common-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.6.2.aar/a5373ecb72dbcb9df9cd0178ce0ae997/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.6.2.aar/9578bd43849d00d76cb86a88e4fe10f4/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.6.2.aar/9578bd43849d00d76cb86a88e4fe10f4/AndroidManifest.xml:5:5-20
 	android:supportsRtl
 		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:12:9-35
 	android:label
@@ -95,65 +149,67 @@ MERGED from [io.fabric.sdk.android:fabric:1.4.3] /Users/alijohar/.gradle/caches/
 	android:allowBackup
 		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:13:9-40
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:14:9-40
+	android:name
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:13:9-66
 activity#com.papyrus.bshairwebapp.Ui.MainActivity
-ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:14:9-23:20
+ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:15:9-24:20
 	android:label
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:16:13-45
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:17:13-45
 	android:configChanges
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:17:13-59
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:18:13-59
 	android:name
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:15:13-68
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:16:13-68
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:18:13-22:29
+ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:19:17-69
+ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:19:25-66
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:21:17-77
+ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:21:27-74
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:22:27-74
 activity#com.papyrus.bshairwebapp.Ui.NewsDetail
-ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:24:9-25:61
+ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:25:9-26:61
 	android:configChanges
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:25:13-59
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:26:13-59
 	android:name
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:24:19-72
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:25:19-72
 activity#com.papyrus.bshairwebapp.Ui.CommentDetail
-ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:26:9-27:61
+ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:27:9-28:61
 	android:configChanges
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:27:13-59
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:28:13-59
 	android:name
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:26:19-75
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:27:19-75
 activity#com.papyrus.bshairwebapp.Ui.CatActivity
-ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:28:9-29:61
+ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:29:9-30:61
 	android:configChanges
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:29:13-59
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:30:13-59
 	android:name
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:28:19-73
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:29:19-73
 activity#com.papyrus.bshairwebapp.Ui.SearchActivity
-ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:30:9-31:61
+ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:31:9-32:61
 	android:configChanges
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:31:13-59
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:32:13-59
 	android:name
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:30:19-76
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:31:19-76
 activity#com.papyrus.bshairwebapp.Ui.AboutUS
-ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:32:9-36:63
+ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:33:9-37:63
 	android:label
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:35:13-60
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:36:13-60
 	android:configChanges
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:34:13-74
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:35:13-74
 	android:theme
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:36:13-51
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:37:13-51
 	android:name
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:33:13-63
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:34:13-63
 meta-data#io.fabric.ApiKey
-ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:38:9-40:72
+ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:39:9-41:72
 	android:value
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:40:13-69
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:41:13-69
 	android:name
-		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:39:13-44
+		ADDED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml:40:13-44
 uses-sdk
 INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml
@@ -166,8 +222,24 @@ MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/alijohar/.gradle/ca
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/AndroidManifest.xml:20:5-44
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:7:5-43
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:7:5-43
+MERGED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:5:5-44
+MERGED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:5:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/d415eb3983cfd8839855f6987ba86a16/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/d415eb3983cfd8839855f6987ba86a16/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-messaging:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/b8c54abd8c7252976e7d0be8b0576606/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-messaging:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/b8c54abd8c7252976e7d0be8b0576606/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-location:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-location-11.6.2.aar/94b39184077ede6d413590bc86f6e81a/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-location:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-location-11.6.2.aar/94b39184077ede6d413590bc86f6e81a/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-base:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-common-11.6.2.aar/3337bd2a4f622c4627f44dc0e0f0e976/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-common:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-common-11.6.2.aar/3337bd2a4f622c4627f44dc0e0f0e976/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.6.2.aar/c4c72215683515090b3828ca91c1e1ed/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.6.2.aar/c4c72215683515090b3828ca91c1e1ed/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/e3939b4a5b79b27d374230e4a714428b/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/e3939b4a5b79b27d374230e4a714428b/AndroidManifest.xml:17:5-43
 MERGED from [com.android.support:support-v4:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/f4aea3a0c533212449eb0d1ab517627c/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/f4aea3a0c533212449eb0d1ab517627c/AndroidManifest.xml:20:5-44
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/4319656474530d27ec3ee8b96d6b006d/AndroidManifest.xml:19:5-43
@@ -182,16 +254,18 @@ MERGED from [com.android.support:support-fragment:27.1.1] /Users/alijohar/.gradl
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/374bfcf837dc6d387b4f70b54415f993/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/86c7944a97452577ffc9bb55ca1b0360/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/86c7944a97452577ffc9bb55ca1b0360/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/customtabs-27.1.1.aar/a28248c3f75ec5b66d55ae7c63d4af55/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/customtabs-27.1.1.aar/a28248c3f75ec5b66d55ae7c63d4af55/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ca583ef941099808a341a2f9606490f7/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ca583ef941099808a341a2f9606490f7/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3445a957b7205bab8de4b1d51742b946/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/3445a957b7205bab8de4b1d51742b946/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/185427b6ebf503702b0906ec263b1772/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/185427b6ebf503702b0906ec263b1772/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/f73b2e1e06778e395b07827178718887/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/f73b2e1e06778e395b07827178718887/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/e099c1bdebf0d1f90009e928f2ae9e1b/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/e099c1bdebf0d1f90009e928f2ae9e1b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/185427b6ebf503702b0906ec263b1772/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/185427b6ebf503702b0906ec263b1772/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/468dae0bea9ddff18494e35961cf2ad2/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/468dae0bea9ddff18494e35961cf2ad2/AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/84c018e08e119bd977570389fa101a71/AndroidManifest.xml:5:5-7:41
@@ -208,10 +282,24 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/alijohar/.gradle
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/bc2ad6d24074234b39a02d92db5a02aa/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/9a42cb7b7b7adf8d1e5bc09e8de86661/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/9a42cb7b7b7adf8d1e5bc09e8de86661/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-11.6.2.aar/58c3207a59f6227b14bfa153e95d12d4/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-messaging-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-11.6.2.aar/58c3207a59f6227b14bfa153e95d12d4/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-location-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.6.2.aar/97c28a9224c4eae7da2b7dab448a22e7/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-location-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.6.2.aar/97c28a9224c4eae7da2b7dab448a22e7/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.6.2.aar/ae9fda4a8f054c95026f79a3cf26154f/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.6.2.aar/ae9fda4a8f054c95026f79a3cf26154f/AndroidManifest.xml:4:5-43
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/91d0b7e6146be25aa22a8063a93ad194/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/91d0b7e6146be25aa22a8063a93ad194/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0cfd35e6e13d373664a756da91cb887c/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0cfd35e6e13d373664a756da91cb887c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.6.2.aar/9f3db50ff7a08262540b3cd969deb1ff/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-iid-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.6.2.aar/9f3db50ff7a08262540b3cd969deb1ff/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.6.2.aar/a575f5ff9f9851d3aca3cdfd184f732e/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.6.2.aar/a575f5ff9f9851d3aca3cdfd184f732e/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-common-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.6.2.aar/a5373ecb72dbcb9df9cd0178ce0ae997/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-common-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.6.2.aar/a5373ecb72dbcb9df9cd0178ce0ae997/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.6.2.aar/9578bd43849d00d76cb86a88e4fe10f4/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.6.2.aar/9578bd43849d00d76cb86a88e4fe10f4/AndroidManifest.xml:4:5-43
 INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml
 INJECTED from /Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -232,3 +320,289 @@ ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.grad
 		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:16:13-36
 	android:name
 		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.4] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/crashlytics-2.9.4.aar/89c9b798040f76a2551b0a170444dfdc/AndroidManifest.xml:13:13-75
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:8:5-10:47
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:25:5-109
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:25:5-109
+	android:protectionLevel
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:10:9-44
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:9:9-63
+permission#com.papyrus.bshairwebapp.permission.C2D_MESSAGE
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:8:5-10:47
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:25:5-109
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:25:5-109
+	android:protectionLevel
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:10:9-44
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:9:9-63
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:27:5-78
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:27:5-78
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:12:22-76
+uses-permission#com.papyrus.bshairwebapp.permission.C2D_MESSAGE
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:27:5-78
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:27:5-78
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:12:22-76
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:18:5-82
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:23:5-81
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:18:22-79
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:19:5-68
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:19:22-65
+uses-permission#android.permission.VIBRATE
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:24:5-66
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:24:22-63
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:30:5-81
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:30:22-78
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:32:5-86
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:32:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:33:5-87
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:33:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:34:5-81
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:34:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:35:5-83
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:35:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:36:5-88
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:36:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:37:5-92
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:37:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:38:5-84
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:38:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:39:5-83
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:39:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:40:5-91
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:40:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:41:5-92
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:41:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:42:5-93
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:42:22-90
+uses-permission#android.permission.READ_APP_BADGE
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:43:5-73
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:43:22-70
+uses-permission#com.oppo.launcher.permission.READ_SETTINGS
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:44:5-82
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:44:22-79
+uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:45:5-83
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:45:22-80
+uses-permission#me.everything.badger.permission.BADGE_COUNT_READ
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:46:5-88
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:46:22-85
+uses-permission#me.everything.badger.permission.BADGE_COUNT_WRITE
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:47:5-89
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:47:22-86
+meta-data#onesignal_app_id
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:50:9-52:51
+	android:value
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:52:13-48
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:51:13-44
+meta-data#onesignal_google_project_number
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:54:9-56:70
+	android:value
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:56:13-67
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:55:13-59
+receiver#com.onesignal.GcmBroadcastReceiver
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:58:9-68:20
+	android:permission
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:60:13-73
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:59:13-62
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:${applicationId}
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:63:13-67:29
+	android:priority
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:63:28-50
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:com.papyrus.bshairwebapp
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:63:13-67:29
+	android:priority
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:63:28-50
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:64:17-81
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:64:25-78
+category#${applicationId}
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:66:17-61
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:66:27-58
+category#com.papyrus.bshairwebapp
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:66:17-61
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:66:27-58
+receiver#com.onesignal.NotificationOpenedReceiver
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:69:9-77
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:69:19-74
+service#com.onesignal.GcmIntentService
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:71:9-66
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:71:18-63
+service#com.onesignal.GcmIntentJobService
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:72:9-74:72
+	android:permission
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:74:13-69
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:73:13-61
+service#com.onesignal.RestoreJobService
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:75:9-77:72
+	android:permission
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:77:13-69
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:76:13-59
+service#com.onesignal.RestoreKickoffJobService
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:78:9-80:72
+	android:permission
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:80:13-69
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:79:13-66
+service#com.onesignal.SyncService
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:81:9-83:43
+	android:stopWithTask
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:83:13-40
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:82:13-53
+service#com.onesignal.SyncJobService
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:84:9-86:72
+	android:permission
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:86:13-69
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:85:13-56
+activity#com.onesignal.PermissionsActivity
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:88:9-90:75
+	android:theme
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:90:13-72
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:89:13-61
+service#com.onesignal.NotificationRestoreService
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:92:9-76
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:92:18-73
+receiver#com.onesignal.BootUpReceiver
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:94:9-100:20
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:94:19-62
+intent-filter#action:name:android.intent.action.ACTION_BOOT_COMPLETED+action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.QUICKBOOT_POWERON
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:95:13-99:29
+action#android.intent.action.ACTION_BOOT_COMPLETED
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:96:17-86
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:96:25-83
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:97:17-79
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:97:25-76
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:98:17-82
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:98:25-79
+receiver#com.onesignal.UpgradeReceiver
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:101:9-105:20
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:101:19-63
+intent-filter#action:name:android.intent.action.MY_PACKAGE_REPLACED
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:102:13-104:29
+action#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:103:17-84
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.10.3] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/AndroidManifest.xml:103:25-81
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/b8c54abd8c7252976e7d0be8b0576606/AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/b8c54abd8c7252976e7d0be8b0576606/AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/b8c54abd8c7252976e7d0be8b0576606/AndroidManifest.xml:23:18-87
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/b8c54abd8c7252976e7d0be8b0576606/AndroidManifest.xml:24:13-26:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/b8c54abd8c7252976e7d0be8b0576606/AndroidManifest.xml:24:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/b8c54abd8c7252976e7d0be8b0576606/AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/b8c54abd8c7252976e7d0be8b0576606/AndroidManifest.xml:25:25-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/AndroidManifest.xml:19:19-85
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:31:9-36:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:31:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:31:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:31:19-84
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:40:9-44:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:40:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:40:18-82
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:41:13-43:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:41:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:42:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/8ef54ecd345ea4ddede089196941b852/AndroidManifest.xml:42:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-common-11.6.2.aar/3337bd2a4f622c4627f44dc0e0f0e976/AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-common-11.6.2.aar/3337bd2a4f622c4627f44dc0e0f0e976/AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-common-11.6.2.aar/3337bd2a4f622c4627f44dc0e0f0e976/AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-common-11.6.2.aar/3337bd2a4f622c4627f44dc0e0f0e976/AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-common-11.6.2.aar/3337bd2a4f622c4627f44dc0e0f0e976/AndroidManifest.xml:6:79-143
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/e3939b4a5b79b27d374230e4a714428b/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/e3939b4a5b79b27d374230e4a714428b/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.6.2] /Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/e3939b4a5b79b27d374230e4a714428b/AndroidManifest.xml:20:20-65

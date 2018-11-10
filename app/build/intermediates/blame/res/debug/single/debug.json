@@ -4,6 +4,10 @@
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/res/drawable/tazhib_repeat.xml"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_browser_actions_context_menu_row.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/customtabs-27.1.1.aar/a28248c3f75ec5b66d55ae7c63d4af55/res/layout/browser_actions_context_menu_row.xml"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_menu_send_news_v.png.flat",
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_menu_send_news_v.png"
     },
@@ -124,6 +128,10 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-hdpi-v4/abc_text_select_handle_right_mtrl_light.png"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_text_dark.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout-watch-v20_abc_alert_dialog_title_material.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/layout-watch-v20/abc_alert_dialog_title_material.xml"
     },
@@ -138,6 +146,10 @@
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/468dae0bea9ddff18494e35961cf2ad2/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable/common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -156,6 +168,10 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-xxhdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_menu_share_v.png.flat",
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_menu_share_v.png"
     },
@@ -170,6 +186,10 @@
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_menu_clock.png.flat",
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/res/drawable-mdpi/ic_menu_clock.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-hdpi-v4/googleg_disabled_color_18.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_abc_activity_chooser_view.xml.flat",
@@ -256,6 +276,10 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/layout/abc_search_view.xml"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/res/drawable-xxhdpi-v4/ic_os_notification_fallback_white_24dp.png"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_tenor.gif.flat",
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/res/drawable/tenor.gif"
     },
@@ -278,6 +302,10 @@
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-v21_design_password_eye.xml.flat",
@@ -364,6 +392,10 @@
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/generated/res/pngs/debug/drawable-hdpi/ic_menu_about_v.png"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
@@ -394,6 +426,10 @@
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_menu_search.png.flat",
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/res/drawable-xxhdpi/ic_menu_search.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable/common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -488,16 +524,20 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-mdpi-v4/abc_text_select_handle_left_mtrl_light.png"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_onesignal_bgimage_notif_layout.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/res/layout/onesignal_bgimage_notif_layout.xml"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_comment_item.xml.flat",
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/res/layout/comment_item.xml"
     },
     {
-        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow.xml.flat",
-        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/e099c1bdebf0d1f90009e928f2ae9e1b/res/layout/notification_template_big_media_narrow.xml"
-    },
-    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-watch-v20_abc_dialog_material_background.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-watch-v20/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/e099c1bdebf0d1f90009e928f2ae9e1b/res/layout/notification_template_big_media_narrow.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/anim-v21_design_bottom_sheet_slide_out.xml.flat",
@@ -536,6 +576,14 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/d8d1db09583c2e90f0571a473d188fa1/res/drawable-xxxhdpi-v4/design_ic_visibility.png"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_disabled.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-hdpi-v4/googleg_standard_color_18.png"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
@@ -554,6 +602,10 @@
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_menu_contact_v.png.flat",
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_menu_contact_v.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-mdpi-v4/googleg_standard_color_18.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_design_ic_visibility_off.png.flat",
@@ -582,6 +634,10 @@
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-xxhdpi-v4/abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -828,12 +884,20 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/res/drawable-xxxhdpi-v4/ic_os_notification_fallback_white_24dp.png"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_navigation_empty_icon.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/d8d1db09583c2e90f0571a473d188fa1/res/drawable/navigation_empty_icon.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -868,6 +932,14 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/d8d1db09583c2e90f0571a473d188fa1/res/layout/design_bottom_navigation_item.xml"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/raw_consumer_onesignal_keep.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/res/raw/consumer_onesignal_keep.xml"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher_background.png.flat",
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png"
     },
@@ -882,6 +954,10 @@
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_select_dialog_singlechoice_material.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/color-v23_design_tint_password_toggle.xml.flat",
@@ -950,6 +1026,10 @@
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_menu_text_format_new.png.flat",
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/res/drawable-mdpi/ic_menu_text_format_new.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_menu_text_format_v.xml.flat",
@@ -1052,6 +1132,10 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable/abc_seekbar_track_material.xml"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/468dae0bea9ddff18494e35961cf2ad2/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
     },
@@ -1132,6 +1216,10 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_tint.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_design_navigation_item_header.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/d8d1db09583c2e90f0571a473d188fa1/res/layout/design_navigation_item_header.xml"
     },
@@ -1156,12 +1244,12 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/d8d1db09583c2e90f0571a473d188fa1/res/drawable-hdpi-v4/design_ic_visibility.png"
     },
     {
-        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_header_item_layout.xml.flat",
-        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/layout/abc_popup_menu_header_item_layout.xml"
-    },
-    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-hdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_header_item_layout.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/layout/abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_menu_contact.png.flat",
@@ -1248,6 +1336,10 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/color/abc_hint_foreground_material_dark.xml"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/res/drawable-xhdpi-v4/ic_os_notification_fallback_white_24dp.png"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_menu_send_news.png.flat",
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/res/drawable-mdpi/ic_menu_send_news.png"
     },
@@ -1268,6 +1360,10 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-hdpi-v4/abc_list_focused_holo.9.png"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_browser_actions_context_menu_page.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/customtabs-27.1.1.aar/a28248c3f75ec5b66d55ae7c63d4af55/res/layout/browser_actions_context_menu_page.xml"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_design_text_input_password_icon.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/d8d1db09583c2e90f0571a473d188fa1/res/layout/design_text_input_password_icon.xml"
     },
@@ -1278,6 +1374,10 @@
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/e099c1bdebf0d1f90009e928f2ae9e1b/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark_normal.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -1298,6 +1398,10 @@
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_abc_text_cursor_material.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark_normal.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable/common_google_signin_btn_text_dark_normal.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -1348,6 +1452,10 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_menu_send_news.png.flat",
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/res/drawable-xhdpi/ic_menu_send_news.png"
     },
@@ -1362,6 +1470,10 @@
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-ldrtl-mdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/res/drawable-mdpi-v4/ic_os_notification_fallback_white_24dp.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_abc_screen_toolbar.xml.flat",
@@ -1392,6 +1504,10 @@
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/res/drawable-v21/ic_menu_send.xml"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_text_light.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
@@ -1402,6 +1518,10 @@
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_menu_send_news_v.xml.flat",
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_menu_send_news_v.xml"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_abc_ic_search_api_material.xml.flat",
@@ -1516,6 +1636,10 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
     },
@@ -1562,6 +1686,10 @@
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_notification_template_media.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/e099c1bdebf0d1f90009e928f2ae9e1b/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light_normal.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable/common_google_signin_btn_text_light_normal.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -1628,12 +1756,20 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/d8d1db09583c2e90f0571a473d188fa1/res/drawable/design_fab_background.xml"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-xxhdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_abc_screen_content_include.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
@@ -1724,6 +1860,10 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-hdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
@@ -1734,6 +1874,14 @@
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_menu_send_bug_v.png.flat",
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_menu_send_bug_v.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light_focused.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light_focused.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable/common_google_signin_btn_text_light_focused.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_menu_text_format_v.png.flat",
@@ -1812,6 +1960,10 @@
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_menu_person_v.xml"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_full_open_on_phone.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-xhdpi-v4/common_full_open_on_phone.png"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_button_bar_material.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
@@ -1834,6 +1986,10 @@
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_abc_ic_clear_material.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-xxhdpi-v4/googleg_standard_color_18.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
@@ -1870,6 +2026,10 @@
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_menu_bshair.png.flat",
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/res/drawable-xxhdpi/ic_menu_bshair.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable/common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/anim_abc_popup_enter.xml.flat",
@@ -1956,6 +2116,10 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_abc_edit_text_material.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable/abc_edit_text_material.xml"
     },
@@ -2008,6 +2172,14 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-xhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_disabled.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_full_open_on_phone.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-hdpi-v4/common_full_open_on_phone.png"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-v21_abc_edit_text_material.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-v21/abc_edit_text_material.xml"
     },
@@ -2050,6 +2222,10 @@
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-mdpi-v4/googleg_disabled_color_18.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_news_item.xml.flat",
@@ -2116,6 +2292,10 @@
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/res/drawable-hdpi/ic_menu_bshair.png"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_menu_bshair.png.flat",
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/src/main/res/drawable-xhdpi/ic_menu_bshair.png"
     },
@@ -2140,8 +2320,20 @@
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/anim/abc_slide_out_bottom.xml"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark_focused.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light_normal.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable/common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_menu_bshair_v.png.flat",
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/generated/res/pngs/debug/drawable-mdpi/ic_menu_bshair_v.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark.xml.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -2196,6 +2388,10 @@
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/generated/res/pngs/debug/drawable-ldpi/ic_menu_clock_v.png"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_design_ic_visibility_off.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/d8d1db09583c2e90f0571a473d188fa1/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
     },
@@ -2220,8 +2416,16 @@
         "source": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_menu_send_news_v.png"
     },
     {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-xhdpi-v4/googleg_standard_color_18.png"
+    },
+    {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/drawable-xhdpi-v4/googleg_disabled_color_18.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/animator-v21_design_appbar_state_list_animator.xml.flat",
@@ -2478,6 +2682,10 @@
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat",
         "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/468dae0bea9ddff18494e35961cf2ad2/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
+        "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/OneSignal-3.10.3.aar/5512534862e0dbd44470d776fcab4c6d/res/drawable-hdpi-v4/ic_os_notification_fallback_white_24dp.png"
     },
     {
         "merged": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
