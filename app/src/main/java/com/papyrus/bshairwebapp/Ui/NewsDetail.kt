@@ -95,7 +95,8 @@ class NewsDetail : AppCompatActivity() {
         val newFontNameByUser = myNewPreferences.getFontName()
         val newFontSizeByUser = myNewPreferences.getFontSize()
         urlPost = bundle.getString("post_url")
-        urlPostWithTitle = title + "\n" + urlPost
+        val link:String = "http://bshaer.net/?p=$postIdNew"
+        urlPostWithTitle = title + "\n" + link
 
         var text = "<head><style type=\"text/css\">\n" +
                 "@font-face {\n" +
@@ -111,6 +112,16 @@ class NewsDetail : AppCompatActivity() {
                 "  direction: rtl;\n" +
                 "  line-height: 2.5;\n" +
                 "}\n" +
+                ".link{\n" +
+                "    display: inline-block;\n" +
+                "    background-color: #7d5abd;\n" +
+                "    color: #FFFFFF;\n" +
+                "    padding: 6px 25px;\n" +
+                "    text-align: center;\n" +
+                "    text-decoration: none;\n" +
+                "    font-size: 16px;\n" +
+                "    opacity: 0.9;" +
+                "}\n" +
                 "\n" +
                 "img{\n" +
                 "  height: auto;\n" +
@@ -119,12 +130,16 @@ class NewsDetail : AppCompatActivity() {
                 "  margin-left: auto;\n" +
                 "  margin-right: auto;\n" +
                 "}\n" +
+                ".center{\n" +
+                "    text-align: center;\n" +
+                "}\n" +
                 "\n" +
                 "h1, h2, h3, h4, h5, h5 {\n" +
                 "  color: red;\n" +
                 "  text-align: center;\n" +
                 "}</style>\n\n</head><html><body dir=\"rtl\"; style=\"text-align:justify;\">";
         text += content
+        text += "<p class =\"center\"><a href=\"$link\" class=\"link\">المطالعة في الموقع</a></p>"
         text += "</body></html>"
 
         des_news_detail.loadDataWithBaseURL("file:///android_asset/",text,"text/html","utf-8",null)
