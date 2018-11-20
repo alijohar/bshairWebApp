@@ -57,6 +57,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     //    TODO: Must change var below when website datas changed
     var bannerTagName: String = "بنر"
     var bannerPostType: String = "advertising"
+    var allBannerCount: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -156,8 +157,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         if (bannersAdvertisingData!!.count == 0) {
             recycler_news.setPadding(0, 0, 0, 0)
         }
+
+        allBannerCount = bannersAdvertisingData.count-1
         myBannerAdvertisingAdapter = BannerAdapterAdvertising(this, bannersAdvertisingData!!)
         viewPagerAdvertising.adapter = myBannerAdvertisingAdapter
+
     }
 
 
@@ -605,7 +609,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         mTimer.scheduleAtFixedRate(MyTimerTask(), 3000, 6000)
 
         val mTimerAdvertising = Timer()
-        mTimerAdvertising.scheduleAtFixedRate(MyTimerTaskAdvertising(), 3000, 8000)
+        mTimerAdvertising.scheduleAtFixedRate(MyTimerTaskAdvertising(), 3000, 5000)
 
     }
 
@@ -636,17 +640,37 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         override fun run() {
             this@MainActivity.runOnUiThread {
 
-                //                TODO FIX ITEM NUMBER
                 if (viewPagerAdvertising.currentItem == 0) {
-                    viewPagerAdvertising.currentItem = 1
+                    if (allBannerCount <= viewPagerAdvertising.currentItem) {
+                        viewPagerAdvertising.currentItem = 0
+                    } else {
+                        viewPagerAdvertising.currentItem = 1
+                    }
+
                 } else if (viewPagerAdvertising.currentItem == 1) {
-                    viewPagerAdvertising.currentItem = 2
+                    if (allBannerCount <= viewPagerAdvertising.currentItem) {
+                        viewPagerAdvertising.currentItem = 0
+                    } else {
+                        viewPagerAdvertising.currentItem = 2
+                    }
                 } else if (viewPagerAdvertising.currentItem == 2) {
-                    viewPagerAdvertising.currentItem = 3
+                    if (allBannerCount <= viewPagerAdvertising.currentItem) {
+                        viewPagerAdvertising.currentItem = 0
+                    } else {
+                        viewPagerAdvertising.currentItem = 3
+                    }
                 } else if (viewPagerAdvertising.currentItem == 3) {
-                    viewPagerAdvertising.currentItem = 0
+                    if (allBannerCount <= viewPagerAdvertising.currentItem) {
+                        viewPagerAdvertising.currentItem = 0
+                    } else {
+                        viewPagerAdvertising.currentItem = 4
+                    }
                 } else if (viewPagerAdvertising.currentItem == 4) {
-                    viewPagerAdvertising.currentItem = 5
+                    if (allBannerCount <= viewPagerAdvertising.currentItem) {
+                        viewPagerAdvertising.currentItem = 0
+                    } else {
+                        viewPagerAdvertising.currentItem = 5
+                    }
                 } else {
                     viewPagerAdvertising.currentItem = 0
                 }
