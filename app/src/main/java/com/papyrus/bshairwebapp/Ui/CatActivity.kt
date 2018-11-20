@@ -208,27 +208,150 @@ class CatActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelected
     }
 
     //    For add item to submenu in drawerlayout
-    fun addMenuItemInNavMenuDrawer(catsData: CatList?, context: Context) {
-        val navView = findViewById<View>(R.id.nav_view_cat) as NavigationView
+        fun addMenuItemInNavMenuDrawer(catsData: CatList?, context: Context) {
+            val navView = findViewById<View>(R.id.nav_view_cat) as NavigationView
 
-        val menu = navView.menu
+            val menu = navView.menu
 
-        val subMenu = menu.addSubMenu(R.string.cats)
+            val subMenu = menu.addSubMenu(R.string.cats)
+            for (item in 0 until catsData!!.categories.size) {
+                if (catsData.categories[item].id == 7) {
+                    subMenu.add(1, 1, 1, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                        val newId = catsData.categories[item].id
+                        val newCatTitle = catsData.categories[item].title
+                        val intent = Intent(context, CatActivity::class.java)
+                        intent.putExtra("cat_id", newId)
+                        intent.putExtra("cat_title", newCatTitle)
+                        startActivity(intent)
 
-        for (item in 0 until catsData!!.categories.size) {
-            subMenu.add(catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
-                val newId = catsData.categories[item].id
-                val newCatTitle = catsData.categories[item].title
-                val intent = Intent(context, CatActivity::class.java)
-                intent.putExtra("cat_id", newId)
-                intent.putExtra("cat_title", newCatTitle)
-                startActivity(intent)
+
+                        true
+                    }
+                } else if (catsData.categories[item].id == 10) {
+                    subMenu.add(1, 1, 2, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                        val newId = catsData.categories[item].id
+                        val newCatTitle = catsData.categories[item].title
+                        val intent = Intent(context, CatActivity::class.java)
+                        intent.putExtra("cat_id", newId)
+                        intent.putExtra("cat_title", newCatTitle)
+                        startActivity(intent)
 
 
-                true
+                        true
+                    }
+
+                } else if (catsData.categories[item].id == 18) {
+                    subMenu.add(1, 1, 3, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                        val newId = catsData.categories[item].id
+                        val newCatTitle = catsData.categories[item].title
+                        val intent = Intent(context, CatActivity::class.java)
+                        intent.putExtra("cat_id", newId)
+                        intent.putExtra("cat_title", newCatTitle)
+                        startActivity(intent)
+
+
+                        true
+                    }
+                } else if (catsData.categories[item].id == 5) {
+                    subMenu.add(1, 1, 4, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                        val newId = catsData.categories[item].id
+                        val newCatTitle = catsData.categories[item].title
+                        val intent = Intent(context, CatActivity::class.java)
+                        intent.putExtra("cat_id", newId)
+                        intent.putExtra("cat_title", newCatTitle)
+                        startActivity(intent)
+
+
+                        true
+                    }
+                } else if (catsData.categories[item].id == 3) {
+                    subMenu.add(1, 1, 5, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                        val newId = catsData.categories[item].id
+                        val newCatTitle = catsData.categories[item].title
+                        val intent = Intent(context, CatActivity::class.java)
+                        intent.putExtra("cat_id", newId)
+                        intent.putExtra("cat_title", newCatTitle)
+                        startActivity(intent)
+
+
+                        true
+                    }
+                } else if (catsData.categories[item].id == 13) {
+                    subMenu.add(1, 1, 6, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                        val newId = catsData.categories[item].id
+                        val newCatTitle = catsData.categories[item].title
+                        val intent = Intent(context, CatActivity::class.java)
+                        intent.putExtra("cat_id", newId)
+                        intent.putExtra("cat_title", newCatTitle)
+                        startActivity(intent)
+
+
+                        true
+                    }
+                } else if (catsData.categories[item].id == 20) {
+                    subMenu.add(1, 1, 7, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                        val newId = catsData.categories[item].id
+                        val newCatTitle = catsData.categories[item].title
+                        val intent = Intent(context, CatActivity::class.java)
+                        intent.putExtra("cat_id", newId)
+                        intent.putExtra("cat_title", newCatTitle)
+                        startActivity(intent)
+
+
+                        true
+                    }
+                } else if (catsData.categories[item].id == 50) {
+                    subMenu.add(1, 1, 8, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                        val newId = catsData.categories[item].id
+                        val newCatTitle = catsData.categories[item].title
+                        val intent = Intent(context, CatActivity::class.java)
+                        intent.putExtra("cat_id", newId)
+                        intent.putExtra("cat_title", newCatTitle)
+                        startActivity(intent)
+
+
+                        true
+                    }
+                } else if (catsData.categories[item].id == 51) {
+                    subMenu.add(1, 1, 9, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                        val newId = catsData.categories[item].id
+                        val newCatTitle = catsData.categories[item].title
+                        val intent = Intent(context, CatActivity::class.java)
+                        intent.putExtra("cat_id", newId)
+                        intent.putExtra("cat_title", newCatTitle)
+                        startActivity(intent)
+
+
+                        true
+                    }
+                } else if (catsData.categories[item].id == 52) {
+                    subMenu.add(1, 1, 10, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                        val newId = catsData.categories[item].id
+                        val newCatTitle = catsData.categories[item].title
+                        val intent = Intent(context, CatActivity::class.java)
+                        intent.putExtra("cat_id", newId)
+                        intent.putExtra("cat_title", newCatTitle)
+                        startActivity(intent)
+
+
+                        true
+
+                    }
+                } else if (catsData.categories[item].id == 53) {
+                    subMenu.add(1, 1, 10, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                        val newId = catsData.categories[item].id
+                        val newCatTitle = catsData.categories[item].title
+                        val intent = Intent(context, CatActivity::class.java)
+                        intent.putExtra("cat_id", newId)
+                        intent.putExtra("cat_title", newCatTitle)
+                        startActivity(intent)
+
+
+                        true
+
+                    }
+                }
             }
-        }
-
 
     }
     fun displayError(error: Throwable?, context: Context) {

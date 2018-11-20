@@ -49,14 +49,14 @@ import kotlin.collections.ArrayList
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     internal lateinit var myNewsApi: NewsApi
     internal var compositeDisposable = CompositeDisposable()
-    var myNewsAdapter =  NewsAdapter(this, ArrayList())
+    var myNewsAdapter = NewsAdapter(this, ArrayList())
     internal lateinit var myBannerAdapter: BannerAdapter
     internal lateinit var myBannerAdvertisingAdapter: BannerAdapterAdvertising
     var pageCount: Int = 1
-    var isShowErrorPageBefor:Boolean = false
+    var isShowErrorPageBefor: Boolean = false
     //    TODO: Must change var below when website datas changed
     var bannerTagName: String = "بنر"
-    var bannerPostType:String = "advertising"
+    var bannerPostType: String = "advertising"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -98,7 +98,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             myNewsApi = myNewsClinet.create(NewsApi::class.java)
 
 
-
 //        recycler_cats_drawer.layoutManager = LinearLayoutManager(this)
 
 
@@ -119,10 +118,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             recycler_news.layoutManager = newLayoutManger
             recycler_news.addOnScrollListener(object : EndlessRecyclerViewScrollListener(newLayoutManger) {
                 override fun onLoadMore(page: Int, totalItemsCount: Int, view: RecyclerView?) {
-                    if (!internet_connection(this@MainActivity)){
+                    if (!internet_connection(this@MainActivity)) {
                         showToastNotInternet(this@MainActivity)
-                    }
-                    else {
+                    } else {
                         var newCount = page + 1
                         progressbar.visibility = View.VISIBLE
 
@@ -146,7 +144,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         compositeDisposable.add(myNewsApi.getBannerAdvertisingPosts(bannerPostType)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe({bannersAdvertisingData -> displayBannerAdvertisingData(bannersAdvertisingData)},{error->displayErrorAdvertising(error, this)}))
+                .subscribe({ bannersAdvertisingData -> displayBannerAdvertisingData(bannersAdvertisingData) }, { error -> displayErrorAdvertising(error, this) }))
     }
 
     private fun displayErrorAdvertising(error: Throwable?, mainActivity: MainActivity) {
@@ -155,8 +153,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     private fun displayBannerAdvertisingData(bannersAdvertisingData: News?) {
-        if (bannersAdvertisingData!!.count == 0){
-            recycler_news.setPadding(0,0,0,0)
+        if (bannersAdvertisingData!!.count == 0) {
+            recycler_news.setPadding(0, 0, 0, 0)
         }
         myBannerAdvertisingAdapter = BannerAdapterAdvertising(this, bannersAdvertisingData!!)
         viewPagerAdvertising.adapter = myBannerAdvertisingAdapter
@@ -164,7 +162,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
     private fun fetchDataCatList() {
-            compositeDisposable.add(myNewsApi.getCatList().subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe ({ catsData -> displayCatData(catsData) }, { error-> displayError(error, this)}))
+        compositeDisposable.add(myNewsApi.getCatList().subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe({ catsData -> displayCatData(catsData) }, { error -> displayError(error, this) }))
     }
 
     private fun displayCatData(catsData: CatList?) {
@@ -178,20 +176,17 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
     private fun fetchData(localPageCount: Int) {
-            compositeDisposable.add(myNewsApi.getNews(localPageCount).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe ({ newsData -> displayData(newsData) }, {error->displayError(error, this)}))
+        compositeDisposable.add(myNewsApi.getNews(localPageCount).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe({ newsData -> displayData(newsData) }, { error -> displayError(error, this) }))
     }
 
     private fun fetchDataBanner(bannerTagName: String, pageBanner: Int) {
-            compositeDisposable.add(myNewsApi.getBannerPosts(bannerTagName, pageBanner)
-                    .subscribeOn(Schedulers.io())
-                    .observeOn(AndroidSchedulers.mainThread())
-                    .subscribe({bannersData -> displayBannerData(bannersData)},{error->displayError(error, this)})
-            )
+        compositeDisposable.add(myNewsApi.getBannerPosts(bannerTagName, pageBanner)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe({ bannersData -> displayBannerData(bannersData) }, { error -> displayError(error, this) })
+        )
 
     }
-
-
-
 
 
     private fun displayData(newsData: News?) {
@@ -205,10 +200,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     fun displayError(error: Throwable?, context: Context) {
-        if (!isShowErrorPageBefor){
+        if (!isShowErrorPageBefor) {
             isShowErrorPageBefor = true
             showGifNotInternet(context)
-        }else{
+        } else {
             Log.i("ErrorConnecting", "this log is show because error page already showed now + $error")
         }
     }
@@ -286,19 +281,19 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
         view.font_name_chooser.minValue = 0
-        view.font_name_chooser.maxValue = fontArray.size-1
+        view.font_name_chooser.maxValue = fontArray.size - 1
         view.font_name_chooser.displayedValues = arrayOf<String>("خط يا علي", "خط درويد كوفي", "خط نسخ")
         view.font_name_chooser.value = myNewPreferences.getFontNameNumber()
 
         view.font_size_chooser.displayedValues = arrayOf<String>("75%", "100%", "125%", "150%", "175%")
         view.font_size_chooser.minValue = 0
-        view.font_size_chooser.maxValue = fontSizeArray.size-1
+        view.font_size_chooser.maxValue = fontSizeArray.size - 1
 
         view.font_size_chooser.value = myNewPreferences.getFontSizeNumber()
         Log.i("tgggt", "${myNewPreferences.getFontNameNumber()} | ${myNewPreferences.getFontSizeNumber()}")
 
-        var font_name:String = fontArray[view.font_name_chooser.value]
-        var font_size:String = fontSizeArray[view.font_size_chooser.value]
+        var font_name: String = fontArray[view.font_name_chooser.value]
+        var font_size: String = fontSizeArray[view.font_size_chooser.value]
         val dialog = commentDialog.setView(view).create()
         dialog.show()
         dialog.setCancelable(true)
@@ -335,7 +330,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     "}</style>\n\n</head><html><body>"
             text += "<p> من يكتب يقرأ مرتين</p>"
             text += "</body></html>"
-            view.text_display_after_change_font.loadDataWithBaseURL("file:///android_asset/",text,"text/html","utf-8",null)
+            view.text_display_after_change_font.loadDataWithBaseURL("file:///android_asset/", text, "text/html", "utf-8", null)
 
             myNewPreferences.setFontSizeNumberOfArrayForDialog(newVal)
 
@@ -372,7 +367,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     "}</style>\n\n</head><html><body>";
             text += "<p> من يكتب يقرأ مرتين</p>"
             text += "</body></html>"
-            view.text_display_after_change_font.loadDataWithBaseURL("file:///android_asset/",text,"text/html","utf-8",null)
+            view.text_display_after_change_font.loadDataWithBaseURL("file:///android_asset/", text, "text/html", "utf-8", null)
 
             myNewPreferences.setFontNameNumberOfArrayForDialog(newVal)
         }
@@ -380,7 +375,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         view.send_dialog_font_chooser.setOnClickListener {
 
-            Log.i("sss","$font_name $font_size")
+            Log.i("sss", "$font_name $font_size")
 
             myNewPreferences.setStyle(font_name, font_size)
             dialog.dismiss()
@@ -445,6 +440,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
     }
+
     fun openAboutActivity(context: Context) {
         val intent = Intent(context, AboutUS::class.java)
         context.startActivity(intent)
@@ -465,19 +461,143 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         val subMenu = menu.addSubMenu(R.string.cats)
         for (item in 0 until catsData!!.categories.size) {
-            subMenu.add(catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
-                val newId = catsData.categories[item].id
-                val newCatTitle = catsData.categories[item].title
-                val intent = Intent(context, CatActivity::class.java)
-                intent.putExtra("cat_id", newId)
-                intent.putExtra("cat_title", newCatTitle)
-                startActivity(intent)
+            if (catsData.categories[item].id == 7) {
+                subMenu.add(1, 1, 1, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                    val newId = catsData.categories[item].id
+                    val newCatTitle = catsData.categories[item].title
+                    val intent = Intent(context, CatActivity::class.java)
+                    intent.putExtra("cat_id", newId)
+                    intent.putExtra("cat_title", newCatTitle)
+                    startActivity(intent)
 
 
-                true
+                    true
+                }
+            } else if (catsData.categories[item].id == 10) {
+                subMenu.add(1, 1, 2, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                    val newId = catsData.categories[item].id
+                    val newCatTitle = catsData.categories[item].title
+                    val intent = Intent(context, CatActivity::class.java)
+                    intent.putExtra("cat_id", newId)
+                    intent.putExtra("cat_title", newCatTitle)
+                    startActivity(intent)
+
+
+                    true
+                }
+
+            } else if (catsData.categories[item].id == 18) {
+                subMenu.add(1, 1, 3, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                    val newId = catsData.categories[item].id
+                    val newCatTitle = catsData.categories[item].title
+                    val intent = Intent(context, CatActivity::class.java)
+                    intent.putExtra("cat_id", newId)
+                    intent.putExtra("cat_title", newCatTitle)
+                    startActivity(intent)
+
+
+                    true
+                }
+            } else if (catsData.categories[item].id == 5) {
+                subMenu.add(1, 1, 4, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                    val newId = catsData.categories[item].id
+                    val newCatTitle = catsData.categories[item].title
+                    val intent = Intent(context, CatActivity::class.java)
+                    intent.putExtra("cat_id", newId)
+                    intent.putExtra("cat_title", newCatTitle)
+                    startActivity(intent)
+
+
+                    true
+                }
+            } else if (catsData.categories[item].id == 3) {
+                subMenu.add(1, 1, 5, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                    val newId = catsData.categories[item].id
+                    val newCatTitle = catsData.categories[item].title
+                    val intent = Intent(context, CatActivity::class.java)
+                    intent.putExtra("cat_id", newId)
+                    intent.putExtra("cat_title", newCatTitle)
+                    startActivity(intent)
+
+
+                    true
+                }
+            } else if (catsData.categories[item].id == 13) {
+                subMenu.add(1, 1, 6, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                    val newId = catsData.categories[item].id
+                    val newCatTitle = catsData.categories[item].title
+                    val intent = Intent(context, CatActivity::class.java)
+                    intent.putExtra("cat_id", newId)
+                    intent.putExtra("cat_title", newCatTitle)
+                    startActivity(intent)
+
+
+                    true
+                }
+            } else if (catsData.categories[item].id == 20) {
+                subMenu.add(1, 1, 7, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                    val newId = catsData.categories[item].id
+                    val newCatTitle = catsData.categories[item].title
+                    val intent = Intent(context, CatActivity::class.java)
+                    intent.putExtra("cat_id", newId)
+                    intent.putExtra("cat_title", newCatTitle)
+                    startActivity(intent)
+
+
+                    true
+                }
+            } else if (catsData.categories[item].id == 50) {
+                subMenu.add(1, 1, 8, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                    val newId = catsData.categories[item].id
+                    val newCatTitle = catsData.categories[item].title
+                    val intent = Intent(context, CatActivity::class.java)
+                    intent.putExtra("cat_id", newId)
+                    intent.putExtra("cat_title", newCatTitle)
+                    startActivity(intent)
+
+
+                    true
+                }
+            } else if (catsData.categories[item].id == 51) {
+                subMenu.add(1, 1, 9, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                    val newId = catsData.categories[item].id
+                    val newCatTitle = catsData.categories[item].title
+                    val intent = Intent(context, CatActivity::class.java)
+                    intent.putExtra("cat_id", newId)
+                    intent.putExtra("cat_title", newCatTitle)
+                    startActivity(intent)
+
+
+                    true
+                }
+            } else if (catsData.categories[item].id == 52) {
+                subMenu.add(1, 1, 10, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                    val newId = catsData.categories[item].id
+                    val newCatTitle = catsData.categories[item].title
+                    val intent = Intent(context, CatActivity::class.java)
+                    intent.putExtra("cat_id", newId)
+                    intent.putExtra("cat_title", newCatTitle)
+                    startActivity(intent)
+
+
+                    true
+
+                }
+            } else if (catsData.categories[item].id == 53) {
+                subMenu.add(1, 1, 10, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                    val newId = catsData.categories[item].id
+                    val newCatTitle = catsData.categories[item].title
+                    val intent = Intent(context, CatActivity::class.java)
+                    intent.putExtra("cat_id", newId)
+                    intent.putExtra("cat_title", newCatTitle)
+                    startActivity(intent)
+
+
+                    true
+
+                }
             }
         }
-
 
         navView.invalidate()
 
@@ -516,7 +636,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         override fun run() {
             this@MainActivity.runOnUiThread {
 
-//                TODO FIX ITEM NUMBER
+                //                TODO FIX ITEM NUMBER
                 if (viewPagerAdvertising.currentItem == 0) {
                     viewPagerAdvertising.currentItem = 1
                 } else if (viewPagerAdvertising.currentItem == 1) {
@@ -555,7 +675,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         return activeNetwork != null && activeNetwork.isConnectedOrConnecting
     }
 
-    fun showToastNotInternet(context: Context){
+    fun showToastNotInternet(context: Context) {
         Toast.makeText(context, R.string.no_internet, Toast.LENGTH_LONG).show()
 
     }
@@ -576,7 +696,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     }
 
-    fun showErrorWhenGetJson(context: Context){
+    fun showErrorWhenGetJson(context: Context) {
         Toast.makeText(context, getText(R.string.some_error), Toast.LENGTH_SHORT).show()
     }
 
