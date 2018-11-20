@@ -36,6 +36,7 @@ import android.view.LayoutInflater
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.crashlytics.android.Crashlytics
+import com.papyrus.bshairwebapp.Adapters.BannerAdapterAdvertising
 import com.papyrus.bshairwebapp.Util.EndlessRecyclerViewScrollListener
 import com.papyrus.bshairwebapp.Preferences.Preferences
 import com.papyrus.bshairwebapp.bshairwebapp.R
@@ -50,10 +51,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     internal var compositeDisposable = CompositeDisposable()
     var myNewsAdapter =  NewsAdapter(this, ArrayList())
     internal lateinit var myBannerAdapter: BannerAdapter
+    internal lateinit var myBannerAdvertisingAdapter: BannerAdapterAdvertising
     var pageCount: Int = 1
     var isShowErrorPageBefor:Boolean = false
     //    TODO: Must change var below when website datas changed
     var bannerTagName: String = "بنر"
+    var bannerPostType:String = "advertising"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -101,7 +104,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 //        Show Banner Data
             fetchDataBanner(bannerTagName, pageCount)
-
+            fetchDataBannerAdvertising(bannerPostType)
 //        Show Data
             fetchData(pageCount)
 
@@ -137,6 +140,22 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             nav_view.setNavigationItemSelectedListener(this)
         }
+    }
+
+    private fun fetchDataBannerAdvertising(bannerPostType: String) {
+        compositeDisposable.add(myNewsApi.getBannerAdvertisingPosts(bannerPostType)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe({bannersAdvertisingData -> displayBannerAdvertisingData(bannersAdvertisingData)},{error->displayErrorAdvertising(error, this)}))
+    }
+
+    private fun displayErrorAdvertising(error: Throwable?, mainActivity: MainActivity) {
+//         TODO Handle banner advertising Error
+    }
+
+    private fun displayBannerAdvertisingData(bannersAdvertisingData: News?) {
+        myBannerAdvertisingAdapter = BannerAdapterAdvertising(this, bannersAdvertisingData!!)
+        viewPagerAdvertising.adapter = myBannerAdvertisingAdapter
     }
 
 
@@ -460,7 +479,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         navView.invalidate()
 
         val mTimer = Timer()
-        mTimer.scheduleAtFixedRate(MyTimerTask(), 3000, 4000)
+        mTimer.scheduleAtFixedRate(MyTimerTask(), 3000, 6000)
+
+        val mTimerAdvertising = Timer()
+        mTimerAdvertising.scheduleAtFixedRate(MyTimerTaskAdvertising(), 3000, 8000)
 
     }
 
@@ -479,6 +501,31 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     viewPager.currentItem = 5
                 } else {
                     viewPager.currentItem = 0
+                }
+
+
+            }
+        }
+    }
+
+
+    inner class MyTimerTaskAdvertising : TimerTask() {
+        override fun run() {
+            this@MainActivity.runOnUiThread {
+
+//                TODO FIX ITEM NUMBER
+                if (viewPagerAdvertising.currentItem == 0) {
+                    viewPagerAdvertising.currentItem = 1
+                } else if (viewPagerAdvertising.currentItem == 1) {
+                    viewPagerAdvertising.currentItem = 2
+                } else if (viewPagerAdvertising.currentItem == 2) {
+                    viewPagerAdvertising.currentItem = 3
+                } else if (viewPagerAdvertising.currentItem == 3) {
+                    viewPagerAdvertising.currentItem = 0
+                } else if (viewPagerAdvertising.currentItem == 4) {
+                    viewPagerAdvertising.currentItem = 5
+                } else {
+                    viewPagerAdvertising.currentItem = 0
                 }
 
 

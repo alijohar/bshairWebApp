@@ -58,8 +58,10 @@ data class Category(
         val post_count: Int
 )
 
-data class CustomFields(val test:String
+data class CustomFields(
+        val websiteAdvertising: List<String>
 )
+
 
 data class ThumbnailImages(
         val full: Full,

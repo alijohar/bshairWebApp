@@ -16,6 +16,9 @@ interface NewsApi {
     fun getBannerPosts(@Query("tag_slug") bannerTage:String,
                        @Query("page") pageBanner:Int):io.reactivex.Observable<News>
 
+    //    For last 10 Banner Posts
+    @GET("get_posts")
+    fun getBannerAdvertisingPosts(@Query("post_type") post_type:String):io.reactivex.Observable<News>
 
 //    For get post comments
     @GET("get_post")
