@@ -150,10 +150,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     private fun displayErrorAdvertising(error: Throwable?, mainActivity: MainActivity) {
-//         TODO Handle banner advertising Error
+
+
     }
 
     private fun displayBannerAdvertisingData(bannersAdvertisingData: News?) {
+        if (bannersAdvertisingData!!.count == 0){
+            recycler_news.setPadding(0,0,0,0)
+        }
         myBannerAdvertisingAdapter = BannerAdapterAdvertising(this, bannersAdvertisingData!!)
         viewPagerAdvertising.adapter = myBannerAdvertisingAdapter
     }
@@ -460,7 +464,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val menu = navView.menu
 
         val subMenu = menu.addSubMenu(R.string.cats)
-
         for (item in 0 until catsData!!.categories.size) {
             subMenu.add(catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
                 val newId = catsData.categories[item].id

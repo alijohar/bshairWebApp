@@ -44,10 +44,14 @@ class BannerAdapterAdvertising(val context: Context, val localBannerArray: News)
 
             //listening to image click
             banner.setOnClickListener(View.OnClickListener {
-                val openURL = Intent(android.content.Intent.ACTION_VIEW)
-                openURL.data = Uri.parse(customLink)
-                context.startActivity(openURL)
-//                Toast.makeText(context, customLink, Toast.LENGTH_LONG).show()
+                try {
+                    val openURL = Intent(android.content.Intent.ACTION_VIEW)
+                    openURL.data = Uri.parse(customLink)
+                    context.startActivity(openURL)
+                }catch (ex:Exception){
+
+                Toast.makeText(context, "للأسف لا يمكن فتح رابط الإعلان", Toast.LENGTH_LONG).show()
+                }
             })
 
             return itemView

@@ -8,6 +8,7 @@
     <dimen name="app_icon_menu">38dp</dimen>
     <dimen name="app_icon_nav_header">48dp</dimen>
     <dimen name="miniMargin">4dp</dimen>
+    <dimen name="no_dimen">0dp</dimen>
     <dimen name="standard_news_image_size">100dp</dimen>
     <dimen name="half_standard_margin">8dp</dimen>
     <dimen name="progressSize">30dp</dimen>
