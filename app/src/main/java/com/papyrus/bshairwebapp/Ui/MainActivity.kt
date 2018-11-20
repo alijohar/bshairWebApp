@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     var pageCount: Int = 1
     var isShowErrorPageBefor:Boolean = false
     //    TODO: Must change var below when website datas changed
-    var bannerTagName: String = "test"
+    var bannerTagName: String = "بنر"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
