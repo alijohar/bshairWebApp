@@ -19,6 +19,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 import android.os.Build
 import android.text.Spanned
+import android.widget.TextView
 import com.bumptech.glide.load.DataSource
 import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
@@ -38,9 +39,20 @@ class NewsDetail : AppCompatActivity() {
     var locatDetailId:Int = 0
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_news_detail)
+        val bundle = intent.extras
+        var itsArticle = bundle.getBoolean("itsArticle")
+
+        if (itsArticle) {
+            val authorArticle = bundle.getString("authorArcticle")
+            setContentView(R.layout.activity_news_detail_article)
+            val newTextView = findViewById<TextView>(R.id.author_name_article)
+            newTextView.text = authorArticle
+        }else{
+            setContentView(R.layout.activity_news_detail)
+        }
 
 
 
@@ -80,7 +92,6 @@ class NewsDetail : AppCompatActivity() {
                 .build()
         )
 
-        val bundle = intent.extras
         val title = bundle.getString("title")
         val content = bundle.getString("content")
         val fullImage = bundle.getString("full_image")

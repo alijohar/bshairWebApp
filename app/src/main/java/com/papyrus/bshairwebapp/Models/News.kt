@@ -28,7 +28,7 @@ data class Post(
         val date: String,
         val modified: String,
         val categories: List<Category>,
-        val tags: List<Any>,
+        val tags: List<Tags>,
         val author: Author,
         val comments: List<Comment>,
         val attachments: List<Attachment>,
@@ -38,6 +38,14 @@ data class Post(
         val custom_fields: CustomFields,
         val thumbnail_size: String,
         val thumbnail_images: ThumbnailImages
+)
+
+data class Tags(
+        val id:Int,
+        val slug: String,
+        val title: String,
+        val description: String,
+        val post_count:Int
 )
 
 data class Comment(
@@ -59,7 +67,8 @@ data class Category(
 )
 
 data class CustomFields(
-        val websiteAdvertising: List<String>
+        val websiteAdvertising: List<String>,
+        val authorName: List<String>
 )
 
 

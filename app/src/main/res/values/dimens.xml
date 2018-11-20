@@ -26,6 +26,7 @@
     <dimen name="banner_height">280dp</dimen>
     <dimen name="banner_height_land">380dp</dimen>
     <dimen name="banner_advertising_height">96dp</dimen>
+    <dimen name="image_news_detail_full_size_article">144dp</dimen>
     <item name="half_alpha" type="dimen" format="float">0.5</item>
     <item name="high_alpha" type="dimen" format="float">0.75</item>
 </resources>
