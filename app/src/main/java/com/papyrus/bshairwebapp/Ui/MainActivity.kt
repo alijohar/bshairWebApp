@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     var pageCount: Int = 1
     var isShowErrorPageBefor: Boolean = false
     //    TODO: Must change var below when website datas changed
-    var bannerTagName: String = "بنر"
+    var bannerTagName: String = "تطبيق"
     var bannerPostType: String = "advertising"
     var allBannerCount: Int = 0
 
