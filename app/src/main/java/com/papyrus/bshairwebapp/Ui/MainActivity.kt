@@ -502,7 +502,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
                     true
                 }
-            } else if (catsData.categories[item].id == 5) {
+            } else if (catsData.categories[item].id == 20) {
                 subMenu.add(1, 1, 4, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
                     val newId = catsData.categories[item].id
                     val newCatTitle = catsData.categories[item].title
@@ -514,7 +514,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
                     true
                 }
-            } else if (catsData.categories[item].id == 3) {
+            } else if (catsData.categories[item].id == 5) {
                 subMenu.add(1, 1, 5, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
                     val newId = catsData.categories[item].id
                     val newCatTitle = catsData.categories[item].title
@@ -526,7 +526,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
                     true
                 }
-            } else if (catsData.categories[item].id == 13) {
+            } else if (catsData.categories[item].id == 3) {
                 subMenu.add(1, 1, 6, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
                     val newId = catsData.categories[item].id
                     val newCatTitle = catsData.categories[item].title
@@ -538,7 +538,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
                     true
                 }
-            } else if (catsData.categories[item].id == 20) {
+            } else if (catsData.categories[item].id == 13) {
                 subMenu.add(1, 1, 7, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
                     val newId = catsData.categories[item].id
                     val newCatTitle = catsData.categories[item].title
@@ -550,7 +550,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
                     true
                 }
-            } else if (catsData.categories[item].id == 50) {
+            } else if (catsData.categories[item].id == 11) {
                 subMenu.add(1, 1, 8, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
                     val newId = catsData.categories[item].id
                     val newCatTitle = catsData.categories[item].title
@@ -562,7 +562,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
                     true
                 }
-            } else if (catsData.categories[item].id == 51) {
+            } else if (catsData.categories[item].id == 50) {
                 subMenu.add(1, 1, 9, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
                     val newId = catsData.categories[item].id
                     val newCatTitle = catsData.categories[item].title
@@ -573,6 +573,19 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
                     true
+                }
+            } else if (catsData.categories[item].id == 51) {
+                subMenu.add(1, 1, 10, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
+                    val newId = catsData.categories[item].id
+                    val newCatTitle = catsData.categories[item].title
+                    val intent = Intent(context, CatActivity::class.java)
+                    intent.putExtra("cat_id", newId)
+                    intent.putExtra("cat_title", newCatTitle)
+                    startActivity(intent)
+
+
+                    true
+
                 }
             } else if (catsData.categories[item].id == 52) {
                 subMenu.add(1, 1, 10, catsData.categories[item].title).setIcon(R.drawable.ic_menu_bshair_v).setOnMenuItemClickListener {
