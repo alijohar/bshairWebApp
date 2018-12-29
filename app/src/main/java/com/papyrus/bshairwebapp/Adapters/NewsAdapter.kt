@@ -24,11 +24,25 @@ class NewsAdapter(internal var context: Context, internal var newsList: ArrayLis
 
     override fun onBindViewHolder(holder: NewsHolder, position: Int) {
         val locatImageView = holder.news_image
-        val imageThumbNewsUrlString = newsList[position].thumbnail
+        var imageThumbNewsUrlString:String?
+
+        try{
+            imageThumbNewsUrlString = newsList[position].thumbnail
+
+        }catch (E:Exception){
+            imageThumbNewsUrlString = "http://www.bshaer.net/wp-content/uploads/2018/12/default.jpg"
+
+        }
         val titleNews = newsList[position].title
         val contentNews = newsList[position].content
         val tags = newsList[position].tags
-        val fullImage = newsList[position].thumbnail_images.medium_large.url
+        var fullImage:String?
+        try {
+            fullImage = newsList[position].thumbnail_images.medium_large.url
+
+        }catch (E:Exception){
+            fullImage = "http://www.bshaer.net/wp-content/uploads/2018/12/default.jpg"
+        }
         val urlPost: String = newsList[position].url
         val numberComment = newsList[position].comment_count
 //        TODO: must get all cats if the customer needs it

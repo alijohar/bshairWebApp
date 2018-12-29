@@ -4,7 +4,7 @@
             "outputFile": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/d8d1db09583c2e90f0571a473d188fa1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/8d048d017cc2aea00009e8956f1be5c2/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/19cbe5ecdf066dcf6824443d528f065c/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

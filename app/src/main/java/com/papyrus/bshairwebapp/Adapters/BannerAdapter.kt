@@ -32,7 +32,14 @@ class BannerAdapter(val context:Context, val localBannerArray:News): PagerAdapte
         val bannerTitle:String = localBannerArray.posts[position].title
         val banner:ImageView = itemView.banner_image
         val tags = localBannerArray.posts[position].tags
-        val imageBanner:String = localBannerArray.posts[position].thumbnail_images.medium_large.url
+        var imageBanner:String?
+
+        try {
+            imageBanner = localBannerArray.posts[position].thumbnail_images.medium_large.url
+        }catch (E:Exception){
+            imageBanner = "http://www.bshaer.net/wp-content/uploads/2018/12/default.jpg"
+
+        }
         val bannerContent = localBannerArray.posts[position].content
         val urlPost:String = localBannerArray.posts[position].url
         val numberComment = localBannerArray.posts[position].comment_count

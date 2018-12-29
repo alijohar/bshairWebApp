@@ -4,24 +4,24 @@
             "outputFile": "/Users/alijohar/Desktop/MainArchive/Apps/Android(Apps)/bshairWebApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml",
             "map": [
                 {
-                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ecf3775a424d5b9686b0b497d86945a8/res/values-bg/values-bg.xml",
+                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/0b717df10e647a138b6b7b6a508ee042/res/values-bg/values.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,220,327,432,518,623,744,823,901,984,1098,1207,1307,1421,1527,1635,1795,1894",
-                        "endColumns": "114,106,104,85,104,120,78,77,82,113,108,99,113,105,107,159,98,82",
-                        "endOffsets": "215,322,427,513,618,739,818,896,979,1093,1202,1302,1416,1522,1630,1790,1889,1972"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "243",
+                        "endColumns": "99",
+                        "endOffsets": "342"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,220,327,432,518,623,744,823,901,984,1098,1207,1307,1421,1527,1635,1795,4645",
-                        "endColumns": "114,106,104,85,104,120,78,77,82,113,108,99,113,105,107,159,98,82",
-                        "endOffsets": "215,322,427,513,618,739,818,896,979,1093,1202,1302,1416,1522,1630,1790,1889,4723"
+                        "startLines": "36",
+                        "startColumns": "4",
+                        "startOffsets": "4541",
+                        "endColumns": "103",
+                        "endOffsets": "4640"
                     }
                 },
                 {
-                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/89ebb60724e311cb715cb3740d27ffdd/res/values-bg/values.xml",
+                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/072f293a354fbefb028499597033b711/res/values-bg/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +38,24 @@
                     }
                 },
                 {
-                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/e3939b4a5b79b27d374230e4a714428b/res/values-bg/values.xml",
+                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/19cbe5ecdf066dcf6824443d528f065c/res/values-bg/values-bg.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,220,327,432,518,623,744,823,901,984,1098,1207,1307,1421,1527,1635,1795,1894",
+                        "endColumns": "114,106,104,85,104,120,78,77,82,113,108,99,113,105,107,159,98,82",
+                        "endOffsets": "215,322,427,513,618,739,818,896,979,1093,1202,1302,1416,1522,1630,1790,1889,1972"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,220,327,432,518,623,744,823,901,984,1098,1207,1307,1421,1527,1635,1795,4645",
+                        "endColumns": "114,106,104,85,104,120,78,77,82,113,108,99,113,105,107,159,98,82",
+                        "endOffsets": "215,322,427,513,618,739,818,896,979,1093,1202,1302,1416,1522,1630,1790,1889,4723"
+                    }
+                },
+                {
+                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/d4750c48ba41b072c73d4657abb6e1ff/res/values-bg/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -55,7 +72,7 @@
                     }
                 },
                 {
-                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/468dae0bea9ddff18494e35961cf2ad2/res/values-bg/values-bg.xml",
+                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/3839c52e5cf7350d74e868360999bb8d/res/values-bg/values-bg.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -69,23 +86,6 @@
                         "startOffsets": "4728",
                         "endColumns": "100",
                         "endOffsets": "4824"
-                    }
-                },
-                {
-                    "source": "/Users/alijohar/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/b8c54abd8c7252976e7d0be8b0576606/res/values-bg/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "243",
-                        "endColumns": "99",
-                        "endOffsets": "342"
-                    },
-                    "to": {
-                        "startLines": "36",
-                        "startColumns": "4",
-                        "startOffsets": "4541",
-                        "endColumns": "103",
-                        "endOffsets": "4640"
                     }
                 }
             ]
