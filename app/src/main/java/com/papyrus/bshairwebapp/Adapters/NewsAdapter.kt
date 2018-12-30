@@ -51,6 +51,7 @@ class NewsAdapter(internal var context: Context, internal var newsList: ArrayLis
         val timePosting = newsList[position].date
         val postId = newsList[position].id
         holder.news_title.text = titleNews
+        holder.news_cat.text = catName
         Glide.with(context).load(imageThumbNewsUrlString).into(locatImageView)
 
         val newCardView = holder.news_card_view
