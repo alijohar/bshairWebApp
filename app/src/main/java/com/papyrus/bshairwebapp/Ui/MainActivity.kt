@@ -36,6 +36,7 @@ import android.view.LayoutInflater
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.crashlytics.android.Crashlytics
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.papyrus.bshairwebapp.Adapters.BannerAdapterAdvertising
 import com.papyrus.bshairwebapp.Util.EndlessRecyclerViewScrollListener
 import com.papyrus.bshairwebapp.Preferences.Preferences
@@ -48,6 +49,7 @@ import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     internal lateinit var myNewsApi: NewsApi
+    private lateinit var firebaseAnalytics: FirebaseAnalytics
     internal var compositeDisposable = CompositeDisposable()
     var myNewsAdapter = NewsAdapter(this, ArrayList())
     internal lateinit var myBannerAdapter: BannerAdapter
@@ -63,6 +65,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         Fabric.with(this, Crashlytics())
         setContentView(R.layout.activity_main)
+        firebaseAnalytics = FirebaseAnalytics.getInstance(this)
 
 
         //        CustomFont

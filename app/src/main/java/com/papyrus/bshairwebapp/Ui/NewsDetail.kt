@@ -24,12 +24,14 @@ import com.bumptech.glide.load.DataSource
 import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.papyrus.bshairwebapp.Util.OnSwipeTouchListener
 import com.papyrus.bshairwebapp.Preferences.Preferences
 import com.papyrus.bshairwebapp.bshairwebapp.R
 
 
 class NewsDetail : AppCompatActivity() {
+    private lateinit var firebaseAnalytics: FirebaseAnalytics
     var urlPost: String? = null
     var urlPostWithTitle: String? = null
     lateinit var commentDialog:AlertDialog.Builder
@@ -44,6 +46,9 @@ class NewsDetail : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val bundle = intent.extras
         var itsArticle = bundle.getBoolean("itsArticle")
+        firebaseAnalytics = FirebaseAnalytics.getInstance(this)
+
+
 
         if (itsArticle) {
             val authorArticle = bundle.getString("authorArcticle")
@@ -192,6 +197,13 @@ class NewsDetail : AppCompatActivity() {
             intent.putExtra("post_title", title)
             startActivity(intent)
         }
+
+//        For Analytics Firebase
+        val bundleFirebase = Bundle()
+        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, postIdNew.toString())
+        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, title)
+        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "NEWS")
+        firebaseAnalytics.logEvent(title, bundleFirebase)
     }
 
 
