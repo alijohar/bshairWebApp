@@ -199,11 +199,11 @@ class NewsDetail : AppCompatActivity() {
         }
 
 //        For Analytics Firebase
-        val bundleFirebase = Bundle()
-        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, postIdNew.toString())
-        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, title)
-        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "NEWS")
-        firebaseAnalytics.logEvent(title, bundleFirebase)
+
+        val params = Bundle()
+        params.putString("العنوان", title)
+        firebaseAnalytics.logEvent("PostView", params)
+
     }
 
 
