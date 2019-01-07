@@ -202,7 +202,7 @@ class NewsDetail : AppCompatActivity() {
 
         val params = Bundle()
         params.putString("العنوان", title)
-        firebaseAnalytics.logEvent("PostView", params)
+        firebaseAnalytics.logEvent("PostViewAndroid", params)
 
     }
 
