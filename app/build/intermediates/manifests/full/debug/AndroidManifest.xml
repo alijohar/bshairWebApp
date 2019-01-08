@@ -84,10 +84,25 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_about_us"
             android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.papyrus.bshairwebapp.Ui.SingleNewsFromPush"
+            android:configChanges="orientation|screenSize" />
 
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="4a453df463908b2235acc05282cdace47c9e4501" />
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+
+        <service
+            android:name="com.papyrus.bshairwebapp.PushNotification.NotificationExtenderExample"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
 
         <provider
             android:name="com.crashlytics.android.CrashlyticsInitProvider"
@@ -97,7 +112,7 @@
 
         <meta-data
             android:name="onesignal_app_id"
-            android:value="9541f839-a909-47bf-a85b-38082d09eb00" /> <!-- Deprecated - Pulled from OneSignal dashboard. -->
+            android:value="2cd9655b-a7da-49fb-83bb-a26ac56e8ade" /> <!-- Deprecated - Pulled from OneSignal dashboard. -->
         <meta-data
             android:name="onesignal_google_project_number"
             android:value="str:REMOTE" />
