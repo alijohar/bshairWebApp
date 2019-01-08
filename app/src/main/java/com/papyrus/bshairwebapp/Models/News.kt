@@ -188,3 +188,9 @@ data class commentStatus(
     val content: String,
     val parent: Int
 )
+
+data class singlePost(
+        val status: String,
+        val post:Post,
+        val previous_url: String
+)

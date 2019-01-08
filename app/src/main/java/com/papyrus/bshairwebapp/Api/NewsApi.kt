@@ -25,6 +25,10 @@ interface NewsApi {
     fun getPostComments(@Query("id") id:Int):io.reactivex.Observable<NewsComments>
 
 
+    //    For get single post
+    @GET("get_post")
+    fun getSinglePost(@Query("id") id:Int):io.reactivex.Observable<singlePost>
+
 //    For get all cats list
     @GET("get_category_index")
     fun getCatList():io.reactivex.Observable<CatList>

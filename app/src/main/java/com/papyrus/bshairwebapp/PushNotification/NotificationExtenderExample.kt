@@ -6,6 +6,7 @@ import android.util.Log
 import com.onesignal.NotificationExtenderService
 import com.onesignal.OSNotificationDisplayedResult
 import com.onesignal.OSNotificationReceivedResult
+import com.papyrus.bshairwebapp.bshairwebapp.R
 
 import java.math.BigInteger
 
@@ -15,7 +16,8 @@ class NotificationExtenderExample : NotificationExtenderService() {
         val overrideSettings = NotificationExtenderService.OverrideSettings()
         overrideSettings.extender = NotificationCompat.Extender { builder ->
             // Sets the background notification color to Red on Android 5.0+ devices.
-            builder.setColor(BigInteger("FFFF0000", 16).toInt())
+            builder.setColor(BigInteger("7E57C2", 16).toInt())
+            builder.setSmallIcon(R.drawable.ic_menu_bshair)
         }
 
         val displayedResult = displayNotification(overrideSettings)

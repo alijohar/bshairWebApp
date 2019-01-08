@@ -2,6 +2,8 @@ package com.papyrus.bshairwebapp
 
 import android.app.Application
 import android.content.Intent
+import android.net.Uri
+import android.os.Bundle
 import android.support.v4.content.ContextCompat
 import android.util.Log
 import com.onesignal.OSNotification
@@ -63,45 +65,46 @@ class bshaerApplication : Application() {
 
             val customKey: String?
             var openURL: String? = null
+            var openApp:String? = null
             var activityToLaunch: Any = MainActivity::class.java
 
             if (data != null) {
                 customKey = data.optString("customkey", null)
                 openURL = data.optString("openURL", null)
+                openApp = data.optString("openApp", null)
 
-                if (customKey != null)
+                if (customKey != null) {
                     Log.i("OneSignalExample", "customkey set with value: $customKey")
                     activityToLaunch = SingleNewsFromPush::class.java
+                    val intent = Intent(applicationContext, activityToLaunch as Class<*>)
+                    intent.flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT or Intent.FLAG_ACTIVITY_NEW_TASK
+                    intent.putExtra("customkey", customKey)
+                    startActivity(intent)
+                }
 
 
-                if (openURL != null)
-                    Log.i("OneSignalExample", "openURL to webview with URL value: $openURL")
+                    if (openURL != null) {
+                        Log.i("OneSignalExample", "openURL to webview with URL value: $openURL")
+                        val uris = Uri.parse(openURL)
+                        val intents = Intent(Intent.ACTION_VIEW, uris)
+                        val b = Bundle()
+                        b.putBoolean("new_window", true)
+                        intents.putExtras(b)
+                        startActivity(intents)
+                    }
+
+                if (openApp != null) {
+                    Log.i("OneSignalExample", "App will opened")
+                    activityToLaunch = MainActivity::class.java
+                    val intent = Intent(applicationContext, activityToLaunch as Class<*>)
+                    intent.flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT or Intent.FLAG_ACTIVITY_NEW_TASK
+                    startActivity(intent)
+                }
+
             }
-
-            if (actionType == OSNotificationAction.ActionType.ActionTaken) {
-                Log.i("OneSignalExample", "Button pressed with id: " + result.action.actionID)
-
-                if (result.action.actionID == "id1") {
-                    Log.i("OneSignalExample", "button id called: " + result.action.actionID)
-                    activityToLaunch = SingleNewsFromPush::class.java
-                } else
-                    Log.i("OneSignalExample", "button id called: " + result.action.actionID)
-            }
-            // The following can be used to open an Activity of your choice.
-            // Replace - getApplicationContext() - with any Android Context.
-            // Intent intent = new Intent(getApplicationContext(), YourActivity.class);
-            val intent = Intent(applicationContext, activityToLaunch as Class<*>)
-            // intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT | Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT or Intent.FLAG_ACTIVITY_NEW_TASK
-//            intent.putExtra("openURL", openURL)
-//            Log.i("OneSignalExample", "openURL = " + openURL!!)
-//            // startActivity(intent);
-            startActivity(intent)
-
-
-        }
     }
 
 
 
+}
 }
