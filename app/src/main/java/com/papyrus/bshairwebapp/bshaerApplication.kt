@@ -49,9 +49,9 @@ class bshaerApplication : Application() {
             Log.i("OneSignalExample", "NotificationID received: $notificationID")
 
             if (data != null) {
-                customKey = data.optString("customkey", null)
+                customKey = data.optString("customKey", null)
                 if (customKey != null)
-                    Log.i("OneSignalExample", "customkey set with value: $customKey")
+                    Log.i("OneSignalExample", "customKey set with value: $customKey")
             }
         }
     }
@@ -69,16 +69,16 @@ class bshaerApplication : Application() {
             var activityToLaunch: Any = MainActivity::class.java
 
             if (data != null) {
-                customKey = data.optString("customkey", null)
+                customKey = data.optString("customKey", null)
                 openURL = data.optString("openURL", null)
                 openApp = data.optString("openApp", null)
 
                 if (customKey != null) {
-                    Log.i("OneSignalExample", "customkey set with value: $customKey")
+                    Log.i("OneSignalExample", "customKey set with value: $customKey")
                     activityToLaunch = SingleNewsFromPush::class.java
                     val intent = Intent(applicationContext, activityToLaunch as Class<*>)
                     intent.flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT or Intent.FLAG_ACTIVITY_NEW_TASK
-                    intent.putExtra("customkey", customKey)
+                    intent.putExtra("customKey", customKey)
                     startActivity(intent)
                 }
 

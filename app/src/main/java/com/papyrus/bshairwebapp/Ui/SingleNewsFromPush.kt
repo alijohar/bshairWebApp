@@ -52,7 +52,7 @@ class SingleNewsFromPush : AppCompatActivity() {
         myNewsApi = myNewsClinet.create(NewsApi::class.java)
 
         val bundel = intent.extras
-        val newId = bundel.getString("customkey")
+        val newId = bundel.getString("customKey")
 
         setSupportActionBar(toolbar_detail)
         fetchData(newId)
