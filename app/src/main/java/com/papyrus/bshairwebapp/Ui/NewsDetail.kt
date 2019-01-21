@@ -104,9 +104,9 @@ class NewsDetail : AppCompatActivity() {
         val catName = bundle.getString("cat_name")
         val authorName = bundle.getString("author_name")
         val time = bundle.getString("time_post")
+        var timeS = time.split(" ")
         val postIdNew = bundle.getInt("post_id")
         locatDetailId = postIdNew
-        val timeS = time.split(" ")
         var myNewPreferences = Preferences(this)
         val newFontNameByUser = myNewPreferences.getFontName()
         val newFontSizeByUser = myNewPreferences.getFontSize()
@@ -183,7 +183,11 @@ class NewsDetail : AppCompatActivity() {
 
 
         detail_author_name.text = authorName
-        detail_time_posting.text = timeS[0]
+        if (time.contains(":")){
+            detail_time_posting.text = timeS[0]
+        }else {
+            detail_time_posting.text = time
+        }
         detail_cat_name.text = catName
         detail_comment_number.text = commentNumber.toString()
 

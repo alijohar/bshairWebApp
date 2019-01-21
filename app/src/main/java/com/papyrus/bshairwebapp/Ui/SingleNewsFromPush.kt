@@ -55,6 +55,8 @@ class SingleNewsFromPush : AppCompatActivity() {
         val newId = bundel.getString("customKey")
 
         setSupportActionBar(toolbar_detail)
+        imag_progress_bar.visibility = View.VISIBLE
+
         fetchData(newId)
 
 
@@ -91,6 +93,7 @@ class SingleNewsFromPush : AppCompatActivity() {
         val catName = newsSingleData.post.categories[0].title
         val authorName = newsSingleData.post.author.name
         val time = newsSingleData.post.date
+        var timeS = time.split(" ")
         val postIdNew = newsSingleData.post.id
         locatDetailId = postIdNew
         var myNewPreferences = Preferences(this)
@@ -166,7 +169,12 @@ class SingleNewsFromPush : AppCompatActivity() {
                 })
                 .into(image_news_detial)
         detail_author_name.text = authorName
-        detail_time_posting.text = time
+
+        if (time.contains(":")){
+            detail_time_posting.text = timeS[0]
+        }else {
+            detail_time_posting.text = time
+        }
         detail_cat_name.text = catName
         detail_comment_number.text = commentNumber.toString()
 

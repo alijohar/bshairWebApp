@@ -12,7 +12,7 @@
     <string name="action_adding_comment">add comment</string>
     <string name="share">Sharing via</string>
     <string name="test_small_title">title</string>
-    <string name="test_number">4</string>
+    <string name="test_number">0</string>
     <string name="your_name">الاسم الکریم</string>
     <string name="your_mail">البريد الإلكتروني</string>
     <string name="your_text">نص الرسالة</string>
@@ -60,6 +60,9 @@
     <string name="mail_not_valid">يبدو أن البريد الإكتروني غير صحيح</string>
     <string name="commenet_error_send">للأسف إرسال التعليق غير مسموح</string>
     <string name="about_us_text"><![CDATA[<p>  تطبيق بشائر يغطي حاجة المجتمع في وجود منصة إلكترونية يمكن عبرها تبادل الأخبار الإجتماعية ومعرفة أخر مستجداتها عبر التطبيق, حيث يحتوي على أقسام متعددة تغطي احتياجات المستخدمين. بإمكان المستخدم أن يعرف ماهي أخر أخبار الوفيات, أو المواليد, أو مناسبات الزواج في المجتمع. أيضا يمكن عبر التطبيق تبادل الأعلانات التجارية والدورات التنموية والتي تسهم في دفع عجلة المجتمع إلى الأمام.     </p>]]></string>
+    <string name="cat_name_title">التصنيف</string>
+    <string name="author_name_title">المحرر</string>
+    <string name="time_title">تاريخ النشر</string>
     <bool name="is_rtl">false</bool>
 
 </resources>
