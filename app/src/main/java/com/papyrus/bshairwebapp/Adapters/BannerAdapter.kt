@@ -47,6 +47,7 @@ class BannerAdapter(val context:Context, val localBannerArray:News): PagerAdapte
         val catName = localBannerArray.posts[position].categories[0].title
         val authorName = localBannerArray.posts[position].author.nickname
         val timePosting = localBannerArray.posts[position].date
+        val postId = localBannerArray.posts[position].id
         itemView.banner_title.text = bannerTitle
         Glide.with(context).load(imageBanner).into(banner)
 
@@ -70,6 +71,7 @@ class BannerAdapter(val context:Context, val localBannerArray:News): PagerAdapte
             bannerIntent.putExtra("title", bannerTitle)
             bannerIntent.putExtra("content", bannerContent)
             bannerIntent.putExtra("full_image", imageBanner)
+            bannerIntent.putExtra("post_id", postId)
             bannerIntent.putExtra("post_url", urlPost)
             bannerIntent.putExtra("number_comment", numberComment)
             bannerIntent.putExtra("cat_name", catName)
